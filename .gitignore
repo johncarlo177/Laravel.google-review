@@ -1,3 +1,4 @@
 .env
 storage/app/maxmind/db.mmdb
 storage/app/google
+vendor/
