@@ -1,0 +1,61 @@
+.lead-form .answer.stars {
+    .stars-container {
+        display: flex;
+        align-items: center;
+
+        flex-wrap: wrap;
+    }
+
+    .star {
+        flex: 1;
+        position: relative;
+        padding: 0.5rem;
+        cursor: pointer;
+        transition: 0.2s ease;
+
+        --enabled-color: rgb(240, 240, 45);
+
+        @mixin enabled-star() {
+            svg.outlined {
+                display: none;
+            }
+
+            svg.complete {
+                display: block;
+
+                path {
+                    fill: var(--enabled-color);
+                }
+            }
+        }
+
+        svg {
+            width: 100%;
+            height: auto;
+
+            path {
+                fill: currentColor;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        svg {
+            display: block;
+        }
+
+        svg.complete {
+            display: none;
+        }
+
+        &.enabled {
+            @include enabled-star();
+        }
+    }
+
+    .star-template {
+        display: none;
+    }
+}

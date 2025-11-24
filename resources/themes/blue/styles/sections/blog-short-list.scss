@@ -1,0 +1,51 @@
+@use './mixins.scss' as *;
+
+section.blog-short-list {
+    line-height: 1.7;
+
+    @include title-styles;
+
+    .text-wrapper {
+        margin-bottom: 2rem;
+    }
+
+    .explore-more-container {
+        display: flex;
+        margin-top: 3rem;
+        justify-content: center;
+    }
+
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+
+        @media (max-width: 900px) {
+            & {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    .post {
+        display: block;
+        text-decoration: none;
+        color: var(--blue-text-color);
+        background-color: white;
+
+        padding: 1rem;
+        box-shadow: rgb(0 0 0 / 5%) 0 27px 40px 30px;
+        border: 2px solid var(--blue-gray-0);
+
+        border-radius: 1rem;
+
+        img {
+            border-top-right-radius: 0.5rem;
+            border-top-left-radius: 0.5rem;
+        }
+
+        .post-title {
+            margin: 0.8rem 0;
+        }
+    }
+}

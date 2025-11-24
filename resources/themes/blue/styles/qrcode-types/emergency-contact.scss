@@ -1,0 +1,91 @@
+@use './base.scss' as *;
+
+.qrcode-type-emergency-contact {
+    $icons-color: rgb(30, 79, 176);
+
+    @include base-qrcode-type($icons-color: $icons-color);
+
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .details-container {
+        background-image: linear-gradient(
+            135deg,
+            rgb(245, 244, 255),
+            rgb(151, 151, 151)
+        );
+
+        .gradient-bg {
+            background-image: linear-gradient(
+                135deg,
+                rgb(102, 211, 211),
+                rgb(3, 78, 78)
+            );
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 0;
+            height: 60%;
+            border-radius: 1rem;
+            border-bottom-right-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+        }
+
+        & > *:not(.gradient-bg) {
+            z-index: 1;
+            position: relative;
+        }
+    }
+
+    .qrcode-container {
+        background-color: white;
+        padding: 0rem;
+        border-radius: 50%;
+        box-shadow: var(--box-shadow);
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-top: -10rem;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .vertical-list {
+        text-align: center;
+        color: white;
+        padding: 0 1rem;
+
+        .name {
+            font-size: 2.4rem;
+        }
+
+        .company {
+            margin-top: 0rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .designation {
+            margin-bottom: 0.5rem;
+        }
+
+        .short-bio {
+            line-height: 2;
+        }
+    }
+
+    .file {
+        margin: 0.5rem 0;
+        text-decoration: underline;
+        font-size: 0.8rem;
+    }
+}

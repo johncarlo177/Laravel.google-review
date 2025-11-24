@@ -1,0 +1,27 @@
+.splash-screen {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: white;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        animation: splash-screen-animation 0.8s ease-in-out alternate infinite;
+    }
+}
+
+@keyframes splash-screen-animation {
+    from {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

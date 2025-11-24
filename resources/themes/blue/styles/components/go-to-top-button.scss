@@ -1,0 +1,25 @@
+.go-to-top-button {
+    position: fixed;
+    bottom: -10rem;
+    right: 2rem;
+    background-color: var(--blue-primary-0);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    z-index: 100;
+    cursor: pointer;
+
+    transition: all ease 0.5s;
+
+    &.visible {
+        bottom: 2rem;
+    }
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+
+        path {
+            fill: white;
+        }
+    }
+}

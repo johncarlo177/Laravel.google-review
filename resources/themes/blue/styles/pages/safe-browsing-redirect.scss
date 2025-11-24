@@ -1,0 +1,57 @@
+.safe-browsing-redirect {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #bbbbbb;
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 1rem;
+
+    .logo {
+        margin-top: 1rem;
+    }
+
+    .actions {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .destination {
+        background-color: #f7f7f7;
+        border: 1px solid #d9d9d9;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin: 0 0 1rem 0;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 100%;
+        width: 100%;
+        text-overflow: ellipsis;
+    }
+
+    .cancel {
+        user-select: none;
+        cursor: pointer;
+        color: rgb(110, 110, 110);
+        margin-inline-start: auto;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    footer {
+        width: 80%;
+        text-align: center;
+        position: absolute;
+        bottom: -2rem;
+        color: #707070;
+    }
+
+    .redirect-text {
+        color: #707070;
+    }
+}

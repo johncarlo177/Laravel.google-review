@@ -1,0 +1,228 @@
+@use './base.scss' as *;
+
+.qrcode-type-business-review {
+    $icons-color: rgb(30, 79, 176);
+
+    @include base-qrcode-type($icons-color: $icons-color);
+
+    background-color: white;
+
+    .banner {
+        background-image: url(/assets/images/biolinks/default/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 200px;
+        clip-path: url(#clip-banner);
+        background-position: center;
+    }
+
+    .logo {
+        padding: 0.7rem;
+        background-color: white;
+        width: 140px;
+        height: 140px;
+        margin: auto;
+        margin-top: -5rem;
+        z-index: 2;
+        position: relative;
+        border-radius: 50%;
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: normal;
+        margin: 1rem 0 1.5rem;
+
+        font-size: 1.5rem;
+    }
+
+    textarea,
+    input {
+        display: block;
+        padding: 2rem;
+        border: 2px solid var(--gray-1, #eee);
+        border-radius: 2rem;
+        margin: 1rem 0 2rem;
+
+        &::placeholder {
+            color: var(--blue-gray-1);
+        }
+
+        &:focus {
+            border-color: var(--gray-2, #b6b6b6);
+            outline: 0;
+        }
+    }
+
+    input {
+        background-color: white;
+        padding: 0.75rem 1.7rem;
+        margin: 0.5rem 0;
+    }
+
+    .submit-review {
+        display: block;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        transition: 0.5s ease;
+
+        qrcg-loader {
+            position: absolute;
+            --loader-color: white;
+            width: 1.4rem;
+            height: 1.4rem;
+            transform: translateY(-0.6rem) scale(0.55);
+        }
+
+        &[disabled] {
+            qrcg-loader {
+                display: block;
+            }
+
+            span {
+                opacity: 0;
+            }
+        }
+
+        &,
+        &:hover {
+            background-color: var(--submit-button-background-color, #ff812f);
+            color: var(--submit-button-text-color, white);
+            border-radius: 2rem;
+            border-color: transparent;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+        margin-top: 1rem;
+    }
+
+    .stars-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.5rem 0.1rem;
+
+        &.danger {
+            .star {
+                * {
+                    stroke: rgb(255, 0, 0);
+                    fill: white;
+                }
+            }
+        }
+
+        &:hover {
+            .star.hover {
+                color: #ffe101;
+                path {
+                    stroke: #ffe101;
+                }
+            }
+        }
+
+        &:not(:hover) {
+            .star.active {
+                color: #ffe101;
+                path {
+                    stroke: #ffe101;
+                }
+            }
+        }
+
+        .star {
+            cursor: pointer;
+            color: white;
+            cursor: pointer;
+
+            svg {
+                width: 3rem;
+                height: 3rem;
+
+                &,
+                * {
+                    pointer-events: none;
+                }
+
+                path {
+                    fill: currentColor;
+                    stroke: var(--gray-2);
+                    transition: 0.2s ease;
+                }
+            }
+
+            &:hover {
+                color: #ffe101;
+
+                path {
+                    stroke: black;
+                }
+            }
+        }
+    }
+
+    .success-message {
+        text-align: center;
+        margin: 3rem 0 calc(100vh - 26rem) 0;
+    }
+
+    .low-rating-message {
+        padding: 1.5rem;
+        margin: 1.5rem 1rem;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+        border-left: 5px solid #ffc107;
+        box-shadow: 0 4px 15px rgba(255, 193, 7, 0.2);
+        animation: slideInDown 0.5s ease-out;
+
+        h3 {
+            color: #856404;
+            font-size: 1.3em;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        p {
+            color: #856404;
+            font-size: 1.05em;
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            color: #0066cc;
+            font-weight: 600;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #004499;
+            }
+        }
+    }
+
+    @keyframes slideInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+}

@@ -1,0 +1,64 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Auth\Access\HandlesAuthorization;
+use {{ namespacedModel }};
+use {{ namespacedUserModel }};
+
+class {{ class }} extends BasePolicy
+{
+    use HandlesAuthorization;
+
+    public function list({{ user }} $user)
+    {
+        return $user->permitted('{{ model }}.list-all');
+    }
+
+    /**
+     * Determine whether the user can show the model.
+     *
+     * @param  \{{ namespacedUserModel }}  $user
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return \Illuminate\Auth\Access\Response|bool
+     */
+    public function show({{ user }} $user, {{ model }} ${{ modelVariable }})
+    {
+        return $user->permitted('{{ model }}.show-any');
+    }
+
+    /**
+     * Determine whether the user can store models.
+     *
+     * @param  \{{ namespacedUserModel }}  $user
+     * @return \Illuminate\Auth\Access\Response|bool
+     */
+    public function store({{ user }} $user)
+    {
+        return $user->permitted('{{ model }}.store');
+    }
+
+    /**
+     * Determine whether the user can update the model.
+     *
+     * @param  \{{ namespacedUserModel }}  $user
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return \Illuminate\Auth\Access\Response|bool
+     */
+    public function update({{ user }} $user, {{ model }} ${{ modelVariable }})
+    {
+        return $user->permitted('{{ model }}.update-any');
+    }
+
+    /**
+     * Determine whether the user can delete the model.
+     *
+     * @param  \{{ namespacedUserModel }}  $user
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return \Illuminate\Auth\Access\Response|bool
+     */
+    public function destroy({{ user }} $user, {{ model }} ${{ modelVariable }})
+    {
+        return $user->permitted('{{ model }}.destroy-any');
+    }
+}

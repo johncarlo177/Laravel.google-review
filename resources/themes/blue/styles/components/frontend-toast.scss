@@ -1,0 +1,41 @@
+.frontend-toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--blue-success-0);
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    animation: frontend-toast-animation 0.5s ease both;
+    z-index: 10000;
+    width: max-content;
+
+    &.closing {
+        animation: frontend-toast-animation-leaving 1s ease both;
+    }
+}
+
+@keyframes frontend-toast-animation-leaving {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(-50%) translateY(100%) scale(0.9);
+        opacity: 0;
+    }
+}
+
+@keyframes frontend-toast-animation {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(100%) scale(0.9);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}

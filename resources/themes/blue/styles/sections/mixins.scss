@@ -1,0 +1,43 @@
+@mixin title-styles {
+    .text-wrapper {
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .tag-line {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: var(--blue-primary-0);
+    }
+
+    .section-title {
+        font-size: 3rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin: 2rem 0;
+        line-height: 1.4;
+    }
+
+    .explainer {
+        font-weight: 300;
+        line-height: 1.7;
+        font-size: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    @media (max-width: 900px) {
+        .section-title {
+            font-size: 1.5rem;
+        }
+
+        .tag-line {
+            font-size: 1rem;
+        }
+
+        .explainer {
+            font-size: 1.2rem;
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+section.website-banner {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    line-height: 1.6;
+
+    padding: 4rem 0;
+
+    .background {
+        // pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+
+        background-size: cover;
+        background-position: center;
+
+        pointer-events: none;
+    }
+
+    > *:not(.background):not(.c-group) {
+        position: relative;
+        z-index: 1;
+    }
+
+    .control {
+        min-height: 400px;
+    }
+
+    qrcg-website-banner {
+        animation: qrcg-website-banner-animation 0.5s ease both;
+    }
+
+    h1,
+    p {
+        text-align: center;
+    }
+
+    h1 {
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        margin: 0 0 2rem 0;
+        font-size: 3rem;
+        color: white;
+        margin-top: 4rem;
+    }
+
+    p {
+        margin: 0 6rem 4rem;
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: white;
+    }
+
+    @media (max-width: 900px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 2rem;
+        }
+    }
+}

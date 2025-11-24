@@ -1,0 +1,38 @@
+section.blog-list {
+    line-height: 1.7;
+
+    a {
+        text-decoration: none;
+        color: var(--blue-text-color);
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    article {
+        border-radius: 1rem;
+        border: var(--blue-gray-1) 1px solid;
+        padding: 2rem;
+        margin: 4rem 0;
+        box-shadow: rgb(0 0 0 / 5%) 0 27px 40px 30px;
+
+        h2 {
+            font-size: 1.7rem;
+        }
+
+        &:not(.has-image) {
+            h2 {
+                margin-top: 0;
+            }
+        }
+
+        img {
+            border-top-right-radius: 0.5rem;
+            border-top-left-radius: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+    }
+}

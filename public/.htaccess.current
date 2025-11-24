@@ -1,0 +1,91 @@
+### Browser cache
+#
+<IfModule mod_headers.c>
+    <FilesMatch "\.(ico|pdf|jpg|jpeg|png|webp|gif|html|htm|xml|txt|xsl|css|js)$">
+        Header set Cache-Control "max-age=31536050"
+    </FilesMatch>
+</IfModule>
+#
+### End browser cache
+
+### Allow CORS for js and css files. Only enable when needed.
+#
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|css|webmanifest)">
+        Header set Access-Control-Allow-Origin "*"
+        Header set Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+        Header set Access-Control-Allow-Methods "GET, OPTIONS"
+    </FilesMatch>
+</IfModule>
+#
+### End allow CORS
+
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    ### Redirect a specific home page of a custom domain
+    #
+    # RewriteCond %{HTTP_HOST} ADD_YOURDOMAIN_HERE_WITHOUT_WWW
+    # RewriteRule ^(/)?$ ADD_YOUR_NEW_HOMEPAGE_HERE [L,R=301]
+    #
+    ### End custom domain redirect
+
+    ### Enforce https
+    #
+    # RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    # RewriteCond %{HTTPS} off
+	# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    #
+	# End enfore https
+
+    ### Enforce www
+    #
+    # RewriteCond %{HTTP_HOST} !^www\. [NC]
+	# RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    #
+    ### End enforce www
+
+    ### Remove www
+    #
+    # RewriteCond %{HTTP_HOST} ^www\. [NC]
+	# RewriteRule ^ https://YOUR_HOST_NAME_HERE%{REQUEST_URI} [L,R=301]
+    #
+    ### End remove www
+
+
+    ### Prevent direct access to /public/ directory
+    #
+    RewriteCond %{THE_REQUEST} \s/public/(\S*) [NC]
+    RewriteRule ^ /%1  [L,R=301,NE]
+    #
+    ### End prevent direct access
+
+    ### Handle Authorization Header
+    #
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+    #
+    ### End handle authorization header
+
+    ### Redirect Trailing Slashes If Not A Folder...
+    #
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+    #
+    ### End redirect trailing slashes
+
+    ### Send Requests To Front Controller...
+    #
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+    #
+    ### End send requests to front controller
+
+</IfModule>

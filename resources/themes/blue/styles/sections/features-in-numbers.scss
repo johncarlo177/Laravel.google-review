@@ -1,0 +1,66 @@
+section.features-in-numbers {
+    background-color: var(--blue-gray-0);
+    position: relative;
+
+    &::before {
+        $pattern-size: 370px;
+        content: '';
+        position: absolute;
+        background-image: url(/assets/images/qrcode-pattern.png);
+        background-size: contain;
+        background-position: bottom;
+        top: -$pattern-size;
+        right: 0;
+        width: $pattern-size;
+        height: $pattern-size;
+        display: none;
+        // pointer-events: none;
+    }
+
+    .wrapper {
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+    }
+
+    .number-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        background-color: white;
+        transform: translateY(30%);
+        padding: 2rem 0;
+
+        border-radius: 0.5rem;
+
+        .number {
+            font-size: 2rem;
+        }
+
+        label {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            // font-weight: 700;
+            color: var(--blue-gray-1);
+        }
+    }
+
+    @media (max-width: 900px) {
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+        }
+
+        .number-box {
+            width: initial;
+            text-align: center;
+
+            label {
+                font-size: 1rem;
+            }
+        }
+    }
+}

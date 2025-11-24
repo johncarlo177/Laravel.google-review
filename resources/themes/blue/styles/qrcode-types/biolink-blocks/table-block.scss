@@ -1,0 +1,19 @@
+.table-block {
+    table {
+        width: 100%;
+
+        td {
+            padding: 0.5rem 0;
+            line-height: 1.5;
+            text-align: start;
+        }
+
+        td:last-child {
+            text-align: end;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+    }
+}

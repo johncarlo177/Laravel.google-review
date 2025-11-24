@@ -1,0 +1,54 @@
+{
+    "name": "chiiya/passes",
+    "description": "PHP library for creating iOS and Android Wallet Passes",
+    "keywords": [
+        "chiiya",
+        "passes",
+        "wallet",
+        "apple",
+        "google",
+        "android",
+        "ios"
+    ],
+    "homepage": "https://github.com/chiiya/passes",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elisha Witte",
+            "email": "github@chiiya.moe",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "google/auth": "^1.18",
+        "spatie/data-transfer-object": "^3.7",
+        "ext-zip": "*",
+        "ext-openssl": "*"
+    },
+    "require-dev": {
+        "chiiya/code-style-php": "^2.6",
+        "phpro/grumphp": "^1.9",
+        "phpunit/phpunit": "^9.5",
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chiiya\\Passes\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Chiiya\\Passes\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpro/grumphp": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

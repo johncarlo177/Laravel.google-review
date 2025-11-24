@@ -1,0 +1,39 @@
+.list-block {
+    --icon-size: 2rem;
+
+    .main-title {
+        margin-bottom: 1rem;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .icon-container {
+        padding: 0.25rem;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    img,
+    svg {
+        display: block;
+        min-width: var(--icon-size);
+        width: var(--icon-size);
+        height: var(--icon-size);
+        min-height: var(--icon-size);
+    }
+
+    svg {
+        path {
+            fill: currentColor;
+        }
+    }
+}

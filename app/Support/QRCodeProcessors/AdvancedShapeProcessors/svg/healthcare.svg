@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="600"
+   height="793.33331"
+   viewBox="0 0 600 793.33331"
+   version="1.1"
+   id="first"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   sodipodi:docname="healthcare.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+   <defs
+      id="defs833" />
+   <sodipodi:namedview
+      id="namedview7"
+      pagecolor="#ffffff"
+      bordercolor="#666666"
+      borderopacity="1.0"
+      inkscape:pageshadow="2"
+      inkscape:pageopacity="0.0"
+      inkscape:pagecheckerboard="0"
+      inkscape:document-units="pt"
+      showgrid="false"
+      width="700pt"
+      units="pt"
+      inkscape:zoom="0.63047904"
+      inkscape:cx="357.66455"
+      inkscape:cy="429.03885"
+      inkscape:window-width="1680"
+      inkscape:window-height="925"
+      inkscape:window-x="37"
+      inkscape:window-y="23"
+      inkscape:window-maximized="0"
+      inkscape:current-layer="g864"
+      showguides="true"
+      inkscape:guide-bbox="true"
+      fit-margin-top="0"
+      fit-margin-left="0"
+      fit-margin-right="0"
+      fit-margin-bottom="0" />
+   <g
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+      id="g864"
+      transform="translate(-100,-86.666664)">
+      <rect
+         style="fill:#1c57cb;fill-opacity:1;stroke-width:0;stroke-linejoin:round"
+         width="600"
+         height="793.33331"
+         id="main-frame"
+         x="100"
+         y="86.666664"
+         rx="15.861069"
+         ry="15.618423" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-linejoin:round"
+         id="text_background"
+         width="533.33331"
+         height="152.26517"
+         x="133.33333"
+         y="686.66669"
+         rx="12.052138"
+         ry="12.427153" />
+      <g
+         id="heart-group"
+         style="fill:#ff2a2a">
+         <path
+            id="heart-path"
+            style="fill:#ff2a2a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.00312958"
+            d="m 192.99003,762.51325 5.78597,-32.62839 c 0.37586,-2.12091 1.45119,-2.56594 2.28616,-2.56594 0.83497,0 1.91029,0.44503 2.28584,2.56594 l 8.81415,49.70181 5.37287,-30.29341 c 0.37617,-2.12123 1.45118,-2.56625 2.28616,-2.56625 0.83497,0 1.90967,0.44502 2.28615,2.56625 l 2.34469,13.21999 c 0.082,0.46099 0.62216,0.91446 1.09159,0.91446 h 41.676 c 4.90844,-6.75426 7.79579,-13.16522 7.79579,-19.4059 0,-15.55747 -12.61221,-28.16623 -28.16623,-28.16623 -12.7665,0 -23.54508,8.50118 -27.00108,20.14416 -3.45725,-11.64298 -14.23177,-20.14416 -26.99983,-20.14416 -15.55715,0 -28.16757,12.60876 -28.16757,28.16623 0,6.24068 2.88751,12.65164 7.79704,19.4059 h 19.42039 c 0.46944,0 1.00991,-0.45347 1.09191,-0.91446 m 27.76407,0.65532 -0.93292,-5.25926 -5.37287,30.29341 c -0.37586,2.12091 -1.45119,2.56593 -2.28616,2.56593 -0.83497,0 -1.90998,-0.44502 -2.28584,-2.56593 l -8.81415,-49.70056 -4.37422,24.66641 c -0.39933,2.25173 -2.50304,4.01462 -4.78982,4.01462 h -16.5173 c 10.2716,12.57216 26.79296,26.39959 44.46727,42.5598 17.67493,-16.16021 34.19567,-29.98764 44.46821,-42.5598 h -38.77269 c -2.28709,0 -4.39049,-1.76289 -4.78951,-4.01462" />
+      </g>
+      <rect
+         style="opacity:1;fill-opacity:1;stroke-width:0;stroke-linejoin:round"
+         id="text_placeholder"
+         width="339.42444"
+         height="101.51012"
+         x="291.84158"
+         y="712.04419"
+         rx="6.4848518"
+         ry="6.6666698" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-linejoin:round"
+         id="qrcode_background"
+         width="533.33331"
+         height="533.33331"
+         x="133.33334"
+         y="120"
+         rx="15.354093"
+         ry="13.837641" />
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke-width:0;stroke-linejoin:round"
+         id="qrcode_placeholder"
+         width="466.66666"
+         height="466.66666"
+         x="166.66667"
+         y="153.33333"
+         rx="11.606452"
+         ry="9.5682449" />
+   </g>
+</svg>

@@ -1,0 +1,66 @@
+.error-page.not-found {
+    background-color: var(--gray-0);
+
+    .website-footer {
+        background-color: white;
+    }
+
+    @media (max-width: 900px) {
+        .layout-gap {
+            display: none;
+        }
+    }
+
+    .page-content {
+        .layout-box {
+            padding: 0;
+        }
+    }
+
+    &.custom-frontend {
+        .inner-page-content {
+            margin-top: 10vh;
+            @media (max-width: 900px) {
+                padding: 3rem 1rem;
+            }
+        }
+    }
+
+    .inner-page-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30vh;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+        padding: 5rem;
+        background-color: white;
+        text-align: center;
+        line-height: 1.7;
+
+        @media (max-width: 900px) {
+            margin: 0;
+            border-radius: 0;
+            padding: 7rem 1rem 3rem;
+        }
+
+        .content {
+            max-width: 550px;
+        }
+
+        .icon {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: var(--gray-2);
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            font-weight: normal;
+        }
+    }
+}

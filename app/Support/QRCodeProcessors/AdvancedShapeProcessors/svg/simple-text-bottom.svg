@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg width="800px" height="1005px" viewBox="0 0 800 1005" version="1.1" id="first" inkscape:version="1.1.2 (b8e25be8, 2022-02-05)" sodipodi:docname="simple-text-bottom.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+   <defs id="defs833" />
+   <sodipodi:namedview id="namedview7" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:document-units="pt" showgrid="false" width="700pt" units="pt" inkscape:zoom="0.52957246" inkscape:cx="272.86162" inkscape:cy="505.12445" inkscape:window-width="1680" inkscape:window-height="925" inkscape:window-x="0" inkscape:window-y="23" inkscape:window-maximized="0" inkscape:current-layer="g864" />
+   <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="g864">
+
+      <rect class="background" fill="none" stroke="none" x="0" y="0" width="800" height="1005" />
+
+      <rect class="text-background" style="stroke-width:4.26117;stroke-linejoin:round;stroke-opacity:1" width="706.66669" height="157.49869" x="46.666656" y="821.43134" ry="27.874422" id="text_placeholder" />
+      <path class="text-background" style="fill-opacity:1;stroke-width:0.361682px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 442.24281,832.04183 h -84.48563 l 42.24284,-42.2182 z" id="path4406" />
+      <rect style="fill:#000000;stroke-width:10.371;stroke-linejoin:round;stroke-opacity:0.85177" id="qrcode_placeholder" width="706.66669" height="706.66669" x="46.666656" y="44.20195" />
+   </g>
+</svg>

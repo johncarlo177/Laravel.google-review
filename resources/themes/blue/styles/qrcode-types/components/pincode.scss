@@ -1,0 +1,80 @@
+.pincode-layout {
+    box-shadow: none;
+    text-align: center;
+
+    .main-details {
+        padding: 1rem;
+        margin-top: 30%;
+        margin-bottom: 2rem;
+
+        &:not(.loading) {
+            .loader {
+                display: none;
+            }
+        }
+
+        &.loading {
+            .pincode-input {
+                .fake-input {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    p {
+        line-height: 1.7;
+    }
+
+    .hidden-input {
+        position: fixed;
+        top: -100000px;
+    }
+
+    .pincode-input {
+        margin: 2rem auto;
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .fake-input {
+            background-color: var(--blue-input-background-color);
+            font-size: 1.7rem;
+            text-align: center;
+            border-radius: 50%;
+            position: relative;
+            --length: 5rem;
+            width: var(--length);
+            height: var(--length);
+
+            .content {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &:not(.has-value) {
+                color: transparent;
+            }
+        }
+    }
+
+    .submit-button-container {
+        margin: 2rem 0 0 0;
+
+        .button {
+            width: 100%;
+        }
+    }
+
+    .error-message {
+        color: var(--blue-danger-0);
+    }
+}

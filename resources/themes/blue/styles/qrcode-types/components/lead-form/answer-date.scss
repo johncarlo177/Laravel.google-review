@@ -1,0 +1,45 @@
+.lead-form {
+    .answer.date {
+        position: relative;
+
+        input {
+            -webkit-appearance: auto !important;
+            appearance: auto !important;
+            width: 100%;
+            display: block;
+            padding-inline-start: 1rem;
+        }
+
+        .placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            pointer-events: none;
+            padding: 0 1rem;
+            color: var(--placeholder-color, var(--blue-gray-1));
+            display: none;
+        }
+    }
+}
+
+html.iphone {
+    .lead-form {
+        .answer.date {
+            input {
+                min-height: 3rem;
+            }
+            //
+            .placeholder {
+                display: block;
+            }
+        }
+
+        .answer.date.has-value {
+            .placeholder {
+                display: none;
+            }
+        }
+    }
+}

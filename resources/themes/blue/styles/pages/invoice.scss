@@ -1,0 +1,94 @@
+body.invoice {
+    background-color: #eee;
+    padding-top: 0 !important;
+
+    @media print {
+        background-color: white;
+    }
+
+    .container {
+        background-color: white;
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+        min-height: 100vh;
+        padding: 2rem;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .line {
+        line-height: 1.5;
+    }
+
+    .business-details,
+    .billing-details {
+        width: 20rem;
+    }
+
+    .second-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        margin-top: 3rem;
+    }
+
+    .invoice-number {
+        margin-top: 4rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .items-table {
+        margin-top: 2rem;
+        width: 100%;
+        border-collapse: collapse;
+
+        td {
+            padding: 0 0.25rem;
+            line-height: 1.7;
+
+            &:last-child {
+                text-align: end;
+            }
+        }
+
+        tbody {
+            td {
+                padding-bottom: 0.5rem;
+                vertical-align: top;
+
+                .item-name {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        tfoot {
+            tr:first-child {
+                td {
+                    border-top: 1px solid black;
+                    padding-top: 1rem;
+                }
+            }
+
+            tr:last-child {
+                td {
+                    padding-top: 1rem;
+                    border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+
+                    &:first-child {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

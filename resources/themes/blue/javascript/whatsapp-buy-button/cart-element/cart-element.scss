@@ -1,0 +1,270 @@
+:host {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    color: black;
+    --whatsapp-color: #25d366;
+}
+
+:host(:not([is-minimized])) {
+    .minimized-container {
+        display: none;
+    }
+}
+
+.widget {
+    border-top: 2px solid black;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    background-color: white;
+    padding: 1rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+.widget.first-render {
+    animation: reveal-widget 0.3s ease both;
+}
+
+@keyframes reveal-widget {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+}
+
+.item-quantity {
+    margin-inline-start: auto;
+}
+
+.item-remove {
+    display: flex;
+    color: red;
+    cursor: pointer;
+    padding: 0.5rem;
+
+    svg {
+        width: 1rem;
+        height: 1rem;
+        pointer-events: none;
+
+        path {
+            fill: currentColor;
+        }
+    }
+}
+
+.total {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
+
+    border-top: 1px solid #dddddd;
+
+    .item-name {
+        margin-inline-end: auto;
+    }
+
+    .item-price {
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+}
+
+button.place-order {
+    //
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.56rem 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    //
+    margin-inline-start: auto;
+    font-weight: bold;
+    cursor: pointer;
+
+    svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        pointer-events: none;
+        path {
+            fill: var(--whatsapp-color);
+        }
+    }
+
+    &.loading {
+        pointer-events: none;
+        opacity: 0.3;
+    }
+
+    &:hover {
+        background-color: var(--whatsapp-color);
+        color: black;
+        border: 1px solid var(--whatsapp-color);
+
+        svg {
+            path {
+                fill: black;
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+
+    .whatsapp-message {
+        color: #a0a0a0;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .cart-icon {
+        color: #b3b3b3;
+        margin-inline-end: 0.5rem;
+        width: 1rem;
+        height: 1rem;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 0.8rem;
+        margin-inline-end: auto;
+        font-weight: normal;
+    }
+
+    .close {
+        display: flex;
+        color: var(--gray-2);
+        cursor: pointer;
+        padding: 0.25rem;
+
+        &:hover {
+            color: black;
+        }
+
+        svg {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+
+    svg {
+        pointer-events: none;
+
+        path {
+            fill: currentColor;
+        }
+    }
+}
+
+.minimize-cart {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--gray-2);
+    gap: 0.5rem;
+
+    svg {
+        pointer-events: none;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: 1px solid currentColor;
+
+        path {
+            fill: currentColor;
+        }
+    }
+
+    &:hover {
+        text-decoration: underline;
+        color: black;
+    }
+}
+
+:host([is-minimized]) {
+    bottom: unset;
+    top: 0;
+
+    .minimized-container {
+        display: block;
+    }
+
+    .widget {
+        display: none;
+    }
+}
+
+.minimized-container {
+    width: 100%;
+    margin: auto;
+    max-width: 500px;
+    padding: 1rem;
+    cursor: pointer;
+    display: none;
+
+    .minimized-cart {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 1.6rem;
+        background-color: white;
+        color: black;
+        padding: 0.6rem;
+        font-weight: bold;
+        justify-content: center;
+        border: 2px solid black;
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+
+    .arrow {
+        opacity: 0;
+        transition: 0.3s ease;
+    }
+
+    svg {
+        width: 1.25rem;
+        height: 1.25rem;
+
+        path {
+            fill: currentColor;
+        }
+    }
+
+    &:hover {
+        .arrow {
+            opacity: 1;
+        }
+    }
+}
+
+.terms {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}

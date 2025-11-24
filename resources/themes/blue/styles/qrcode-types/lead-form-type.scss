@@ -1,0 +1,5 @@
+@use './components/loader.scss' as *;
+
+.qrcode-type-lead-form {
+    @include qrcode-type-loader;
+}

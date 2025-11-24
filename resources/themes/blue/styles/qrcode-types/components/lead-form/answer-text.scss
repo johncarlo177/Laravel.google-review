@@ -1,0 +1,35 @@
+.lead-form {
+    .answer.text,
+    .answer.textarea,
+    .answer.date,
+    .answer.email {
+        textarea,
+        input {
+            -webkit-appearance: none;
+            appearance: none;
+            background-color: transparent;
+            border: 0;
+            outline: 0;
+            border-bottom: 2px solid var(--blue-gray-1);
+            border-radius: 0;
+            font-size: 1.5rem;
+
+            padding: 0.5rem 0;
+
+            color-scheme: dark;
+
+            &::placeholder {
+                color: var(--placeholder-color, var(--blue-gray-1));
+                font-weight: normal;
+            }
+
+            &::-webkit-datetime-edit-fields-wrapper {
+                color: var(--text-color, black);
+            }
+
+            &::-webkit-calendar-picker-indicator {
+                color: var(--text-color, black);
+            }
+        }
+    }
+}

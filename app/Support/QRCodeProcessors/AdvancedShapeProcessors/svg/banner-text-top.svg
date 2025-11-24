@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<svg width="800px" height="1005px" viewBox="0 0 800 1005" version="1.1" id="first" inkscape:version="1.1.2 (b8e25be8, 2022-02-05)" sodipodi:docname="text-top.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+   <sodipodi:namedview id="namedview7" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:document-units="pt" showgrid="false" width="700pt" units="pt" inkscape:zoom="0.74892856" inkscape:cx="300.42919" inkscape:cy="625.56033" inkscape:window-width="1680" inkscape:window-height="925" inkscape:window-x="0" inkscape:window-y="23" inkscape:window-maximized="0" inkscape:current-layer="g1529" />
+   <defs id="defs2">
+      <style id="style1492">
+         .frame {
+            fill: #fff;
+         }
+      </style>
+      <filter style="color-interpolation-filters:sRGB" inkscape:label="Drop Shadow" id="filter3227" x="-0.0057592999" y="-0.0045364354" width="1.0355157" height="1.0279747">
+         <feFlood flood-opacity="1" flood-color="rgb(143,138,138)" result="flood" id="feFlood3217" />
+         <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1" id="feComposite3219" />
+         <feGaussianBlur in="composite1" stdDeviation="1" result="blur" id="feGaussianBlur3221" />
+         <feOffset dx="10" dy="10" result="offset" id="feOffset3223" />
+         <feComposite in="SourceGraphic" in2="offset" operator="over" result="composite2" id="feComposite3225" />
+      </filter>
+   </defs>
+   <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="g1529">
+      <g id="g944" transform="matrix(1.8243295,0,0,1.8243295,-238.5152,-92.803984)">
+         <rect class="frame" style="stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter3227)" id="rect866" width="416.71732" height="529.04974" x="136.64134" y="56.770184" ry="32.612659" />
+         <g transform="matrix(1.0005958,0,0,0.85147254,-12.14009,8.3421512)" id="g1525">
+            <rect class="text-background" id="text_placeholder_old" style="stroke-width:2.76348;stroke-linejoin:round;stroke-opacity:1" width="416.71729" height="112.33249" x="148.56877" y="56.770184" ry="32.612625" />
+            <rect class="text-background" style="stroke-width:3.38624;stroke-linejoin:round;stroke-opacity:1" id="rect2082" width="416.71729" height="70.056824" x="148.56879" y="99.045853" ry="0" />
+         </g>
+         <path class="text-background" style="fill-opacity:1;stroke-width:0.198255px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 368.15527,153.272 h -46.31051 l 23.15526,23.14176 z" id="path4406" />
+      </g>
+      <rect id="text_placeholder" style="fill:none;stroke-width:4.58777;stroke-linejoin:round;stroke-opacity:1" width="760.72186" height="169.59482" x="11.145112" y="11.144279" ry="49.237156" />
+
+      <g id="g842" transform="translate(0,20)">
+         <rect style="fill:black;stroke:none;stroke-width:0;stroke-linejoin:round;stroke-opacity:1" id="qrcode_placeholder" width="627.20386" height="644.8324" x="77.276581" y="259.03458" ry="0" />
+      </g>
+   </g>
+</svg>

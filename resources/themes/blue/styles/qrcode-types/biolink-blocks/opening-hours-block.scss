@@ -1,0 +1,7 @@
+@use '../components/opening-hours.scss' as *;
+@use '../base.scss' as *;
+
+.block.opening-hours-block {
+    @include opening-hours;
+    @include white-card($icons-color: black);
+}

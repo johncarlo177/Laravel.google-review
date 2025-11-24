@@ -1,0 +1,101 @@
+.image-carousel {
+    padding: 0 1rem;
+    img {
+        border-radius: 1rem;
+    }
+}
+
+.image-carousel .pagination-container {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.image-carousel .blaze-pagination {
+    gap: 14px;
+}
+
+.image-carousel {
+    .blaze-next,
+    .blaze-prev {
+        background-position: 50%;
+        background-size: 100%;
+        font-size: 0;
+        z-index: 0;
+
+        svg {
+            width: 3rem;
+            height: 3rem;
+            display: block;
+            pointer-events: none;
+
+            path {
+                fill: var(--navigation-color);
+            }
+        }
+    }
+}
+
+.blaze-pagination {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+}
+
+.blaze-pagination button {
+    background: #ffffff26;
+    border: none;
+    border-radius: 50%;
+    color: #0000;
+    cursor: pointer;
+    outline: 0;
+    transition: transform 0.2s;
+    width: 1rem;
+    height: 1rem;
+}
+
+.blaze-pagination button.active {
+    background-color: var(--navigation-color);
+    border-color: var(--navigation-color);
+    transform: scale(1.15);
+}
+
+.blaze-slider.end .blaze-next,
+.blaze-slider.start .blaze-prev {
+    opacity: 0.1;
+}
+
+.blaze-next,
+.blaze-prev {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+    padding: 0;
+}
+
+.blaze-pagination button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: hsl(0deg, 0%, 15%);
+    cursor: pointer;
+    transition: transform 200ms ease, background-color 300ms ease;
+}
+
+.blaze-pagination button.active {
+    background: white;
+    transform: scale(1.3);
+}
+
+.blaze-slider.start .blaze-prev,
+.blaze-slider.end .blaze-next {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

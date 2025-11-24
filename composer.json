@@ -1,0 +1,107 @@
+{
+    "name": "quickcode/backend",
+    "type": "project",
+    "description": "QR Code Generator SAAS",
+    "version": "2.139",
+    "keywords": [
+        "qrcode",
+        "generator",
+        "saas"
+    ],
+    "repositories": [
+        {
+            "url": "https://github.com/walidaalhomsi/php-svg.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/walidaalhomsi/yookassa-sdk-php.git",
+            "type": "git"
+        }
+    ],
+    "license": "proprietary",
+    "require": {
+        "php": "^8.2.0",
+        "ext-imagick": "*",
+        "ext-mbstring": "*",
+        "ext-xml": "*",
+        "auth0/auth0-php": "^8.6",
+        "chiiya/passes": "^0.5.0",
+        "chillerlan/php-qrcode": "dev-main#1ca995a3bbe576fed7041b2d2836c13bdf1862f9",
+        "dedoc/scramble": "^0.12.23",
+        "flutterwavedev/flutterwave-v3": "^1.0",
+        "geoip2/geoip2": "~2.0",
+        "giggsey/libphonenumber-for-php": "^8.13",
+        "guzzlehttp/guzzle": "^7.4",
+        "kreait/firebase-php": "^7.18",
+        "ksubileau/color-thief-php": "^2.0",
+        "laravel/framework": "^12.0",
+        "laravel/sanctum": "^4.0",
+        "laravel/socialite": "^5.7",
+        "laravel/tinker": "^2.7",
+        "league/flysystem-aws-s3-v3": "^3.0",
+        "matomo/device-detector": "^6.4",
+        "meyfa/php-svg": "dev-main#b9405535e69d25d6d3e4fdaa9494d81ead7bfad2",
+        "mobicms/captcha": "^3.1",
+        "phpmailer/phpmailer": "^6.8",
+        "pkpass/pkpass": "^2.3",
+        "postfinancecheckout/sdk": "^4.1",
+        "stripe/stripe-php": "^8.11",
+        "symfony/http-client": "^6.0",
+        "yansongda/pay": "~3.2.0",
+        "yoomoney/yookassa-sdk-php": "dev-master#4ff228de6dd5fc667b6cdb5e6ab3ec8c3901e157"
+    },
+    "require-dev": {
+        "brianium/paratest": "^7.5",
+        "fakerphp/faker": "^1.9.1",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^8.1",
+        "phpunit/phpunit": "^11.3",
+        "spatie/laravel-ignition": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        },
+        "files": [
+            "app/Support/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

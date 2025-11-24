@@ -1,0 +1,21 @@
+.copyable-data-block {
+    border: 1px solid var(--gray-1);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+
+    .label {
+        margin-bottom: 0.5rem;
+    }
+
+    .value {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: space-between;
+        font-weight: bold;
+
+        .text {
+            user-select: all;
+        }
+    }
+}

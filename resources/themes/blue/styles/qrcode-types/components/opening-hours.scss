@@ -1,0 +1,31 @@
+@mixin opening-hours {
+    font-size: 0.9rem;
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:not(.additional) {
+            margin-top: 0.5rem;
+
+            &:not(:first-child) {
+                border-top: 1px solid rgba(0, 0, 0, 0.3);
+                padding-top: 0.5rem;
+            }
+        }
+
+        &:first-child {
+            margin-top: 1rem;
+        }
+    }
+
+    .key {
+        width: 7rem;
+        text-align: left;
+    }
+
+    .value {
+        text-align: right;
+    }
+}

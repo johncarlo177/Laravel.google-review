@@ -1,0 +1,30 @@
+@use './button.scss' as *;
+
+.atcb-initialized {
+    .atcb-button {
+        @include button();
+        @include primary-button();
+
+        color: var(--btn-text);
+
+        --btn-background: white;
+        --btn-shadow: none;
+
+        --btn-background-hover: var(--blue-primary-0);
+        --btn-shadow-hover: none;
+        --btn-text-hover: var(--btn-text);
+
+        &:hover,
+        &:focus {
+            color: var(--btn-text);
+        }
+
+        .atcb-icon {
+            display: none;
+        }
+
+        .atcb-text {
+            line-height: 1;
+        }
+    }
+}

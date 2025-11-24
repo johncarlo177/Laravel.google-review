@@ -1,0 +1,12 @@
+html {
+    font-family: Avenir Next W01, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+        sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+        Noto Color Emoji;
+    tab-size: 4;
+    color: var(--blue-text-color);
+
+    &[lang='ar'] {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}

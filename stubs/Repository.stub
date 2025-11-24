@@ -1,0 +1,9 @@
+<?php 
+
+namespace App\Repositories;
+
+use App\Interfaces\$CLASS_NAME$ as $INTERFACE_NAME$;
+
+class $CLASS_NAME$ implements $INTERFACE_NAME$ {
+
+}

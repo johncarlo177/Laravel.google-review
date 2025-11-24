@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="728.5647"
+   height="1178.5284"
+   viewBox="0 0 728.56469 1178.5285"
+   version="1.1"
+   id="first"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   sodipodi:docname="qrcode-with-logo-and-slug.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs833" />
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     width="700pt"
+     units="pt"
+     inkscape:zoom="0.52957246"
+     inkscape:cx="1130.157"
+     inkscape:cy="481.52051"
+     inkscape:window-width="1680"
+     inkscape:window-height="912"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g864"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="g864">
+    <rect
+       style="fill:#f9f9f9;stroke-width:0.456633;stroke-linejoin:round;stroke-opacity:0.991722"
+       id="background"
+       width="728.5647"
+       height="1178.5284"
+       x="2.732309e-06"
+       y="4.1648509e-06" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:9.02228;stroke-linejoin:round;stroke-opacity:1"
+       id="qrcode_placeholder"
+       width="614.76703"
+       height="614.7674"
+       x="56.89856"
+       y="345.79584" />
+    <rect
+       style="opacity:0.985669;fill:#e6e6e6;stroke:none;stroke-width:3.97049;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="line_1"
+       width="623.78937"
+       height="131.3065"
+       x="52.387669"
+       y="998.56323" />
+    <rect
+       style="opacity:0.985669;fill:#e6e6e6;stroke:none;stroke-width:5.70635;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="logo_placeholder"
+       width="623.78937"
+       height="271.21484"
+       x="52.387669"
+       y="32.580994" />
+  </g>
+</svg>

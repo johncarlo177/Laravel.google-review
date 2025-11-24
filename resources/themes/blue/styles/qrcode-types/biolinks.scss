@@ -1,0 +1,216 @@
+@use './base.scss' as *;
+@use '../components/button.scss' as button;
+
+@use './biolink-blocks/dynamic-block.scss';
+
+@use './biolink-blocks/paragraph-block.scss';
+
+@use './biolink-blocks/opening-hours-block.scss';
+
+@use './biolink-blocks/lead-form-block.scss';
+
+@use './biolink-blocks/profile-block.scss';
+
+@use './biolink-blocks/table-block.scss';
+
+@use './biolink-blocks/list-block.scss';
+
+@use './biolink-blocks/copyable-data-block.scss';
+
+@use './biolink-blocks/audio-block.scss';
+
+@use './biolink-blocks/iframe-block.scss';
+
+@use './biolink-blocks/image-block.scss';
+
+@use './biolink-blocks/qrcode-details-block.scss';
+
+@use './biolink-blocks/youtube-block.scss';
+
+.qrcode-type-biolinks {
+    $icons-color: rgb(30, 79, 176);
+
+    @include base-qrcode-type($icons-color: $icons-color);
+
+    &:not(.has-banner) {
+        .layout-generated-webpage {
+            .details-container {
+                margin-top: 0;
+                animation: none;
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                flex: 1;
+                .details-bg {
+                    border-top-right-radius: 0;
+                    border-top-left-radius: 0;
+                }
+            }
+        }
+    }
+
+    .layout-generated-webpage {
+        display: flex;
+        flex-direction: column;
+        box-shadow: var(--box-shadow);
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        min-height: calc(var(--available-height, 100vh) - 4rem);
+        animation: none;
+
+        .details-container {
+            box-shadow: none;
+            padding: 1rem;
+            margin-bottom: 0;
+            animation: none;
+
+            .details-bg {
+                background-color: transparent;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 0;
+                border-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+                background-size: cover;
+                background-repeat: no-repeat;
+                overflow: hidden;
+            }
+
+            & > *:not(.details-bg) {
+                z-index: 1;
+                position: relative;
+            }
+        }
+    }
+
+    .profile-image {
+        background-color: white;
+        margin: 0 auto;
+        margin-top: -10rem;
+        border-radius: 50%;
+        padding: 0rem;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            min-height: 100%;
+            min-width: 100%;
+        }
+    }
+}
+
+.block {
+    margin: 2rem 0;
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.title-block {
+    text-align: center;
+
+    h2 {
+        margin: 0;
+        font-size: 1.3rem;
+    }
+}
+
+.image-grid-block {
+    .title {
+        margin-bottom: 1rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+        a {
+            display: block;
+            padding-bottom: 100%;
+            background-size: cover;
+            background-position: center;
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+.link-block,
+.share-block,
+.vcard-block,
+.paypal-block {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 1rem auto;
+    border-radius: 0.75rem;
+
+    a {
+        @include button.button();
+        position: relative;
+        line-height: 1.7;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        box-shadow: none;
+        z-index: 1;
+
+        img.icon {
+            height: var(--icon-size, 1rem);
+        }
+
+        &:hover {
+            box-shadow: none;
+        }
+
+        svg {
+            display: block;
+            pointer-events: none;
+
+            width: var(--icon-size, 1.5rem);
+            height: var(--icon-size, 1.5rem);
+
+            * {
+                fill: var(--icon-color, black);
+            }
+        }
+    }
+}
+
+.file-block {
+    @extend .link-block;
+}
+
+.video-block {
+    video {
+        width: 100%;
+    }
+}

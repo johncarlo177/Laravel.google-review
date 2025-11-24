@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg width="800px" height="1005px" viewBox="0 0 800 1005" version="1.1" id="first" inkscape:version="1.1.2 (b8e25be8, 2022-02-05)" sodipodi:docname="four-corners-text-bottom.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+   <defs id="defs833">
+      <mask maskUnits="userSpaceOnUse" id="mask2993">
+         <rect style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.92933;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect2995" width="190.0706" height="190.07059" x="18.560698" y="175.62604" ry="0" />
+      </mask>
+      <mask maskUnits="userSpaceOnUse" id="mask2993-6">
+         <rect style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.92933;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect2995-4" width="190.0706" height="190.07059" x="18.560698" y="175.62604" ry="0" />
+      </mask>
+      <mask maskUnits="userSpaceOnUse" id="mask2993-0">
+         <rect style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.92933;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect2995-3" width="190.0706" height="190.07059" x="18.560698" y="175.62604" ry="0" />
+      </mask>
+      <mask maskUnits="userSpaceOnUse" id="mask2993-8">
+         <rect style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.92933;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect2995-7" width="190.0706" height="190.07059" x="18.560698" y="175.62604" ry="0" />
+      </mask>
+   </defs>
+   <sodipodi:namedview id="namedview7" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:document-units="pt" showgrid="false" width="700pt" units="pt" inkscape:zoom="0.63047904" inkscape:cx="318.01216" inkscape:cy="516.2741" inkscape:window-width="1680" inkscape:window-height="925" inkscape:window-x="37" inkscape:window-y="23" inkscape:window-maximized="0" inkscape:current-layer="g864" />
+   <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="g864">
+      <rect class="background" fill="none" stroke="none" x="0" y="0" width="800" height="1005" />
+
+      <rect class="text-background" style="stroke-width:4.34082;stroke-linejoin:round;stroke-opacity:1" width="733.33331" height="157.49869" x="34.919464" y="836.68903" ry="27.874422" id="text_placeholder" />
+      <path class="text-background" style="fill-opacity:1;stroke-width:0.361682px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 443.82894,836.19103 h -84.48563 l 42.24284,-42.2182 z" id="path4406" />
+      <rect style="fill:#000000;stroke-width:8.80552;stroke-linejoin:round;stroke-opacity:0.85177" id="qrcode_placeholder" width="600" height="600" x="100" y="99.893677" />
+      <rect class="corner-alignment" style="fill:none;fill-opacity:1;stroke:none;stroke-width:10.7222;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect3153" width="722.61121" height="722.61121" x="38.694397" y="38.58807" />
+      <rect style="fill:none;stroke:#000000;stroke-width:20;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect2102" width="732.90125" height="732.90131" x="33.549377" y="190.61458" ry="44.326065" mask="url(#mask2993)" class="corner" transform="translate(5.1450195,-152.02651)" />
+      <rect style="fill:none;stroke:#000000;stroke-width:20;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect2102-2" width="732.90125" height="732.90131" x="33.549377" y="190.61458" ry="44.326065" mask="url(#mask2993-6)" class="corner" transform="rotate(90,473.44074,478.47944)" />
+      <rect style="fill:none;stroke:#000000;stroke-width:20;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect2102-8" width="732.90125" height="732.90131" x="33.549377" y="190.61458" ry="44.326065" mask="url(#mask2993-0)" class="corner" transform="rotate(-90,321.41424,473.33442)" />
+      <rect style="fill:none;stroke:#000000;stroke-width:20;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect2102-1" width="732.90125" height="732.90131" x="33.549377" y="190.61458" ry="44.326065" mask="url(#mask2993-8)" class="corner" transform="rotate(180,397.42749,475.90693)" />
+   </g>
+</svg>

@@ -1,0 +1,46 @@
+.button.whatsapp-buy-button {
+    position: relative;
+    padding-inline-start: 2.5rem;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease;
+    background-color: transparent;
+    outline: transparent;
+    border: 0;
+    box-shadow: none;
+    color: currentColor;
+
+    &:hover {
+        background-color: transparent;
+        box-shadow: none;
+        border: 0;
+        outline: transparent;
+    }
+
+    svg {
+        width: 1.4rem;
+        height: 1.4rem;
+        pointer-events: none;
+        position: absolute;
+        inset-inline-start: 0.6rem;
+
+        path {
+            fill: currentColor;
+        }
+    }
+
+    &.loading {
+        svg {
+            display: none;
+        }
+        qrcg-loader {
+            display: block;
+            position: absolute;
+            --loader-color: currentColor;
+            width: 1.4rem;
+            height: 1.4rem;
+            transform: translateY(-0.48rem) scale(0.55);
+            inset-inline-start: 0.2rem;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="1000" height="200" version="1.1">
+    <style>
+        text {
+            font-size: 60px;
+            font-style: FONT_STYLE;
+            font-weight: FONT_WEIGHT;
+            fill: COLOR;
+            fill-opacity: 1;
+            stroke: none;
+            font-family: 'FONT_FAMILY';
+        }
+    </style>
+    <text xml:space="preserve" x="10" y="90">
+        <tspan>TEXT</tspan>
+    </text>
+</svg>

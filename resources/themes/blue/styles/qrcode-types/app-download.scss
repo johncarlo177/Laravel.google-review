@@ -1,0 +1,101 @@
+@use './base.scss' as *;
+
+.qrcode-type-app-download {
+    @include base-qrcode-type($icons-color: rgb(0, 0, 0));
+
+    $bg-gradient-color-1: rgb(7, 58, 108);
+    $bg-gradient-color-2: rgb(3, 24, 45);
+
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .details-container {
+        background-image: linear-gradient(
+            135deg,
+            $bg-gradient-color-1,
+            $bg-gradient-color-2
+        );
+    }
+
+    .portfolio-title {
+        color: var(--blue-text-color);
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .portfolio-image {
+        border-radius: 1rem;
+        background-color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: var(--box-shadow);
+        position: relative;
+
+        a {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        img {
+            border-radius: 0.5rem;
+        }
+
+        .caption {
+            display: block;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        .description {
+            margin-top: 1rem;
+            line-height: 1.7;
+        }
+    }
+
+    .main-details {
+        color: white;
+        text-align: center;
+
+        h1 {
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.7rem;
+        }
+
+        .button {
+            width: fit-content;
+            margin: auto;
+        }
+    }
+
+    .download-list {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem 0;
+
+        .app-store {
+            padding: 0 7.1%;
+
+            img {
+                display: block;
+
+                width: 100%;
+            }
+        }
+
+        & + .sep {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+}

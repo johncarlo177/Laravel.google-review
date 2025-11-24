@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quick Code QR Code Generator URL Shortner PHP Script SaaS</title>
+
+        <!-- Favicon start -->
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="/assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#ffc40d" />
+        <meta
+            name="msapplication-config"
+            content="/assets/favicon/browserconfig.xml"
+        />
+        <meta name="theme-color" content="#1c57cb" />
+
+        <!-- Favicon end -->
+
+        <script type="module" src="/main.js"></script>
+    </head>
+    <body>
+        <!-- Section header start -->
+        <header class="website-header">
+            <div class="close-btn">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        fill="currentColor"
+                        d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z"
+                    />
+                </svg>
+            </div>
+            <div class="open-btn">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        fill="currentColor"
+                        d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
+                    />
+                </svg>
+            </div>
+            <div class="layout-box">
+                <div class="header-content">
+                    <a href="/" class="logo">
+                        <img src="/assets/images/quickcode-logo.png" />
+                    </a>
+                    <ul class="menu">
+                        <li>
+                            <a href="/#features">Features</a>
+                        </li>
+                        <li>
+                            <a href="/#pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Docs</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="#">Support</a>
+                        </li>
+                    </ul>
+
+                    <ul class="call-to-actions" state="guest">
+                        <li>
+                            <a href="#" class="button" target="_blank">
+                                Get Demo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/#pricing" class="button accent">
+                                Buy now
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="call-to-actions hidden" state="logged-in">
+                        <li>
+                            <a href="#" class="button" target="_blank">
+                                Get Demo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/#pricing" class="button accent">
+                                Buy now
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Section header end -->
+
+        <!-- Start Banner -->
+
+        <section class="website-banner">
+            <div class="background"></div>
+
+            <div class="layout-box small">
+                <h1 class="section-title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum quae cumque eum fuga nostrum sapiente, vitae harum
+                    consequatur, sequi autem veritatis nemo eligendi. Adipisci
+                    architecto tempora officiis distinctio facilis molestias!
+                </h1>
+            </div>
+
+            <div class="layout-box">
+                <div class="control">
+                    <qrcg-website-banner></qrcg-website-banner>
+                </div>
+            </div>
+        </section>
+
+        <!-- End Banner -->
+
+        <!-- Section features in numbers -->
+        <section class="features-in-numbers">
+            <div class="layout-box">
+                <div class="wrapper">
+                    <div class="number-box">
+                        <span class="number">52</span>
+                        <label>Custom Shapes</label>
+                    </div>
+                    <div class="number-box">
+                        <span class="number">17</span>
+                        <label>QR Code Modules</label>
+                    </div>
+                    <div class="number-box">
+                        <span class="number">12</span>
+                        <label>Payment Processors</label>
+                    </div>
+                    <div class="number-box">
+                        <span class="number">21</span>
+                        <label>QR Code Types</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section features in numbers end -->
+
+        <!-- Section QR code show case -->
+        <section class="qrcode-showcase" id="features">
+            <div class="modal-content">
+                <div class="layout-box">
+                    <div class="close-btn">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                fill="currentColor"
+                                d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z"
+                            />
+                        </svg>
+                    </div>
+                    <h2 class="heading">
+                        Gradients you can build with <strong>Quick</strong>Code
+                    </h2>
+                    <p class="sub-heading">
+                        You can create gradients with multiple colors and
+                        unlimited stops. You can select gradient type either
+                        linear or radial. You can select the opacity of each
+                        color as well.
+                    </p>
+                    <div class="image-gallery">
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-1.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-2.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-3.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-4.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-5.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-6.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-7.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-8.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-9.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-10.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-11.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-12.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-13.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-14.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-15.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-16.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-17.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-18.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-19.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-20.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layout-box">
+                <div class="wrapper">
+                    <div class="overlay">
+                        <div class="overlay-wrapper">
+                            <div class="text">Show more examples</div>
+                            <div class="arrow">➞</div>
+                        </div>
+                    </div>
+                    <p class="tag">Advanced Gradient</p>
+                    <p class="explainer">
+                        Make your QR code stand out from the crowd, add
+                        gradients with unlimited color stops.
+                    </p>
+                    <div class="images">
+                        <div class="image">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-1.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+
+                        <div class="image">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-5.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+
+                        <div class="image">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-15.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+
+                        <div class="image">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-20.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+
+                        <div class="image">
+                            <img
+                                src="/assets/images/gradient/qrcode-gradient-showcase-17.png"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section QR code show case end -->
+
+        <!-- Section QR code show case -->
+        <section class="qrcode-showcase accent">
+            <div class="modal-content">
+                <div class="layout-box">
+                    <div class="close-btn">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                fill="currentColor"
+                                d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z"
+                            />
+                        </svg>
+                    </div>
+                    <h2 class="heading">
+                        Outlined shapes related to your niche
+                    </h2>
+                    <p class="sub-heading">
+                        Over 50 shapes can be created with
+                        <strong>Quick</strong>Code, gradients can be added to
+                        each shape, you may also include the shape in stickers
+                        and you can add your logo to it.
+                    </p>
+                    <div class="image-gallery">
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-1.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-2.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-3.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-4.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-5.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-6.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-7.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-8.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-9.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-10.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-11.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-12.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-13.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-14.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-15.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-16.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-17.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-18.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-19.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-20.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-21.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-22.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-23.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-24.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-25.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-26.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-27.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-28.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-29.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-30.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-31.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-32.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-33.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-34.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-35.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-36.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-37.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-38.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-39.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-40.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-41.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-42.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-43.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-44.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-45.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-46.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-47.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-48.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-49.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-50.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                        <div class="image animate-cascade">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-51.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layout-box">
+                <div class="wrapper">
+                    <div class="overlay">
+                        <div class="overlay-wrapper">
+                            <div class="text">Show more examples</div>
+                            <div class="arrow">➞</div>
+                        </div>
+                    </div>
+                    <p class="tag">Outlined Shapes</p>
+                    <p class="explainer">
+                        Create QR code related to your business niche, 50+
+                        shapes available to choose from.
+                    </p>
+                    <div class="images">
+                        <div class="image">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-1.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+
+                        <div class="image">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-35.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+
+                        <div class="image">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-45.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+
+                        <div class="image">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-50.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+
+                        <div class="image">
+                            <img
+                                src="/assets/images/outlined-shapes/qrcode-outlined-shape-48.jpeg"
+                                alt="QR Code with gradient"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section QR code show case end -->
+
+        <section class="qrcode-stats">
+            <div class="layout-box">
+                <div class="text-wrapper">
+                    <p class="tag-line">Advanced QR Code Stats</p>
+                    <h2 class="section-title">
+                        Insights to help you understand your audience.
+                    </h2>
+                    <p class="explainer">
+                        Get insights about daily scans, hour of the day, device
+                        types, and operating system, in addition to countries
+                        and cities.
+                    </p>
+                </div>
+
+                <img class="main-image" src="/assets/images/qrcode-stats.jpg" />
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="main-testimonial">
+                <div class="layout-box">
+                    <h2 class="heading">Trust our customers words</h2>
+                    <p class="text">
+                        “After purchasing Quick Code, I was amazed about the
+                        quality of this product. It was very well thought out
+                        and works great! Not only does the app work great, but
+                        the support is wonderful. I highly recommend!
+                    </p>
+                    <div class="details">
+                        <label> Steve Querio </label> January 2023
+                    </div>
+                </div>
+
+                <img src="/assets/images/quote.svg" class="quote-image" />
+            </div>
+            <div class="testimonials-track">
+                <div class="testimonial-item">
+                    <p>
+                        “As a happy customer, I wanted to express my
+                        satisfaction with the QR PHP script. The script has been
+                        very useful and the support team has been fantastic. I
+                        am truly pleased with my purchase and would highly
+                        recommend this product to others. Thank you for the
+                        great experience.
+                    </p>
+                    <div class="details">
+                        <label>Tariq Hussien</label> January 2023
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>
+                        “Support is just as good at the script level, very
+                        pleased with the immediate attention received and the
+                        friendliness of support in serving with excellent
+                        service. thank you for that.
+                    </p>
+                    <div class="details">
+                        <label> Claudivam Flaviano </label>
+                        December 2022
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>
+                        “I bought Quick Code QR Generator SaaS and I can say
+                        that it was the best decision I could make. Not only the
+                        program is great, but also the support must be mentioned
+                        here quite clearly. There are few developers who do such
+                        a great job as Mohammad from TheQuickCode. He takes his
+                        time, is technically super and you feel well taken care
+                        of, especially if you are not so technically skilled. I
+                        can only give a very clear recommendation for
+                        TheQuickCode! Many, many thanks for the more than good
+                        support! That was one of the best support I have
+                        received so far!
+                    </p>
+                    <div class="details">
+                        <label> Heiko Mölcher </label>
+                        November 2022
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>
+                        “Quick code is great. I personally recommend it if you
+                        want to buy a QR code hope one of the best choices is
+                        this script. Because you can get a regular updates with
+                        some new features
+                    </p>
+                    <div class="details">
+                        <label> Mhd Awal Hadi </label>
+                        October 2022
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>
+                        “Let me explain Flexibility a bit: -Product Quality 5
+                        Starts -Featuring Quality 5 Stars -Code Quality 5 Stars
+                        -Documentation Quality 5Stars -Flexibility Quality 5
+                        Stars -LIFE quality booster 5 Stars Customer Support
+                        "Unlimited" STARS: The Greatest experience in the
+                        customer support industry ever. Not speaking as in
+                        skripts or codecanyon only; Globally speaking. I really
+                        just wish them all the best in there business program,
+                        Just like how I felt them wishing me in whatever am
+                        dealing with..
+                    </p>
+                    <div class="details">
+                        <label> Ziad Kodsi </label>
+                        October 2022
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>
+                        “From the first moment that the installation of the
+                        project began, I had technical support who was
+                        supporting me in every doubt I had, with an immediate
+                        response. About the project it has an intuitive step by
+                        step for the installation, the project is very organized
+                        and easy to manipulate.
+                    </p>
+                    <div class="details">
+                        <label> Imderf </label>
+                        November 2022
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>
+                        “The author has done a great job of this software code,
+                        I have been in contact with him and there is lots of new
+                        features and improvements coming in new version. The
+                        author is very quick to reply for support issues and
+                        will go out of his way to help get the problem resolved.
+                        A very responsible person. I strongly recommend the work
+                        of this author.
+                    </p>
+                    <div class="details">
+                        <label> Aaron Broderick </label>
+                        November 2022
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>
+                        “The author gets in touch quickly. Resolves issues on
+                        the client side. A very responsible person. Thank you!
+                        Anyone interested in the work of this author, I
+                        RECOMMEND!
+                    </p>
+                    <div class="details">
+                        <label> Yaroslavua </label>
+                        November 2022
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <div class="text-wrapper">
+                <h2 class="section-title">Simple one time pricing</h2>
+                <p class="explainer">
+                    Own your software or start your SaaS business with Quick
+                    Code
+                </p>
+            </div>
+
+            <div class="pricing-switch">
+                <div class="pricing-switch-box">
+                    <div class="switch-item active" tab-id="monthly">
+                        Monthly Billing
+                    </div>
+                    <div class="switch-item" tab-id="yearly">
+                        Yearly Billing
+                    </div>
+                </div>
+            </div>
+
+            <div class="layout-box">
+                <div class="blocks">
+                    <div class="items-wrapper">
+                        <div class="tag">Get a license</div>
+
+                        <div class="items">
+                            <div class="item" tab-id="monthly">
+                                <h3 class="heading">Regular License</h3>
+                                <div class="price">
+                                    <span class="currency">$</span>
+                                    <span class="number">39</span>
+                                    <span class="sep">/</span>
+                                    <span class="term">One time</span>
+                                </div>
+                                <p class="below-price">
+                                    For <span>personal</span> use on a single
+                                    website.
+                                </p>
+                                <ul class="text-list">
+                                    <li>50+ outlined shapes</li>
+                                    <li>1400+ sticker fonts</li>
+                                    <li>20 QR code types</li>
+                                </ul>
+                                <ul class="icons-list">
+                                    <li>Priority Support</li>
+                                    <li>Source code included</li>
+                                    <li>Connect unlimited domains</li>
+                                    <li>Advanced gradient</li>
+                                </ul>
+                                <a href="#" class="button accent buy-button"
+                                    >Buy now</a
+                                >
+                            </div>
+                            <div class="item" tab-id="yearly">
+                                <h3 class="heading">Extended License</h3>
+                                <div class="price">
+                                    <span class="currency">$</span>
+                                    <span class="number">130</span>
+                                    <span class="sep">/</span>
+                                    <span class="term">One time</span>
+                                </div>
+                                <p class="below-price">
+                                    Start your own <span>SaaS</span> business on
+                                    a single website.
+                                </p>
+                                <ul class="text-list">
+                                    <li>50+ outlined shapes</li>
+                                    <li>1400+ sticker fonts</li>
+                                    <li>20 QR code types</li>
+                                    <li>12 payment processors</li>
+                                </ul>
+                                <ul class="icons-list">
+                                    <li>Priority Support</li>
+                                    <li>Source code included</li>
+                                    <li>Connect unlimited domains</li>
+                                    <li>Advanced gradient</li>
+                                </ul>
+                                <a href="#" class="button accent buy-button"
+                                    >Buy now</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="free-trial-notice">
+            <div class="layout-box">
+                <div class="text">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>information</title>
+                        <path
+                            d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
+                        />
+                    </svg>
+                    Get 15 days free trial available after sign up, no credit
+                    card is required.
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-short-list">
+            <div class="layout-box">
+                <div class="text-wrapper">
+                    <h2 class="section-title">From Our Blog</h2>
+                    <p class="explainer">
+                        Information about QR Codes and how to use our platform.
+                    </p>
+                </div>
+
+                <div class="posts">
+                    <a class="post">
+                        <img src="/assets/images/blog-1.png" alt="" />
+                        <h2 class="post-title">This is blog article name</h2>
+                        <div class="post-excerpt">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatibus, in quod et debitis libero sunt,
+                            odio earum, quo non ut cupiditate! Adipisci
+                            recusandae pariatur at ipsum quisquam velit fugiat
+                            similique!
+                        </div>
+                    </a>
+                    <a class="post">
+                        <img src="/assets/images/blog-1.png" alt="" />
+                        <h2 class="post-title">This is blog article name</h2>
+                        <div class="post-excerpt">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatibus, in quod et debitis libero sunt,
+                            odio earum, quo non ut cupiditate! Adipisci
+                            recusandae pariatur at ipsum quisquam velit fugiat
+                            similique!
+                        </div>
+                    </a>
+                    <a class="post">
+                        <img src="/assets/images/blog-1.png" alt="" />
+                        <h2 class="post-title">This is blog article name</h2>
+                        <div class="post-excerpt">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatibus, in quod et debitis libero sunt,
+                            odio earum, quo non ut cupiditate! Adipisci
+                            recusandae pariatur at ipsum quisquam velit fugiat
+                            similique!
+                        </div>
+                    </a>
+                </div>
+
+                <div class="explore-more-container">
+                    <a href="#" class="button primary">Explore More</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="layout-gap"></div>
+
+        <footer class="website-footer">
+            <div class="layout-box">
+                <div class="footer-wrapper">
+                    <div class="logo-block">
+                        <a href="/" class="logo">
+                            <img src="/assets/images/quickcode-logo.png" />
+                        </a>
+                        <div class="socials">
+                            <a
+                                href="https://instagram.com/the.quick.code"
+                                target="_blank"
+                                class="social-icon"
+                                title="instagram: @the.quick.code"
+                            >
+                                <svg
+                                    style="width: 24px; height: 24px"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                title="twitter: @thequickcode"
+                                href="https://twitter.com/thequickcode"
+                                target="_blank"
+                                class="social-icon"
+                            >
+                                <svg
+                                    style="width: 24px; height: 24px"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://quickcodesupport.atlassian.net/servicedesk/customer/portal/3"
+                                    target="_blank"
+                                    >Support Portal</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://docs.quickcode.digital/developer/"
+                                    target="_blank"
+                                    >Developer Guide</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://demo.quickcode.digital/api-docs"
+                                    target="_blank"
+                                    >API Docs</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://trello.com/b/qblhQglC/quick-code-roadmap"
+                                    target="_blank"
+                                    >Project Roadmap</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h3>Services</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Installation Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Recurring Updates</a>
+                            </li>
+                            <li>
+                                <a href="https://paypal.me/walidaalhomsi"
+                                    >Support Our Project</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#">Delivery Center</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-copy">
+                    &copy; 2023 Quick Code FZE, License no. 31670, Ajman
+                    Freezone, UAE
+                </div>
+            </div>
+        </footer>
+
+        <div class="go-to-top-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z"
+                />
+            </svg>
+        </div>
+    </body>
+</html>

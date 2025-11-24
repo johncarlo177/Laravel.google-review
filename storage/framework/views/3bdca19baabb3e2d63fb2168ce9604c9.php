@@ -1,0 +1,1 @@
+<script async src="<?php echo e(asset('dashboard-Bi6RV9sa.js')); ?>"></script><?php /**PATH /home/johncarlo/Documents/Projects/FREELANCER-TASK/review/review/resources/views/blue/partials/head/dashboard-assets.blade.php ENDPATH**/ ?>

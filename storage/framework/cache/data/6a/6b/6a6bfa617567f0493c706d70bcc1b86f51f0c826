@@ -1,0 +1,1250 @@
+1795513537s:72948:"<!DOCTYPE html>
+<html lang="en" dir=ltr>
+
+
+
+<head>
+    <title>
+                    Quick Code
+            </title>
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+
+<meta charset="UTF-8" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+
+<base href="http://127.0.0.1:8000/" />
+
+<meta name="csrf-token" content="3a1x3caaVmwgRGe0Ul0flR46ETjhLXJRvTKayNko">
+
+<link rel="apple-touch-icon" sizes="180x180" href="http://127.0.0.1:8000/assets/favicon/apple-touch-icon.png?v=1" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="http://127.0.0.1:8000/assets/favicon/favicon-32x32.png?v=1" />
+
+<link rel="icon" type="image/png" sizes="16x16" href="http://127.0.0.1:8000/assets/favicon/favicon-16x16.png?v=1" />
+
+<link rel="manifest" href="http://127.0.0.1:8000/assets/favicon/site.webmanifest?v=1763902802" />
+
+<link rel="mask-icon" href="http://127.0.0.1:8000/assets/favicon/safari-pinned-tab.svg?v=1763656782" color="#eee" />
+
+<link rel="shortcut icon" href="http://127.0.0.1:8000/assets/favicon/favicon.ico?v=1" />
+
+<meta name="msapplication-TileColor" content="#fff" />
+
+<meta name="msapplication-config" content="http://127.0.0.1:8000/assets/favicon/browserconfig.xml?v=1763902802" />
+
+<meta name="theme-color" content="#ffffff" />
+
+
+<script>
+    history.scrollRestoration = 'manual'
+
+    window.CONFIG = {"YXBwLnVybA==":"aHR0cDovLzEyNy4wLjAuMTo4MDAw","YXBwLmVudg==":"cHJvZHVjdGlvbg==","YXBwLm5hbWU=":"UXVpY2sgQ29kZQ==","YXBwLmF1dGhlbnRpY2F0aW9uX3R5cGU=":"bnVsbA==","YXBwLm1hcmtldHBsYWNl":"VUVGRVJFeEY=","ZnJvbnRlbmQuc2xvZ2Fu":"UVIgQ29kZSBHZW5lcmF0b3I=","YXBwLmZyb250ZW5kX2N1c3RvbV91cmw=":"bnVsbA==","cXJjb2RlLnN0b3JhZ2VfcGF0aA==":"cXJjb2RlX2ZpbGVz","ZnJvbnRlbmQuaGVhZGVyX2xvZ29fdXJs":"bnVsbA==","ZnJvbnRlbmQuaGVhZGVyX2xvZ29faW52ZXJzZV91cmw=":"bnVsbA==","ZnJvbnRlbmQubG9naW5fbG9nb191cmw=":"bnVsbA==","YWNjb3VudF9wYWdlLmJhY2tncm91bmRfaW1hZ2VfdXJs":"bnVsbA==","YWNjb3VudF9wYWdlLmdyYWRpZW50":"bnVsbA==","YWNjb3VudF9wYWdlLmltYWdlX3JvdW5kX2Nvcm5lcg==":"bnVsbA==","YWNjb3VudF9wYWdlLmltYWdlX3Bvc2l0aW9u":"bnVsbA==","Y29udGVudC1tYW5hZ2VyLnBvc2l0aW9ucw==":"WyJCbG9nOiBiZWxvdyB0aXRsZSIsIkJsb2c6IG1ldGEgZGVzY3JpcHRpb24iLCJCbG9nOiBwYWdlIHRpdGxlIiwiRmVhdHVyZSAxOiBsYWJlbCIsIkZlYXR1cmUgMTogbnVtYmVyIiwiRmVhdHVyZSAyOiBsYWJlbCIsIkZlYXR1cmUgMjogbnVtYmVyIiwiRmVhdHVyZSAzOiBsYWJlbCIsIkZlYXR1cmUgMzogbnVtYmVyIiwiRmVhdHVyZSA0OiBsYWJlbCIsIkZlYXR1cmUgNDogbnVtYmVyIiwiRm9vdGVyIENvcHlyaWdodHMiLCJGb290ZXI6IGJlbG93IGxvZ28uIiwiRnJlZSB0cmlhbCBub3RpY2UiLCJGcm9udCBQYWdlOiBiZWxvdyBtYWluIHRpdGxlIiwiRnJvbnQgUGFnZTogbWFpbiB0aXRsZSIsIlByaWNpbmc6IGJhZGdlIDEiLCJQcmljaW5nOiBiZWxvdyBwcmljZSIsIlByaWNpbmc6IHRhZ2xpbmUiLCJQcmljaW5nOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKGFwcC1kb3dubG9hZCk6IHRpdGxlIiwiUVIgQ29kZSBUeXBlcyAoYmlvbGlua3MpOiBiYWRnZSIsIlFSIENvZGUgVHlwZXMgKGJpb2xpbmtzKTogdGV4dCIsIlFSIENvZGUgVHlwZXMgKGJpb2xpbmtzKTogdGl0bGUiLCJRUiBDb2RlIFR5cGVzIChicmF6aWxwaXgpOiBiYWRnZSIsIlFSIENvZGUgVHlwZXMgKGJyYXppbHBpeCk6IHRleHQiLCJRUiBDb2RlIFR5cGVzIChicmF6aWxwaXgpOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKGJ1c2luZXNzLXByb2ZpbGUpOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKGJ1c2luZXNzLXJldmlldyk6IHRpdGxlIiwiUVIgQ29kZSBUeXBlcyAoY2FsbCk6IGJhZGdlIiwiUVIgQ29kZSBUeXBlcyAoY2FsbCk6IHRleHQiLCJRUiBDb2RlIFR5cGVzIChjYWxsKTogdGl0bGUiLCJRUiBDb2RlIFR5cGVzIChjcnlwdG8pOiBiYWRnZSIsIlFSIENvZGUgVHlwZXMgKGNyeXB0byk6IHRleHQiLCJRUiBDb2RlIFR5cGVzIChjcnlwdG8pOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKGRlbGl2ZXJlZC12ZWhpY2xlKTogdGl0bGUiLCJRUiBDb2RlIFR5cGVzIChlbWFpbCk6IGJhZGdlIiwiUVIgQ29kZSBUeXBlcyAoZW1haWwpOiB0ZXh0IiwiUVIgQ29kZSBUeXBlcyAoZW1haWwpOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKGVtYWlsLWR5bmFtaWMpOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKGVtZXJnZW5jeS1jb250YWN0KTogdGl0bGUiLCJRUiBDb2RlIFR5cGVzIChldmVudCk6IGJhZGdlIiwiUVIgQ29kZSBUeXBlcyAoZXZlbnQpOiB0ZXh0IiwiUVIgQ29kZSBUeXBlcyAoZXZlbnQpOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKGZhY2Vib29rbWVzc2VuZ2VyKTogYmFkZ2UiLCJRUiBDb2RlIFR5cGVzIChmYWNlYm9va21lc3Nlbmdlcik6IHRleHQiLCJRUiBDb2RlIFR5cGVzIChmYWNlYm9va21lc3Nlbmdlcik6IHRpdGxlIiwiUVIgQ29kZSBUeXBlcyAoZmFjZXRpbWUpOiBiYWRnZSIsIlFSIENvZGUgVHlwZXMgKGZhY2V0aW1lKTogdGV4dCIsIlFSIENvZGUgVHlwZXMgKGZhY2V0aW1lKTogdGl0bGUiLCJRUiBDb2RlIFR5cGVzIChmaWxlLXVwbG9hZCk6IHRpdGxlIiwiUVIgQ29kZSBUeXBlcyAoZ29vZ2xlLXJldmlldyk6IGJhZGdlIiwiUVIgQ29kZSBUeXBlcyAoZ29vZ2xlLXJldmlldyk6IHRleHQiLCJRUiBDb2RlIFR5cGVzIChnb29nbGUtcmV2aWV3KTogdGl0bGUiLCJRUiBDb2RlIFR5cGVzIChpbnRlcm5hbC1wcm9kdWN0aW9uKTogdGl0bGUiLCJRUiBDb2RlIFR5cGVzIChsZWFkLWZvcm0pOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKGxvY2F0aW9uKTogYmFkZ2UiLCJRUiBDb2RlIFR5cGVzIChsb2NhdGlvbik6IHRleHQiLCJRUiBDb2RlIFR5cGVzIChsb2NhdGlvbik6IHRpdGxlIiwiUVIgQ29kZSBUeXBlcyAobW9uZGF5KTogdGl0bGUiLCJRUiBDb2RlIFR5cGVzIChwYXlwYWwpOiBiYWRnZSIsIlFSIENvZGUgVHlwZXMgKHBheXBhbCk6IHRleHQiLCJRUiBDb2RlIFR5cGVzIChwYXlwYWwpOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKHByb2R1Y3QtY2F0YWxvZ3VlKTogYmFkZ2UiLCJRUiBDb2RlIFR5cGVzIChwcm9kdWN0LWNhdGFsb2d1ZSk6IHRleHQiLCJRUiBDb2RlIFR5cGVzIChwcm9kdWN0LWNhdGFsb2d1ZSk6IHRpdGxlIiwiUVIgQ29kZSBUeXBlcyAocmVzdGF1cmFudC1tZW51KTogYmFkZ2UiLCJRUiBDb2RlIFR5cGVzIChyZXN0YXVyYW50LW1lbnUpOiB0ZXh0IiwiUVIgQ29kZSBUeXBlcyAocmVzdGF1cmFudC1tZW51KTogdGl0bGUiLCJRUiBDb2RlIFR5cGVzIChyZXN1bWUpOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKHNtcyk6IGJhZGdlIiwiUVIgQ29kZSBUeXBlcyAoc21zKTogdGV4dCIsIlFSIENvZGUgVHlwZXMgKHNtcyk6IHRpdGxlIiwiUVIgQ29kZSBUeXBlcyAoc21zLWR5bmFtaWMpOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKHRlbGVncmFtKTogYmFkZ2UiLCJRUiBDb2RlIFR5cGVzICh0ZWxlZ3JhbSk6IHRleHQiLCJRUiBDb2RlIFR5cGVzICh0ZWxlZ3JhbSk6IHRpdGxlIiwiUVIgQ29kZSBUeXBlcyAodGV4dCk6IGJhZGdlIiwiUVIgQ29kZSBUeXBlcyAodGV4dCk6IHRleHQiLCJRUiBDb2RlIFR5cGVzICh0ZXh0KTogdGl0bGUiLCJRUiBDb2RlIFR5cGVzICh1cGkpOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKHVwaS1keW5hbWljKTogdGl0bGUiLCJRUiBDb2RlIFR5cGVzICh1cmwpOiBiYWRnZSIsIlFSIENvZGUgVHlwZXMgKHVybCk6IHRleHQiLCJRUiBDb2RlIFR5cGVzICh1cmwpOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKHZjYXJkKTogYmFkZ2UiLCJRUiBDb2RlIFR5cGVzICh2Y2FyZCk6IHRleHQiLCJRUiBDb2RlIFR5cGVzICh2Y2FyZCk6IHRpdGxlIiwiUVIgQ29kZSBUeXBlcyAodmNhcmQtcGx1cyk6IGJhZGdlIiwiUVIgQ29kZSBUeXBlcyAodmNhcmQtcGx1cyk6IHRleHQiLCJRUiBDb2RlIFR5cGVzICh2Y2FyZC1wbHVzKTogdGl0bGUiLCJRUiBDb2RlIFR5cGVzICh2aWJlcik6IGJhZGdlIiwiUVIgQ29kZSBUeXBlcyAodmliZXIpOiB0ZXh0IiwiUVIgQ29kZSBUeXBlcyAodmliZXIpOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKHdlYnNpdGUtYnVpbGRlcik6IHRpdGxlIiwiUVIgQ29kZSBUeXBlcyAod2VjaGF0KTogYmFkZ2UiLCJRUiBDb2RlIFR5cGVzICh3ZWNoYXQpOiB0ZXh0IiwiUVIgQ29kZSBUeXBlcyAod2VjaGF0KTogdGl0bGUiLCJRUiBDb2RlIFR5cGVzICh3aGF0c2FwcCk6IGJhZGdlIiwiUVIgQ29kZSBUeXBlcyAod2hhdHNhcHApOiB0ZXh0IiwiUVIgQ29kZSBUeXBlcyAod2hhdHNhcHApOiB0aXRsZSIsIlFSIENvZGUgVHlwZXMgKHdpZmkpOiBiYWRnZSIsIlFSIENvZGUgVHlwZXMgKHdpZmkpOiB0ZXh0IiwiUVIgQ29kZSBUeXBlcyAod2lmaSk6IHRpdGxlIiwiUVIgQ29kZSBUeXBlcyAoem9vbSk6IGJhZGdlIiwiUVIgQ29kZSBUeXBlcyAoem9vbSk6IHRleHQiLCJRUiBDb2RlIFR5cGVzICh6b29tKTogdGl0bGUiLCJRUiBDb2RlIFR5cGVzOiB0YWciLCJRUiBDb2RlIFR5cGVzOiB0ZXh0IiwiUVIgQ29kZSBUeXBlczogdGl0bGUiLCJRUiBjb2RlIHN0YXRzOiB0YWcgbGluZSIsIlFSIGNvZGUgc3RhdHM6IHRleHQiLCJRUiBjb2RlIHN0YXRzOiB0aXRsZSIsIlNob3djYXNlIEdyYWRpZW50IE1vZGFsOiBoZWFkaW5nIiwiU2hvd2Nhc2UgR3JhZGllbnQgTW9kYWw6IHRleHQiLCJTaG93Y2FzZSBHcmFkaWVudDogb3ZlcmxheSIsIlNob3djYXNlIEdyYWRpZW50OiB0YWciLCJTaG93Y2FzZSBHcmFkaWVudDogdGV4dCIsIlNob3djYXNlIFNoYXBlcyBNb2RhbDogaGVhZGluZyIsIlNob3djYXNlIFNoYXBlcyBNb2RhbDogdGV4dCIsIlNob3djYXNlIFNoYXBlczogb3ZlcmxheSIsIlNob3djYXNlIFNoYXBlczogdGFnIiwiU2hvd2Nhc2UgU2hhcGVzOiB0ZXh0IiwiU2lkZWJhcjogY29udGVudCIsIlNpZGViYXI6IHRpdGxlIiwiVGVzdGltb25pYWxzIC0gTWFpbiB0ZXN0aW1vbmlhbDogY3VzdG9tZXIgbmFtZSIsIlRlc3RpbW9uaWFscyAtIE1haW4gdGVzdGltb25pYWw6IGRhdGUiLCJUZXN0aW1vbmlhbHMgLSBNYWluIHRlc3RpbW9uaWFsOiB0ZXh0IiwiVGVzdGltb25pYWxzOiBsaXN0IiwiVGVzdGltb25pYWxzOiB0aXRsZSIsIldoaXRlIExhYmVsIFBvc2l0aW9uIDAiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiAxIiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gMTAiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiAxMSIsIldoaXRlIExhYmVsIFBvc2l0aW9uIDEyIiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gMTMiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiAxNCIsIldoaXRlIExhYmVsIFBvc2l0aW9uIDE1IiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gMTYiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiAxNyIsIldoaXRlIExhYmVsIFBvc2l0aW9uIDE4IiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gMTkiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiAyIiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gMjAiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiAyMSIsIldoaXRlIExhYmVsIFBvc2l0aW9uIDIyIiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gMjMiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiAyNCIsIldoaXRlIExhYmVsIFBvc2l0aW9uIDI1IiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gMjYiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiAyNyIsIldoaXRlIExhYmVsIFBvc2l0aW9uIDI4IiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gMjkiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiAzIiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gMzAiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiAzMSIsIldoaXRlIExhYmVsIFBvc2l0aW9uIDMyIiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gMzMiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiAzNCIsIldoaXRlIExhYmVsIFBvc2l0aW9uIDM1IiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gMzYiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiAzNyIsIldoaXRlIExhYmVsIFBvc2l0aW9uIDM4IiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gMzkiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiA0IiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gNDAiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiA0MSIsIldoaXRlIExhYmVsIFBvc2l0aW9uIDQyIiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gNDMiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiA0NCIsIldoaXRlIExhYmVsIFBvc2l0aW9uIDUiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiA2IiwiV2hpdGUgTGFiZWwgUG9zaXRpb24gNyIsIldoaXRlIExhYmVsIFBvc2l0aW9uIDgiLCJXaGl0ZSBMYWJlbCBQb3NpdGlvbiA5Il0=","YXBwLmVtYWlsX3ZlcmlmaWNhdGlvbl9hZnRlcl9zaWduX3Vw":"dHJ1ZQ==","cXJjb2RlLnNraXBfaW5zdGFsbF9zdGVwXzE=":"bnVsbA==","Y3VycmVuY3k=":"eyJuYW1lIjoiVW5pdGVkIFN0YXRlcyBEb2xsYXIiLCJjdXJyZW5jeV9jb2RlIjoiVVNEIiwic3ltYm9sIjoiJCIsInN5bWJvbF9wb3NpdGlvbiI6ImJlZm9yZSIsInRob3VzYW5kc19zZXBhcmF0b3IiOiIsIiwiZGVjaW1hbF9zZXBhcmF0b3IiOiIuIiwiZGVjaW1hbF9zZXBhcmF0b3JfZW5hYmxlZCI6ImVuYWJsZWQifQ==","YXBwLmFmdGVyX2xvZ291dF9hY3Rpb24=":"bnVsbA==","YXBwLndwbHVzX2ludGVncmF0aW9uX2VuYWJsZWQ=":"ZmFsc2U=","YXBwLmZyb250ZW5kX2xpbmtz":"bnVsbA==","YXBwLmRhc2hib2FyZC1jbGllbnQtbWVudQ==":"bnVsbA==","YXBwLm5ld191c2VyX3JlZ2lzdHJhdGlvbg==":"bnVsbA==","dGhlbWUuZGVmYXVsdF9zY3JvbGxiYXI=":"bnVsbA==","cHJldmlldy5jYW52YXNUZXh0UmVuZGVy":"bnVsbA==","YXBwLnBhaWRfc3Vic2NyaXB0aW9ucw==":"bnVsbA==","YXBwLmF2YWlsYWJsZV9xcmNvZGVfdHlwZXM=":"bnVsbA==","YXBwLmZyb250ZW5kX3ByaWNpbmdfcGxhbnNfdXJs":"bnVsbA==","ZHJvcGxldC5pc19sYXJnZQ==":"dHJ1ZQ==","YXBwLmFsbG93X2lmcmFtZV9lbWJlZA==":"bnVsbA==","YXBwLm1vYmlsZV9udW1iZXJfZmllbGQ=":"bnVsbA==","ZGFzaGJvYXJkLnZpZXdfc3RhdHNfbGlua19pbl9lZGl0X3FyY29kZV9wYWdl":"bnVsbA==","ZnJvbnRwYWdlLnNob3dfY3VzdG9taXplX2Rlc2lnbl9idXR0b24=":"bnVsbA==","ZGFzaGJvYXJkLnNlbGVjdF9xcmNvZGVzX29mX2N1cnJlbnRseV9sb2dnZWRfaW5fdXNlcl9ieV9kZWZhdWx0":"bnVsbA==","YmlsbGluZy5tb2Rl":"bnVsbA==","YWNjb3VudF9jcmVkaXQuZHluYW1pY19xcmNvZGVfcHJpY2U=":"bnVsbA==","YWNjb3VudF9jcmVkaXQuc3RhdGljX3FyY29kZV9wcmljZQ==":"bnVsbA==","ZGFzaGJvYXJkLmhlbHBfYnV0dG9uX2luX2Rhc2hib2FyZF9oZWFkZXI=":"bnVsbA==","YXV0aDAuZW5hYmxlZA==":"bnVsbA==","aG9tZXBhZ2UuaG9tZXBhZ2UtZ2VuZXJhdG9y":"bnVsbA==","YWNjb3VudC5jYW5jZWxfc3Vic2NyaXB0aW9uX2J1dHRvbg==":"bnVsbA==","YXBwLmNvbG9yLXBpY2tlci1wYWxldHRlcw==":"bnVsbA==","cGx1Z2lucy5lbmFibGVk":"W10=","cXVpY2txcl9hcnQuYXZhaWxhYmxlX3dvcmtmbG93cw==":"bnVsbA==","Y3VzdG9tZXIuc2hvcnRfbGlua19jaGFuZ2U=":"bnVsbA==","YnVsa19vcGVyYXRpb24uZXhwb3J0LXFyY29kZS1zaXpl":"bnVsbA==","Y29va2llX2NvbnNlbnRfZW5hYmxlZA==":"bnVsbA==","dXNlcnNfY2FuX2RlbGV0ZV9xcmNvZGVz":"bnVsbA==","cXJjb2RlLnNlYXJjaGJveF9pbl9xcmNvZGVfc2VsZWN0aW9uX3BhZ2U=":"bnVsbA==","bWVudS5zaG93X3BheWluZ19ub25fcGF5aW5nX3VzZXJz":"bnVsbA==","ZGFzaGJvYXJkLnRvcF9iYW5uZXJfb3B0aW9u":"bnVsbA==","ZGFzaGJvYXJkLnRvcF9iYW5uZXJfaW1hZ2U=":"bnVsbA==","ZGFzaGJvYXJkLnRvcF9iYW5uZXJfaW1hZ2VfdXJs":"bnVsbA==","ZGFzaGJvYXJkLnRvcF9iYW5uZXJfdmlkZW8=":"bnVsbA==","ZGFzaGJvYXJkLnRvcF9iYW5uZXJfdmlkZW9fdXJs":"bnVsbA==","ZGFzaGJvYXJkLnRvcF9iYW5uZXJfdGl0bGU=":"bnVsbA==","ZGFzaGJvYXJkLnRvcF9iYW5uZXJfc3VidGl0bGU=":"bnVsbA==","ZGFzaGJvYXJkLnRvcF9iYW5uZXJfdGV4dF9jb2xvcg==":"bnVsbA==","d2Vic2l0ZS1iYW5uZXItYmFja2dyb3VuZC1jb2xvcg==":"bnVsbA==","d2Vic2l0ZS1iYW5uZXItY29sb3ItMQ==":"bnVsbA==","d2Vic2l0ZS1iYW5uZXItY29sb3ItMg==":"bnVsbA==","d2Vic2l0ZS1iYW5uZXItY29sb3ItMw==":"bnVsbA==","d2Vic2l0ZS1iYW5uZXItY29sb3ItNA==":"bnVsbA==","ZGFzaGJvYXJkLnFyY29kZV9saXN0X21vZGU=":"bnVsbA==","ZGFzaGJvYXJkLndlbGNvbWVfcG9wdXBfZW5hYmxlZA==":"bnVsbA==","ZGFzaGJvYXJkLndlbGNvbWVfbW9kYWxfdmlkZW9fdXJs":"bnVsbA==","ZGFzaGJvYXJkLndlbGNvbWVfbW9kYWxfdGV4dA==":"bnVsbA==","ZGFzaGJvYXJkLnVzZV90ZW1wbGF0ZV9idXR0b24=":"bnVsbA==","ZGFzaGJvYXJkLnRvcF9iYW5uZXJfaGVpZ2h0":"bnVsbA==","ZGFzaGJvYXJkLndlbGNvbWVfbW9kYWxfc2hvd190aW1lcw==":"bnVsbA==","ZGFzaGJvYXJkLnNpZGViYXJfYWNjb3VudF93aWRnZXRfc3R5bGU=":"bnVsbA==","Z29vZ2xlX3JlY2FwdGNoYS5zaXRlX2tleQ==":"bnVsbA==","Z29vZ2xlX3JlY2FwdGNoYS5zZWNyZXRfa2V5":"bnVsbA==","cGxhbi5hbGxvd2VkX2ZpbGVfc2l6ZQ==":"MiBtYg==","cXJjb2RlLnBpbmNvZGVfdHlwZQ==":"bnVsbA==","cXJjb2RlLnBpbmNvZGVfbGVuZ3Ro":"bnVsbA==","YXBwLnNob3dfc2lnbnVwX2xpbmtfaW5fbG9naW5fc2NyZWVu":"bnVsbA==","d2lkZ2V0X3NjcmlwdF92ZXJzaW9u":"MTc2MzY1Njc5Ng=="}
+
+    window.QRCG_TRANSLATION = {}
+
+    window.QRCG_CURRENT_LOCALE = 'en'
+
+    window.QRCG_DIRECTION = 'ltr'
+
+    window.QRCG_BUNDLE_TYPE = 'build';
+
+    window.QRCG_ENABLED_WORKFLOWS = [];
+
+    window.QRCG_AI_IS_ENABLED = false;
+
+    window.QRCG_VERSION = "2.139";
+
+    window.QRCG_ENVIRONEMNT = 'production';
+</script>
+
+<script> window.QRCG_QR_TYPE_CONFIGS = {"qrType.app-download.url":"app-download-qr-code-generator","qrType.biolinks.url":"biolinks-qr-code-generator","qrType.brazilpix.url":"brazilpix-qr-code-generator","qrType.business-profile.url":"business-profile-qr-code-generator","qrType.business-review.url":"business-review-qr-code-generator","qrType.call.url":"call-qr-code-generator","qrType.crypto.url":"crypto-qr-code-generator","qrType.email.url":"email-qr-code-generator","qrType.email-dynamic.url":"email-dynamic-qr-code-generator","qrType.event.url":"event-qr-code-generator","qrType.facetime.url":"facetime-qr-code-generator","qrType.file-upload.url":"file-upload-qr-code-generator","qrType.google-review.url":"google-review-qr-code-generator","qrType.lead-form.url":"lead-form-qr-code-generator","qrType.location.url":"location-qr-code-generator","qrType.facebookmessenger.url":"facebookmessenger-qr-code-generator","qrType.paypal.url":"paypal-qr-code-generator","qrType.product-catalogue.url":"product-catalogue-qr-code-generator","qrType.restaurant-menu.url":"restaurant-menu-qr-code-generator","qrType.resume.url":"resume-qr-code-generator","qrType.sms.url":"sms-qr-code-generator","qrType.sms-dynamic.url":"sms-dynamic-qr-code-generator","qrType.telegram.url":"telegram-qr-code-generator","qrType.text.url":"text-qr-code-generator","qrType.upi.url":"upi-qr-code-generator","qrType.upi-dynamic.url":"upi-dynamic-qr-code-generator","qrType.url.url":"url-qr-code-generator","qrType.vcard-plus.url":"vcard-plus-qr-code-generator","qrType.viber.url":"viber-qr-code-generator","qrType.wechat.url":"wechat-qr-code-generator","qrType.website-builder.url":"website-builder-qr-code-generator","qrType.whatsapp.url":"whatsapp-qr-code-generator","qrType.wifi.url":"wifi-qr-code-generator","qrType.zoom.url":"zoom-qr-code-generator","qrType.vcard.url":"vcard-qr-code-generator"}; </script>
+
+<script> window.QRCG_QR_TYPES_SORT_ORDER = [{"slug":"app-download","sort_order":null},{"slug":"biolinks","sort_order":null},{"slug":"brazilpix","sort_order":null},{"slug":"business-profile","sort_order":null},{"slug":"business-review","sort_order":null},{"slug":"call","sort_order":null},{"slug":"crypto","sort_order":null},{"slug":"email","sort_order":null},{"slug":"email-dynamic","sort_order":null},{"slug":"event","sort_order":null},{"slug":"facetime","sort_order":null},{"slug":"file-upload","sort_order":null},{"slug":"google-review","sort_order":null},{"slug":"lead-form","sort_order":null},{"slug":"location","sort_order":null},{"slug":"facebookmessenger","sort_order":null},{"slug":"paypal","sort_order":null},{"slug":"product-catalogue","sort_order":null},{"slug":"restaurant-menu","sort_order":null},{"slug":"resume","sort_order":null},{"slug":"sms","sort_order":null},{"slug":"sms-dynamic","sort_order":null},{"slug":"telegram","sort_order":null},{"slug":"text","sort_order":null},{"slug":"upi","sort_order":null},{"slug":"upi-dynamic","sort_order":null},{"slug":"url","sort_order":null},{"slug":"vcard-plus","sort_order":null},{"slug":"viber","sort_order":null},{"slug":"wechat","sort_order":null},{"slug":"website-builder","sort_order":null},{"slug":"whatsapp","sort_order":null},{"slug":"wifi","sort_order":null},{"slug":"zoom","sort_order":null},{"slug":"vcard","sort_order":null}]; </script>
+
+    <script type="module" crossorigin src="http://127.0.0.1:8000/assets/blue.BW4C9MXY.js"></script>
+<link rel="stylesheet" href="http://127.0.0.1:8000/assets/blue.DxYTLGN3.css">
+
+    <style>
+    *:not(:defined) {
+        display: none;
+    }
+
+    :root {
+        --gray-0: whitesmoke;
+        --gray-1: #dedede;
+        --gray-2: #a9a9c1;
+        --info-0: #3a3fd7;
+        --primary-0: #363a9a;
+        --primary-1: #17b8b3;
+        --cyan-0: #17b8b3;
+        --accent-0: yellow;
+        --accent-1: #ffc800;
+        --danger: #e93e3e;
+        --danger-1: #c61212;
+        --success-0: #56ae56;
+        --warning-0: #ffdd9e;
+        --warning-1: #ebab34;
+        --warning-2: #da9005;
+        --dark: #1b2740;
+        --light: white;
+        --header-bg: var(--primary-0);
+        --container-max-width: 55rem;
+        --breakpoint: 70rem;
+        --dashboard-sidebar-width: 14rem;
+        --available-dashboard-sidebar-height: 100vh;
+
+        --dashboard-sidebar-background-color: var(--primary-0);
+
+        --qrcg-font-family: system-ui, -apple-system, Segoe UI, Roboto,
+            Helvetica, Arial, sans-serif, Apple Color Emoji,
+            Segoe UI Emoji;
+
+        --qrcg-rtl-font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+            sans-serif;
+    }
+
+    body.dashboard-page {
+        font-family: var(--qrcg-font-family);
+        opacity: 0;
+    }
+
+    body.resolved.dashboard-page {
+        animation: body-fade-in 0.5s 0.1s ease-in both;
+    }
+
+    @keyframes body-fade-in {
+        from {
+            opacity: 0.0000001;
+        }
+
+        to {
+            opacity: 100%;
+        }
+    }
+</style>
+
+
+    <script async src="http://127.0.0.1:8000/dashboard-Bi6RV9sa.js"></script>
+
+<style> :root {  } </style>
+
+
+
+<template class="custom-code" position="Dashboard: before content"></template>
+
+<template class="custom-code" position="Login Form: Before Inputs"></template>
+
+<template class="custom-code" position="Checkout: No Billing Method Available"></template>
+
+<template class="custom-code" position="Account Upgrade: Hosted Upgrade Page"></template>
+
+<template class="custom-code" position="Dashboard Sidebar: After Customer Menu"></template>
+
+
+
+    
+</head>
+
+<body class='path-base '>
+
+    
+
+    
+    <header class="website-header">
+        <div class="close-btn">
+            <svg viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" />
+            </svg>
+        </div>
+        <div class="open-btn">
+            <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+            </svg>
+        </div>
+        <div class="layout-box">
+            <div class="header-content">
+                <a href="/" class="logo" title="Logo">
+            <img src="http://127.0.0.1:8000/assets/images/logo-white.png" alt="Logo" />
+    </a>
+                <ul class="menu">
+                                            <li>
+                            <a href="/#pricing" >
+                                Pricing
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/#gradients"  target="_self" >
+                                Gradients
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/#custom-shapes" >
+                                Custom Shapes
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/#testimonials" >
+                                Testimonials
+                            </a>
+                        </li>
+                                    </ul>
+
+                <div class="push"></div>
+
+                <qrcg-language-picker></qrcg-language-picker>
+
+                <ul class="call-to-actions" state="guest">
+                    <li>
+                        <a href="/account/login" class="button login">
+                            Login
+                        </a>
+                    </li>
+                                            <li>
+                            <a href="/account/sign-up" class="button accent">
+                                Register
+                            </a>
+                        </li>
+                                    </ul>
+                <ul class="call-to-actions hidden" state="logged-in">
+                    <li>
+                        <a href="/account/login" class="button login">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="button accent logout-button">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="website-banner">
+                        <div class="background">
+                <blue-website-banner-background></blue-website-banner-background>
+            </div>
+            
+    <div class="layout-box small">
+        <h1 class="section-title">
+            Next-Gen <strong>QR Code</strong> Generator
+        </h1>
+
+        <p>Design <strong>beautiful</strong> QR codes, stand out from the crowd. Create <em>dynamic</em> QR codes to get scan statistics and insights.</p>
+
+    </div>
+
+    <div class="layout-box">
+        <div class="control">
+            <qrcg-website-banner></qrcg-website-banner>
+        </div>
+    </div>
+</section>
+    
+    <section class="features-in-numbers">
+    <div class="layout-box">
+        <div class="wrapper">
+                        <div class="number-box">
+                <span class="number">
+                    17
+                </span>
+                <label>
+                    QR Code <strong>Modules</strong>
+                </label>
+            </div>
+                        <div class="number-box">
+                <span class="number">
+                    20
+                </span>
+                <label>
+                    QR Code <strong>Types</strong>
+                </label>
+            </div>
+                        <div class="number-box">
+                <span class="number">
+                    50
+                </span>
+                <label>
+                    QR Code <strong>Shapes</strong>
+                </label>
+            </div>
+                        <div class="number-box">
+                <span class="number">
+                    5
+                </span>
+                <label>
+                    QR Code <strong>Stickers</strong>
+                </label>
+            </div>
+            
+        </div>
+    </div>
+</section>
+    
+    <section class="qrcode-showcase" id="gradients">
+        <div class="modal-content">
+            <div class="layout-box">
+                <div class="close-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" />
+                    </svg>
+                </div>
+                <h2 class="heading">
+                    Gradients you can build with <strong>Quick</strong>Code
+                </h2>
+                <p class="sub-heading">
+                    You can create gradients with multiple colors and unlimited stops. You can select gradient type either linear or radial. You can select the opacity of each color as well.
+                </p>
+                <div class="image-gallery">
+                    
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-1.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-2.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-3.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-4.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-5.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-6.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-7.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-8.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-9.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-10.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-11.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-12.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-13.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-14.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-15.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-16.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-17.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-18.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-19.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                            <div class="image animate-cascade">
+                            <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-20.png" alt="QR Code with gradient" loading='lazy' />
+                        </div>
+                                    </div>
+            </div>
+        </div>
+
+        <div class="layout-box">
+            <div class="wrapper" style="background-image: url(http://127.0.0.1:8000/assets/images/qrcode-showcase-bg-1.png)">
+                <div class="overlay">
+                    <div class="overlay-wrapper">
+                        <div class="text">
+                            Show more gradients
+                        </div>
+                        <div class="arrow">➞</div>
+                    </div>
+                </div>
+                <p class="tag">
+                    Advanced Gradient
+                </p>
+                <p class="explainer">
+                    Make your QR code stand out from the crowd, add gradients with unlimited color stops.
+                </p>
+                <div class="images">
+                    <div class="image">
+                        <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-1.png" alt="QR Code with gradient" loading='lazy' />
+                    </div>
+
+                    <div class="image">
+                        <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-5.png" alt="QR Code with gradient" loading='lazy' />
+                    </div>
+
+                    <div class="image">
+                        <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-15.png" alt="QR Code with gradient" loading='lazy' />
+                    </div>
+
+                    <div class="image">
+                        <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-20.png" alt="QR Code with gradient" loading='lazy' />
+                    </div>
+
+                    <div class="image">
+                        <img src="http://127.0.0.1:8000/assets/images/gradient/qrcode-gradient-showcase-17.png" alt="QR Code with gradient" loading='lazy' />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="qrcode-showcase accent" id="custom-shapes">
+    <div class="modal-content">
+        <div class="layout-box">
+            <div class="close-btn">
+                <svg viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" />
+                </svg>
+            </div>
+            <h2 class="heading">
+                Outlined shapes related to your niche
+            </h2>
+            <p class="sub-heading">
+                Over 50 shapes can be created with <strong>Quick</strong>Code, gradients can be added to each shape, you may also include the shape in stickers and you can add your logo to it.
+            </p>
+            <div class="image-gallery">
+                
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-1.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-2.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-3.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-4.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-5.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-6.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-7.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-8.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-9.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-10.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-11.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-12.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-13.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-14.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-15.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-16.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-17.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-18.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-19.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-20.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-21.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-22.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-23.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-24.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-25.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-26.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-27.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-28.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-29.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-30.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-31.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-32.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-33.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-34.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-35.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-36.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-37.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-38.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-39.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-40.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-41.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-42.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-43.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-44.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-45.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-46.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-47.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-48.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-49.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-50.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image animate-cascade">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-51.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                            </div>
+        </div>
+    </div>
+
+    <div class="layout-box">
+        <div class="wrapper"
+            style="background-image: url(http://127.0.0.1:8000/assets/images/qrcode-showcase-bg-2.png)">
+            <div class="overlay">
+                <div class="overlay-wrapper">
+                    <div class="text">
+                        Show more examples
+                    </div>
+                    <div class="arrow">➞</div>
+                </div>
+            </div>
+            <p class="tag">
+                Outlined Shapes
+            </p>
+            <p class="explainer">
+                Create QR code related to your business niche, 50+ shapes available to choose from.
+            </p>
+            <div class="images">
+                
+                                <div class="image">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-1.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-35.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-45.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-50.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                                <div class="image">
+                    <img src="http://127.0.0.1:8000/assets/images/outlined-shapes/qrcode-outlined-shape-48.jpeg" alt="QR Code with gradient" loading='lazy' />
+                </div>
+                            </div>
+        </div>
+    </div>
+</section>
+    
+    <section class="qrcode-types">
+    <div class="layout-box">
+        <div class="text-wrapper">
+            <p class="tag-line">
+                20 QR code types available
+            </p>
+            <h2 class="section-title">
+                QR code types to create engaging customer experience
+            </h2>
+            <p class="explainer">
+                Build an outstanding digital experience for users with QR Codes. Use QR codes on your websites, or stick it offline on a product or information point.
+            </p>
+        </div>
+        <div class="boxes">
+            
+            
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    🔗 Brazillian PIX
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Receive instant payment from your customers in Brazil by scanning the QR code.</p>
+            </div>
+            
+            
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    📞 Call
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Receive customer service or sales calls without  needing to deal the number anymore, let your  customers call you by opening their camera app and  clicking on the call button.</p>
+            </div>
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M14.24 10.56C13.93 11.8 12 11.17 11.4 11L11.95 8.82C12.57 9 14.56 9.26 14.24 10.56M11.13 12.12L10.53 14.53C11.27 14.72 13.56 15.45 13.9 14.09C14.26 12.67 11.87 12.3 11.13 12.12M21.7 14.42C20.36 19.78 14.94 23.04 9.58 21.7C4.22 20.36 .963 14.94 2.3 9.58C3.64 4.22 9.06 .964 14.42 2.3C19.77 3.64 23.03 9.06 21.7 14.42M14.21 8.05L14.66 6.25L13.56 6L13.12 7.73C12.83 7.66 12.54 7.59 12.24 7.53L12.68 5.76L11.59 5.5L11.14 7.29C10.9 7.23 10.66 7.18 10.44 7.12L10.44 7.12L8.93 6.74L8.63 7.91C8.63 7.91 9.45 8.1 9.43 8.11C9.88 8.22 9.96 8.5 9.94 8.75L8.71 13.68C8.66 13.82 8.5 14 8.21 13.95C8.22 13.96 7.41 13.75 7.41 13.75L6.87 15L8.29 15.36C8.56 15.43 8.82 15.5 9.08 15.56L8.62 17.38L9.72 17.66L10.17 15.85C10.47 15.93 10.76 16 11.04 16.08L10.59 17.87L11.69 18.15L12.15 16.33C14 16.68 15.42 16.54 16 14.85C16.5 13.5 16 12.7 15 12.19C15.72 12 16.26 11.55 16.41 10.57C16.61 9.24 15.59 8.53 14.21 8.05Z" />
+                    </svg> Crypto
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Encode your address on Bitcoin, Ethereum, Bitcoin  Cash, Lite Coin or Dash.</p>
+            </div>
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    ✉ Email
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Receive predefined emails, ask for feedback or collect users inquiries about a specified product. All of these can be done by utilizing the predefined subject and message body.</p>
+            </div>
+            
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+                    </svg> Event
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Allow your customers to save your next big event on  their mobile. Add recurring events, specify timezone  and the event venue and map location. All details  encoded in a single QR code that can be saved to the  mobile calendar after scan.</p>
+            </div>
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    📞 FaceTime
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Receive FaceTime calls with ease of use. Add your FaceTime id and let your customers connect to you with a simple scan.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
+                    </svg>
+Location
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Customers should reach you easily by scanning this  QR code. You can specify the app which might be  Google Maps, Waze or the default location app  installed on the mobile.</p>
+            </div>
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    🔗 Facebook Messenger
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Get direct messenger conversations after scanning this QR code.</p>
+            </div>
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    🔗 PayPal
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Receive paypal payments, create direct buy links or  recieve dontations through PayPal. You can also  specify taxes and shipping fees.</p>
+            </div>
+            
+            
+            
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    💬 SMS
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Let your audience vote for you in your next big competition :) Specifiy the destination number and the SMS text and users should only click on the send button.</p>
+            </div>
+            
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    🔗 Telegram
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Connect your users to your Telegram username by a simple scan.</p>
+            </div>
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    🗒 Static Text / URL
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Convey your message to your customers, add any text or URL with direct linking to the destination. Encode any information with this QR code type.</p>
+            </div>
+            
+            
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    🔗 URL QR Codes
+                </h3>
+
+                <div class="badge">
+                    
+                    Dynamic
+                </div>
+
+                <p>Create dynamic QR codes that can be changed later needing to re-print. Get insights and reports with dynamic QR codes.</p>
+            </div>
+            
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    🔗 Viber
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Allow your customers to send you direct Viber messages when scanning this QR code.</p>
+            </div>
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    🔗 WeChat
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Allow your customers to send you direct WeChat messages when scanning this QR code.</p>
+            </div>
+            
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" />
+                    </svg>
+WhatsApp
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Who dosn't use WhatsApp? Receive customer messages  directly to your number with a predefined message so  you will know what the customer is inquiring about.</p>
+            </div>
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12,21L15.6,16.2C14.6,15.45 13.35,15 12,15C10.65,15 9.4,15.45 8.4,16.2L12,21M12,3C7.95,3 4.21,4.34 1.2,6.6L3,9C5.5,7.12 8.62,6 12,6C15.38,6 18.5,7.12 21,9L22.8,6.6C19.79,4.34 16.05,3 12,3M12,9C9.3,9 6.81,9.89 4.8,11.4L6.6,13.8C8.1,12.67 9.97,12 12,12C14.03,12 15.9,12.67 17.4,13.8L19.2,11.4C17.19,9.89 14.7,9 12,9Z" />
+                    </svg>
+WiFi
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Many would ask about your guest area WiFi password,  it should be easier! Create a QR code that would  join your WiFi automatically after scan.</p>
+            </div>
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    🔗 Zoom
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Join Zoom meetings by encoding your Meeting ID and Password.</p>
+            </div>
+            
+            
+            <div class="single-box">
+                <h3 class="heading">
+                    👤 vCard
+                </h3>
+
+                <div class="badge">
+                    
+                    Static
+                </div>
+
+                <p>Save your business card details in your customer phone with just a single scan. Nobody should enter your contact details manually anymore.</p>
+            </div>
+                    </div>
+        <div class="show-more">
+            Show more types
+        </div>
+    </div>
+</section>
+    
+    <section class="qrcode-stats">
+        <div class="layout-box">
+            <div class="text-wrapper">
+                <p class="tag-line">
+                    Advanced QR Code Stats
+
+                </p>
+                <h2 class="section-title">
+                    Insights to help you understand your audience.
+                </h2>
+                <p class="explainer">
+                    Get insights about daily scans, hour of the day, device types, and operating system, in addition to countries and cities.
+                </p>
+            </div>
+
+            <img class="main-image" src="http://127.0.0.1:8000/assets/images/qrcode-stats.jpg" alt="Statistics" loading="lazy" />
+
+        </div>
+    </section>
+    
+    <section class="testimonials" id="testimonials">
+    <div class="main-testimonial">
+        <div class="layout-box">
+            <h2 class="heading">
+                Trust our customers words
+            </h2>
+            <p class="text">
+                “After using the QR code generator, I was amazed about the quality of this product. It was very well thought out and works great! Not only does the app work great, but the support is wonderful. I highly recommend!
+            </p>
+            <div class="details">
+                <label>
+                    John Doe
+                </label>
+                January 2023
+            </div>
+        </div>
+
+        <img src="http://127.0.0.1:8000/assets/images/quote.svg" class="quote-image" alt="Quote image" />
+    </div>
+
+    
+        <div class="testimonials-track">
+                <div class="testimonial-item">
+            <p>“After using the QR code generator, I was amazed about the quality of this product. It was very well thought out and works great! Not only does the app work great, but the support is wonderful. I highly recommend!</p>
+
+        </div>
+                <div class="testimonial-item">
+            <p>“After using the QR code generator, I was amazed about the quality of this product. It was very well thought out and works great! Not only does the app work great, but the support is wonderful. I highly recommend!</p>
+
+        </div>
+                <div class="testimonial-item">
+            <p>“After using the QR code generator, I was amazed about the quality of this product. It was very well thought out and works great! Not only does the app work great, but the support is wonderful. I highly recommend!</p>
+
+        </div>
+                <div class="testimonial-item">
+            <p>“After using the QR code generator, I was amazed about the quality of this product. It was very well thought out and works great! Not only does the app work great, but the support is wonderful. I highly recommend!</p>
+
+        </div>
+                <div class="testimonial-item">
+            <p>“After using the QR code generator, I was amazed about the quality of this product. It was very well thought out and works great! Not only does the app work great, but the support is wonderful. I highly recommend!</p>
+
+        </div>
+                <div class="testimonial-item">
+            <p>“After using the QR code generator, I was amazed about the quality of this product. It was very well thought out and works great! Not only does the app work great, but the support is wonderful. I highly recommend!</p>
+
+        </div>
+                <div class="testimonial-item">
+            <p>“After using the QR code generator, I was amazed about the quality of this product. It was very well thought out and works great! Not only does the app work great, but the support is wonderful. I highly recommend!</p>
+
+        </div>
+                <div class="testimonial-item">
+            <p>“After using the QR code generator, I was amazed about the quality of this product. It was very well thought out and works great! Not only does the app work great, but the support is wonderful. I highly recommend!</p>
+
+        </div>
+            </div>
+    </section>
+    
+    <section class="pricing" id="pricing">
+        <div class="text-wrapper">
+            <p class="tag-line">
+                No hidden fees
+            </p>
+            <h2 class="section-title">
+                Straightforward Pricing
+            </h2>
+        </div>
+
+        
+        <div class="pricing-switch">
+            <div class="pricing-switch-box">
+                <div class="switch-item " tab-id="monthly">
+                    Monthly Billing
+                </div>
+                <div class="switch-item active" tab-id="yearly">
+                    Yearly Billing
+                </div>
+
+                            </div>
+        </div>
+
+        <div class="layout-box">
+            <div class="blocks">
+                <div class="items-wrapper" style="background-image: url(http://127.0.0.1:8000/assets/images/qrcode-showcase-bg-1.png)">
+
+                    <div class="tag" tab-id="yearly">
+                        Paid yearly
+                    </div>
+
+                    <div class="tag" tab-id="monthly">
+                        Paid monthly
+                    </div>
+
+                    <div class="tag" tab-id="life-time">
+                        One Time
+                    </div>
+
+                    <div class="items">
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="free-trial-notice">
+    <div class="layout-box">
+        <div class="text">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>information</title>
+                <path
+                    d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+            </svg>
+
+            Get 15 days free trial after sign up, no credit card is required.
+        </div>
+    </div>
+</section>
+    
+        
+
+    
+
+    <div class="go-to-top-button">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" />
+    </svg>
+</div>
+
+<div class="layout-gap"></div>
+
+
+    <footer class="website-footer">
+        <div class="layout-box">
+            <div class="footer-wrapper">
+                <div class="footer-logo-block">
+                    <a href="/" class="logo" title="Logo">
+            <img src="http://127.0.0.1:8000/assets/images/logo-white.png" alt="Logo" />
+    </a>
+                    <div class="socials">
+                            <a
+                                href="https://instagram.com/"
+                                target="_blank"
+                                class="social-icon"
+                                title="instagram: @handle"
+                            >
+                                <svg
+                                    style="width: 24px; height: 24px"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                title="twitter: @handle"
+                                href="https://twitter.com/"
+                                target="_blank"
+                                class="social-icon"
+                            >
+                            <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24"   >
+                              <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" fill="currentColor"/>
+                            </svg>
+                            </a>
+                        </div>
+                    <qrcg-language-picker></qrcg-language-picker>
+                </div>
+                                    <div class="list">
+                        <h3>Company</h3>
+                        <ul>
+                                                            <li>
+                                    <a href="/contact" >
+                                        Contact
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="#support-portal-link" >
+                                        Support
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                                    <div class="list">
+                        <h3>Resources</h3>
+                        <ul>
+                                                            <li>
+                                    <a href="/terms-and-conditions" >
+                                        Terms and conditions
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="/privacy-policy" >
+                                        Privacy policy
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="/blog"  target="_self" >
+                                        Blog
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                            </div>
+            <div class="footer-copy">
+                QR Code Generator © 2025 All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    
+
+    
+
+    <!--HTML Cookie Consent Banner-->
+    <div id="cookie-consent" class="hidden-div">
+        <div class="main-text">
+            <span id="cookie-consent-msg">
+                This site uses cookies. Visit our cookies policy page or click the link in any footer for more information and to change your preferences.
+            </span>
+            <span>
+                <a id="cookie-consent-more-info-1" target="_blank" href="/privacy-policy">
+                    Privacy Policy
+                </a>
+            </span>
+
+        </div>
+
+        <div class="controls">
+            <a id="button-accept-all" class="button primary" href="#">
+                Accept All Cookies
+            </a>
+            <a id="accept-necessary" class="button accent" href="#">
+                Accept Only Essential Cookies
+            </a>
+            <a id="customize-link" class="button outline full-width" href="#">
+                Customize
+            </a>
+        </div>
+
+    </div>
+
+    <!--HTML Popup Cookie Consent Banner-->
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <h3>
+                Cookie Settings
+            </h3>
+            <hr>
+            <label class="checkbox-label">
+                <input class="my-input-class" type="checkbox" name="necessary" checked disabled>
+                <span>
+                    Necessary
+                </span>
+            </label>
+            <label class="checkbox-label">
+                <input class="my-input-class" type="checkbox" name="preferences"><span>Preferences</span>
+            </label>
+            <label class="checkbox-label">
+                <input class="my-input-class" type="checkbox" name="statistics"><span>Statistics</span>
+            </label>
+            <label class="checkbox-label">
+                <input class="my-input-class" type="checkbox" name="marketing"><span>Marketing</span>
+            </label>
+            <label class="checkbox-label">
+                <input class="my-input-class" type="checkbox" name="others"><span>Others</span>
+            </label>
+            <a id="cookie-consent-more-info-2" style="color: black; font-size: small;" target="_blank" href="/privacy-policy">Privacy Policy</a>
+            <hr>
+            <div class="controls">
+                <button id="popup-ok" class="button primary">Apply</button>
+                <button id="popup-cancel" class="button danger">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+";

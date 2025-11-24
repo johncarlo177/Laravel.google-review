@@ -1,0 +1,27 @@
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    svg {
+        pointer-events: none;
+        width: 2rem;
+        height: 2rem;
+        * {
+            fill: orange;
+        }
+    }
+
+    a {
+        display: flex;
+        background-color: white;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        border-radius: 50%;
+        box-shadow: var(--box-shadow);
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}

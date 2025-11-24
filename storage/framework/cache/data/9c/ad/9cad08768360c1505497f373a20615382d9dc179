@@ -1,0 +1,131 @@
+1764254060a:155:{s:84:"App\Support\SoftwareUpdate\MandatorySeeders\ColorCustomizationFeatureSeeder::lastRun";a:2:{s:2:"id";i:1;s:5:"value";s:27:"2025-11-24T09:02:52.277468Z";}s:84:"App\Support\SoftwareUpdate\MandatorySeeders\ColorCustomizationFeatureSeeder::version";a:2:{s:2:"id";i:2;s:5:"value";s:7:"v2.26.2";}s:69:"App\Support\SoftwareUpdate\MandatorySeeders\CustomCodeSeeder::lastRun";a:2:{s:2:"id";i:3;s:5:"value";s:27:"2025-11-24T09:02:52.378415Z";}s:69:"App\Support\SoftwareUpdate\MandatorySeeders\CustomCodeSeeder::version";a:2:{s:2:"id";i:4;s:5:"value";s:8:"1.19.3/1";}s:70:"App\Support\SoftwareUpdate\MandatorySeeders\FileRemovalSeeder::lastRun";a:2:{s:2:"id";i:5;s:5:"value";s:27:"2025-11-24T09:02:52.487143Z";}s:70:"App\Support\SoftwareUpdate\MandatorySeeders\FileRemovalSeeder::version";a:2:{s:2:"id";i:6;s:5:"value";s:4:"2.36";}s:23:"app.website-header-menu";a:2:{s:2:"id";i:7;s:5:"value";a:1:{i:0;a:2:{s:4:"name";N;s:5:"items";a:4:{i:0;a:7:{s:5:"label";s:7:"Pricing";s:4:"link";s:9:"/#pricing";s:6:"target";N;s:8:"hasBadge";b:0;s:5:"badge";N;s:20:"badgeBackgroundColor";s:7:"#ff0000";s:14:"badgeTextColor";s:7:"#ffffff";}i:1;a:7:{s:5:"label";s:9:"Gradients";s:4:"link";s:11:"/#gradients";s:6:"target";s:5:"_self";s:8:"hasBadge";b:0;s:5:"badge";N;s:20:"badgeBackgroundColor";s:7:"#ff0000";s:14:"badgeTextColor";s:7:"#ffffff";}i:2;a:7:{s:5:"label";s:13:"Custom Shapes";s:4:"link";s:15:"/#custom-shapes";s:6:"target";N;s:8:"hasBadge";b:0;s:5:"badge";N;s:20:"badgeBackgroundColor";s:7:"#ff0000";s:14:"badgeTextColor";s:7:"#ffffff";}i:3;a:7:{s:5:"label";s:12:"Testimonials";s:4:"link";s:14:"/#testimonials";s:6:"target";N;s:8:"hasBadge";b:0;s:5:"badge";N;s:20:"badgeBackgroundColor";s:7:"#ff0000";s:14:"badgeTextColor";s:7:"#ffffff";}}}}}s:23:"app.website-footer-menu";a:2:{s:2:"id";i:8;s:5:"value";a:2:{i:0;a:2:{s:4:"name";s:7:"Company";s:5:"items";a:2:{i:0;a:7:{s:5:"label";s:7:"Contact";s:4:"link";s:8:"/contact";s:6:"target";N;s:8:"hasBadge";b:0;s:5:"badge";N;s:20:"badgeBackgroundColor";s:7:"#ff0000";s:14:"badgeTextColor";s:7:"#ffffff";}i:1;a:7:{s:5:"label";s:7:"Support";s:4:"link";s:20:"#support-portal-link";s:6:"target";N;s:8:"hasBadge";b:0;s:5:"badge";N;s:20:"badgeBackgroundColor";s:7:"#ff0000";s:14:"badgeTextColor";s:7:"#ffffff";}}}i:1;a:2:{s:4:"name";s:9:"Resources";s:5:"items";a:3:{i:0;a:7:{s:5:"label";s:20:"Terms and conditions";s:4:"link";s:21:"/terms-and-conditions";s:6:"target";N;s:8:"hasBadge";b:0;s:5:"badge";N;s:20:"badgeBackgroundColor";s:7:"#ff0000";s:14:"badgeTextColor";s:7:"#ffffff";}i:1;a:7:{s:5:"label";s:14:"Privacy policy";s:4:"link";s:15:"/privacy-policy";s:6:"target";N;s:8:"hasBadge";b:0;s:5:"badge";N;s:20:"badgeBackgroundColor";s:7:"#ff0000";s:14:"badgeTextColor";s:7:"#ffffff";}i:2;a:7:{s:5:"label";s:4:"Blog";s:4:"link";s:5:"/blog";s:6:"target";s:5:"_self";s:8:"hasBadge";b:0;s:5:"badge";N;s:20:"badgeBackgroundColor";s:7:"#ff0000";s:14:"badgeTextColor";s:7:"#ffffff";}}}}}s:21:"dashboard.client-menu";a:2:{s:2:"id";i:9;s:5:"value";N;}s:63:"App\Support\SoftwareUpdate\MandatorySeeders\MenuSeeder::lastRun";a:2:{s:2:"id";i:10;s:5:"value";s:27:"2025-11-24T09:02:52.490022Z";}s:63:"App\Support\SoftwareUpdate\MandatorySeeders\MenuSeeder::version";a:2:{s:2:"id";i:11;s:5:"value";s:5:"v2.00";}s:35:"notifications.trial-expired.enabled";a:2:{s:2:"id";i:12;s:5:"value";b:1;}s:41:"notifications.trial-expired.email_subject";a:2:{s:2:"id";i:13;s:5:"value";s:34:"Your trial subscription is expired";}s:38:"notifications.trial-expired.email_body";a:2:{s:2:"id";i:14;s:5:"value";s:156:"# Hello,
+
+Your trial subscription has been expired.
+
+Your dynamic QR codes will be disabled.
+
+You can upgrade your subscription from [here](PLANS_PAGE_URL).";}s:36:"notifications.trial-expired.sms_body";a:2:{s:2:"id";i:15;s:5:"value";s:98:"Your trial subscription has been expired. To renew, please open the following URL:
+
+PLANS_PAGE_URL";}s:48:"notifications.subscription-expiring-soon.enabled";a:2:{s:2:"id";i:16;s:5:"value";b:1;}s:54:"notifications.subscription-expiring-soon.email_subject";a:2:{s:2:"id";i:17;s:5:"value";s:36:"Your subscription is about to expire";}s:51:"notifications.subscription-expiring-soon.email_body";a:2:{s:2:"id";i:18;s:5:"value";s:180:"# Hello,
+
+Your subscription is about to expire.
+
+Your dynamic QR codes will be disabled after subscription expiration.
+
+You can renew your subscription from [here](PLANS_PAGE_URL).";}s:49:"notifications.subscription-expiring-soon.sms_body";a:2:{s:2:"id";i:19;s:5:"value";s:94:"Your subscription is about to expire. To renew, please open the following URL:
+
+PLANS_PAGE_URL";}s:55:"notifications.subscription-expiring-soon.remaining_days";a:2:{s:2:"id";i:20;s:5:"value";i:3;}s:42:"notifications.subscription-expired.enabled";a:2:{s:2:"id";i:21;s:5:"value";b:1;}s:48:"notifications.subscription-expired.email_subject";a:2:{s:2:"id";i:22;s:5:"value";s:28:"Your subscription is expired";}s:45:"notifications.subscription-expired.email_body";a:2:{s:2:"id";i:23;s:5:"value";s:148:"# Hello,
+
+Your subscription has been expired.
+
+Your dynamic QR codes will be disabled.
+
+You can renew your subscription from [here](PLANS_PAGE_URL).";}s:43:"notifications.subscription-expired.sms_body";a:2:{s:2:"id";i:24;s:5:"value";s:92:"Your subscription has been expired. To renew, please open the following URL:
+
+PLANS_PAGE_URL";}s:50:"notifications.dynamic-qrcode-limit-reached.enabled";a:2:{s:2:"id";i:25;s:5:"value";b:1;}s:56:"notifications.dynamic-qrcode-limit-reached.email_subject";a:2:{s:2:"id";i:26;s:5:"value";s:30:"Dynamic QR codes limit reached";}s:53:"notifications.dynamic-qrcode-limit-reached.email_body";a:2:{s:2:"id";i:27;s:5:"value";s:151:"# Hello,
+
+You can no longer create new dynamic QR codes with your current subscription,
+
+You can upgrade your subscription from [here](PLANS_PAGE_URL).";}s:51:"notifications.dynamic-qrcode-limit-reached.sms_body";a:2:{s:2:"id";i:28;s:5:"value";s:118:"You can no longer create new dynamic QR codes with your current subscription
+
+Upgrade your subcription: PLANS_PAGE_URL";}s:40:"notifications.scan-limit-reached.enabled";a:2:{s:2:"id";i:29;s:5:"value";b:1;}s:46:"notifications.scan-limit-reached.email_subject";a:2:{s:2:"id";i:30;s:5:"value";s:18:"Scan limit reached";}s:43:"notifications.scan-limit-reached.email_body";a:2:{s:2:"id";i:31;s:5:"value";s:153:"# Hello,
+
+Your dynamic QR codes cannot recieve more scans with your current subscription,
+
+You can upgrade your subscription from [here](PLANS_PAGE_URL).";}s:41:"notifications.scan-limit-reached.sms_body";a:2:{s:2:"id";i:32;s:5:"value";s:121:"Your dynamic QR codes cannot recieve more scans with your current subscription,
+
+Upgrade your subcription: PLANS_PAGE_URL";}s:33:"notifications.invite-user.enabled";a:2:{s:2:"id";i:33;s:5:"value";b:1;}s:39:"notifications.invite-user.email_subject";a:2:{s:2:"id";i:34;s:5:"value";s:27:"You are invited to APP_NAME";}s:36:"notifications.invite-user.email_body";a:2:{s:2:"id";i:35;s:5:"value";s:215:"# Hello INVITED_USER_NAME,
+
+ACCOUNT_OWNER invited you to participate in **FOLDER_NAME** folder. 
+
+Here is your login details:
+
+Login URL: LOGIN_URL
+
+Email: **INVITED_EMAIL_ADDRESS**
+
+Password: **GENERATED_PASSWORD**";}s:34:"notifications.invite-user.sms_body";a:2:{s:2:"id";i:36;s:5:"value";s:145:"ACCOUNT_OWNER invited you to participate in FOLDER_NAME folder.
+
+Login URL: LOGIN_URL
+
+Email: INVITED_EMAIL_ADDRESS
+
+Password: GENERATED_PASSWORD";}s:46:"notifications.bulk-operation-completed.enabled";a:2:{s:2:"id";i:37;s:5:"value";b:1;}s:52:"notifications.bulk-operation-completed.email_subject";a:2:{s:2:"id";i:38;s:5:"value";s:42:"BULK_OPERATION_NAME Completed Successfully";}s:49:"notifications.bulk-operation-completed.email_body";a:2:{s:2:"id";i:39;s:5:"value";s:107:"# Hello,
+
+Bulk operation is completed successfully.
+
+You can download QR Codes from [here](OPERATION_LINK).";}s:47:"notifications.bulk-operation-completed.sms_body";a:2:{s:2:"id";i:40;s:5:"value";s:104:"Hello,
+
+Bulk operation is completed successfully.
+
+You can download QR Codes from [here](DOWNLOAD_LINK).";}s:40:"notifications.lead-form-response.enabled";a:2:{s:2:"id";i:41;s:5:"value";b:1;}s:46:"notifications.lead-form-response.email_subject";a:2:{s:2:"id";i:42;s:5:"value";s:31:"You have received a new lead :)";}s:43:"notifications.lead-form-response.email_body";a:2:{s:2:"id";i:43;s:5:"value";s:91:"# Hello,
+
+You have received a new lead response, details can be found below:
+
+FORM_RESPONSE";}s:41:"notifications.lead-form-response.sms_body";a:2:{s:2:"id";i:44;s:5:"value";s:91:"# Hello,
+
+You have received a new lead response, details can be found below:
+
+FORM_RESPONSE";}s:42:"notifications.custom-form-response.enabled";a:2:{s:2:"id";i:45;s:5:"value";b:1;}s:48:"notifications.custom-form-response.email_subject";a:2:{s:2:"id";i:46;s:5:"value";s:22:"New response received.";}s:45:"notifications.custom-form-response.email_body";a:2:{s:2:"id";i:47;s:5:"value";s:86:"# Hello,
+
+You have received a new response, details can be found below:
+
+FORM_RESPONSE";}s:43:"notifications.custom-form-response.sms_body";a:2:{s:2:"id";i:48;s:5:"value";s:91:"# Hello,
+
+You have received a new lead response, details can be found below:
+
+FORM_RESPONSE";}s:25:"notifications.otp.enabled";a:2:{s:2:"id";i:49;s:5:"value";b:1;}s:31:"notifications.otp.email_subject";a:2:{s:2:"id";i:50;s:5:"value";s:27:"OTP Verification - OTP_CODE";}s:28:"notifications.otp.email_body";a:2:{s:2:"id";i:51;s:5:"value";s:62:"# Hello ACCOUNT_OWNER,
+
+Your OTP code is OTP_CODE.
+
+Thank you.";}s:26:"notifications.otp.sms_body";a:2:{s:2:"id";i:52;s:5:"value";s:26:"Your OTP code is OTP_CODE.";}s:38:"notifications.welcome-customer.enabled";a:2:{s:2:"id";i:53;s:5:"value";b:1;}s:44:"notifications.welcome-customer.email_subject";a:2:{s:2:"id";i:54;s:5:"value";s:19:"Welcome To APP_NAME";}s:41:"notifications.welcome-customer.email_body";a:2:{s:2:"id";i:55;s:5:"value";s:1051:"# 🤖 Welcome to APP_NAME!
+
+Hi CUSTOMER_NAME,
+
+Welcome to **APP_NAME**, your new home for creating **artistic and fully customizable QR codes**! 🎉  
+
+Our platform lets you design QR codes that truly stand out — from stylish personal designs to professional marketing materials.  
+With support for **32 different QR code types**, including both **dynamic** and **static** options, you'll have the flexibility to create exactly what you need for any project or purpose.
+
+Here's what makes us special:
+- **Beautiful, customizable designs** that reflect your brand or personality  
+- **32 QR code types** to cover every use case — from links and text to files and contact info  
+- **Dynamic QR codes** that can be updated anytime, and **static codes** for quick, permanent sharing  
+
+We're thrilled to have you with us and can't wait to see your creativity in action.  
+If you have any questions or need assistance, feel free to reply to this email.
+
+Thanks for joining **APP_NAME** — where functionality meets creativity, one QR code at a time.";}s:39:"notifications.welcome-customer.sms_body";a:2:{s:2:"id";i:56;s:5:"value";s:0:"";}s:35:"notifications.welcome-admin.enabled";a:2:{s:2:"id";i:57;s:5:"value";b:1;}s:41:"notifications.welcome-admin.email_subject";a:2:{s:2:"id";i:58;s:5:"value";s:21:"New User Registration";}s:38:"notifications.welcome-admin.email_body";a:2:{s:2:"id";i:59;s:5:"value";s:421:"# 🆕 New User Registration
+
+Hello ADMIN_NAME,
+
+A new user has just registered on **APP_NAME**.
+
+---
+
+### 👤 User Details
+- **Name:** CUSTOMER_NAME  
+- **Email:** CUSTOMER_EMAIL
+---
+
+### 🧭 Next Steps
+You can view and manage this user's account in the [Admin Dashboard](USER_MANAGEMENT_URL).  
+
+If this registration seems suspicious, you may delete the newly regisetered user from the [Users Page](USERS_SCREEN_URL).";}s:36:"notifications.welcome-admin.sms_body";a:2:{s:2:"id";i:60;s:5:"value";s:0:"";}s:72:"App\Support\SoftwareUpdate\MandatorySeeders\NotificationsSeeder::lastRun";a:2:{s:2:"id";i:61;s:5:"value";s:27:"2025-11-24T09:02:52.539751Z";}s:72:"App\Support\SoftwareUpdate\MandatorySeeders\NotificationsSeeder::version";a:2:{s:2:"id";i:62;s:5:"value";s:8:"v2.134/4";}s:23:"qrType.app-download.url";a:2:{s:2:"id";i:63;s:5:"value";s:30:"app-download-qr-code-generator";}s:19:"qrType.biolinks.url";a:2:{s:2:"id";i:64;s:5:"value";s:26:"biolinks-qr-code-generator";}s:20:"qrType.brazilpix.url";a:2:{s:2:"id";i:65;s:5:"value";s:27:"brazilpix-qr-code-generator";}s:27:"qrType.business-profile.url";a:2:{s:2:"id";i:66;s:5:"value";s:34:"business-profile-qr-code-generator";}s:26:"qrType.business-review.url";a:2:{s:2:"id";i:67;s:5:"value";s:33:"business-review-qr-code-generator";}s:15:"qrType.call.url";a:2:{s:2:"id";i:68;s:5:"value";s:22:"call-qr-code-generator";}s:17:"qrType.crypto.url";a:2:{s:2:"id";i:69;s:5:"value";s:24:"crypto-qr-code-generator";}s:16:"qrType.email.url";a:2:{s:2:"id";i:70;s:5:"value";s:23:"email-qr-code-generator";}s:24:"qrType.email-dynamic.url";a:2:{s:2:"id";i:71;s:5:"value";s:31:"email-dynamic-qr-code-generator";}s:16:"qrType.event.url";a:2:{s:2:"id";i:72;s:5:"value";s:23:"event-qr-code-generator";}s:19:"qrType.facetime.url";a:2:{s:2:"id";i:73;s:5:"value";s:26:"facetime-qr-code-generator";}s:22:"qrType.file-upload.url";a:2:{s:2:"id";i:74;s:5:"value";s:29:"file-upload-qr-code-generator";}s:24:"qrType.google-review.url";a:2:{s:2:"id";i:75;s:5:"value";s:31:"google-review-qr-code-generator";}s:20:"qrType.lead-form.url";a:2:{s:2:"id";i:76;s:5:"value";s:27:"lead-form-qr-code-generator";}s:19:"qrType.location.url";a:2:{s:2:"id";i:77;s:5:"value";s:26:"location-qr-code-generator";}s:28:"qrType.facebookmessenger.url";a:2:{s:2:"id";i:78;s:5:"value";s:35:"facebookmessenger-qr-code-generator";}s:17:"qrType.paypal.url";a:2:{s:2:"id";i:79;s:5:"value";s:24:"paypal-qr-code-generator";}s:28:"qrType.product-catalogue.url";a:2:{s:2:"id";i:80;s:5:"value";s:35:"product-catalogue-qr-code-generator";}s:26:"qrType.restaurant-menu.url";a:2:{s:2:"id";i:81;s:5:"value";s:33:"restaurant-menu-qr-code-generator";}s:17:"qrType.resume.url";a:2:{s:2:"id";i:82;s:5:"value";s:24:"resume-qr-code-generator";}s:14:"qrType.sms.url";a:2:{s:2:"id";i:83;s:5:"value";s:21:"sms-qr-code-generator";}s:22:"qrType.sms-dynamic.url";a:2:{s:2:"id";i:84;s:5:"value";s:29:"sms-dynamic-qr-code-generator";}s:19:"qrType.telegram.url";a:2:{s:2:"id";i:85;s:5:"value";s:26:"telegram-qr-code-generator";}s:15:"qrType.text.url";a:2:{s:2:"id";i:86;s:5:"value";s:22:"text-qr-code-generator";}s:14:"qrType.upi.url";a:2:{s:2:"id";i:87;s:5:"value";s:21:"upi-qr-code-generator";}s:22:"qrType.upi-dynamic.url";a:2:{s:2:"id";i:88;s:5:"value";s:29:"upi-dynamic-qr-code-generator";}s:14:"qrType.url.url";a:2:{s:2:"id";i:89;s:5:"value";s:21:"url-qr-code-generator";}s:21:"qrType.vcard-plus.url";a:2:{s:2:"id";i:90;s:5:"value";s:28:"vcard-plus-qr-code-generator";}s:16:"qrType.viber.url";a:2:{s:2:"id";i:91;s:5:"value";s:23:"viber-qr-code-generator";}s:17:"qrType.wechat.url";a:2:{s:2:"id";i:92;s:5:"value";s:24:"wechat-qr-code-generator";}s:26:"qrType.website-builder.url";a:2:{s:2:"id";i:93;s:5:"value";s:33:"website-builder-qr-code-generator";}s:19:"qrType.whatsapp.url";a:2:{s:2:"id";i:94;s:5:"value";s:26:"whatsapp-qr-code-generator";}s:15:"qrType.wifi.url";a:2:{s:2:"id";i:95;s:5:"value";s:22:"wifi-qr-code-generator";}s:15:"qrType.zoom.url";a:2:{s:2:"id";i:96;s:5:"value";s:22:"zoom-qr-code-generator";}s:16:"qrType.vcard.url";a:2:{s:2:"id";i:97;s:5:"value";s:23:"vcard-qr-code-generator";}s:63:"App\Support\SoftwareUpdate\MandatorySeeders\PageSeeder::lastRun";a:2:{s:2:"id";i:98;s:5:"value";s:27:"2025-11-24T09:02:52.683280Z";}s:63:"App\Support\SoftwareUpdate\MandatorySeeders\PageSeeder::version";a:2:{s:2:"id";i:99;s:5:"value";s:6:"v2.105";}s:73:"App\Support\SoftwareUpdate\MandatorySeeders\PaymentGatewaySeeder::lastRun";a:2:{s:2:"id";i:100;s:5:"value";s:27:"2025-11-24T14:34:20.621308Z";}s:73:"App\Support\SoftwareUpdate\MandatorySeeders\PaymentGatewaySeeder::version";a:2:{s:2:"id";i:101;s:5:"value";s:0:"";}s:38:"payment_processors.paypal.display_name";a:2:{s:2:"id";i:102;s:5:"value";s:6:"PayPal";}s:41:"payment_processors.paypal.pay_button_text";a:2:{s:2:"id";i:103;s:5:"value";s:15:"Pay with PayPal";}s:38:"payment_processors.stripe.display_name";a:2:{s:2:"id";i:104;s:5:"value";s:11:"Credit Card";}s:41:"payment_processors.stripe.pay_button_text";a:2:{s:2:"id";i:105;s:5:"value";s:7:"Pay Now";}s:30:"payment_processors.paddle.mode";a:2:{s:2:"id";i:106;s:5:"value";s:7:"sandbox";}s:38:"payment_processors.paddle.display_name";a:2:{s:2:"id";i:107;s:5:"value";s:11:"Credit Card";}s:41:"payment_processors.paddle.pay_button_text";a:2:{s:2:"id";i:108;s:5:"value";s:7:"Pay Now";}s:40:"payment_processors.razorpay.display_name";a:2:{s:2:"id";i:109;s:5:"value";s:11:"Credit Card";}s:43:"payment_processors.razorpay.pay_button_text";a:2:{s:2:"id";i:110;s:5:"value";s:38:"अब भुगतान करें";}s:43:"payment_processors.mercadopago.display_name";a:2:{s:2:"id";i:111;s:5:"value";s:12:"Mercado Pago";}s:46:"payment_processors.mercadopago.pay_button_text";a:2:{s:2:"id";i:112;s:5:"value";s:5:"Pagar";}s:37:"payment_processors.paytr.display_name";a:2:{s:2:"id";i:113;s:5:"value";s:11:"Credit Card";}s:40:"payment_processors.paytr.pay_button_text";a:2:{s:2:"id";i:114;s:5:"value";s:11:"Şimdi öde";}s:39:"payment_processors.payfast.display_name";a:2:{s:2:"id";i:115;s:5:"value";s:11:"Credit Card";}s:42:"payment_processors.payfast.pay_button_text";a:2:{s:2:"id";i:116;s:5:"value";s:7:"Pay Now";}s:38:"payment_processors.xendit.display_name";a:2:{s:2:"id";i:117;s:5:"value";s:11:"Credit Card";}s:41:"payment_processors.xendit.pay_button_text";a:2:{s:2:"id";i:118;s:5:"value";s:7:"Pay Now";}s:38:"payment_processors.mollie.display_name";a:2:{s:2:"id";i:119;s:5:"value";s:11:"Credit Card";}s:41:"payment_processors.mollie.pay_button_text";a:2:{s:2:"id";i:120;s:5:"value";s:7:"Pay Now";}s:40:"payment_processors.paystack.display_name";a:2:{s:2:"id";i:121;s:5:"value";s:11:"Credit Card";}s:43:"payment_processors.paystack.pay_button_text";a:2:{s:2:"id";i:122;s:5:"value";s:7:"Pay Now";}s:44:"payment_processors.alipay-china.display_name";a:2:{s:2:"id";i:123;s:5:"value";s:11:"Credit Card";}s:47:"payment_processors.alipay-china.pay_button_text";a:2:{s:2:"id";i:124;s:5:"value";s:7:"Pay Now";}s:40:"payment_processors.yookassa.display_name";a:2:{s:2:"id";i:125;s:5:"value";s:11:"Credit Card";}s:43:"payment_processors.yookassa.pay_button_text";a:2:{s:2:"id";i:126;s:5:"value";s:7:"Pay Now";}s:44:"payment_processors.paykickstart.display_name";a:2:{s:2:"id";i:127;s:5:"value";s:11:"Credit Card";}s:47:"payment_processors.paykickstart.pay_button_text";a:2:{s:2:"id";i:128;s:5:"value";s:7:"Pay Now";}s:46:"payment_processors.paykickstart.email_template";a:2:{s:2:"id";i:129;s:5:"value";s:132:"Hello FULL_NAME,
+
+Thank you for subscribing to PLAN_NAME plan. Here is your login credentials:
+    
+Email: EMAIL
+
+Password: PASSWORD";}s:54:"payment_processors.paykickstart.upgrade_email_template";a:2:{s:2:"id";i:130;s:5:"value";s:137:"Hello FULL_NAME,
+
+Thank you for subscribing to PLAN_NAME plan. Your account has been upgraded and your login credentials remain the same.";}s:42:"payment_processors.payu-latam.display_name";a:2:{s:2:"id";i:131;s:5:"value";s:11:"Credit Card";}s:45:"payment_processors.payu-latam.pay_button_text";a:2:{s:2:"id";i:132;s:5:"value";s:7:"Pay Now";}s:41:"payment_processors.2checkout.display_name";a:2:{s:2:"id";i:133;s:5:"value";s:11:"Credit Card";}s:44:"payment_processors.2checkout.pay_button_text";a:2:{s:2:"id";i:134;s:5:"value";s:7:"Pay Now";}s:39:"payment_processors.dintero.display_name";a:2:{s:2:"id";i:135;s:5:"value";s:11:"Credit Card";}s:42:"payment_processors.dintero.pay_button_text";a:2:{s:2:"id";i:136;s:5:"value";s:7:"Pay Now";}s:47:"payment_processors.offline-payment.display_name";a:2:{s:2:"id";i:137;s:5:"value";s:13:"Bank Transfer";}s:50:"payment_processors.offline-payment.pay_button_text";a:2:{s:2:"id";i:138;s:5:"value";s:20:"Attach Transfer Note";}s:56:"payment_processors.offline-payment.customer_instructions";a:2:{s:2:"id";i:139;s:5:"value";s:196:"Please pay us with swift transfer, and attach the transfer note below.
+
+Our bank details are:
+
+Bank name: **ACME BANK**
+
+IBAN number: **120901930193**
+
+Account name: **COMPANY NAME INC.**
+        ";}s:75:"App\Support\SoftwareUpdate\MandatorySeeders\PaymentProcessorSeeder::lastRun";a:2:{s:2:"id";i:140;s:5:"value";s:27:"2025-11-24T09:02:52.708388Z";}s:75:"App\Support\SoftwareUpdate\MandatorySeeders\PaymentProcessorSeeder::version";a:2:{s:2:"id";i:141;s:5:"value";s:9:"v2.25.3/1";}s:74:"App\Support\SoftwareUpdate\MandatorySeeders\RolePermissionsSeeder::lastRun";a:2:{s:2:"id";i:142;s:5:"value";s:27:"2025-11-24T09:02:52.803226Z";}s:74:"App\Support\SoftwareUpdate\MandatorySeeders\RolePermissionsSeeder::version";a:2:{s:2:"id";i:143;s:5:"value";s:7:"2.128/1";}s:75:"App\Support\SoftwareUpdate\MandatorySeeders\SubscriptionPlanSeeder::lastRun";a:2:{s:2:"id";i:144;s:5:"value";s:27:"2025-11-24T09:02:52.805720Z";}s:75:"App\Support\SoftwareUpdate\MandatorySeeders\SubscriptionPlanSeeder::version";a:2:{s:2:"id";i:145;s:5:"value";s:7:"v2.08/1";}s:71:"App\Support\SoftwareUpdate\MandatorySeeders\SubscriptionSeeder::lastRun";a:2:{s:2:"id";i:146;s:5:"value";s:27:"2025-11-24T09:02:52.808902Z";}s:71:"App\Support\SoftwareUpdate\MandatorySeeders\SubscriptionSeeder::version";a:2:{s:2:"id";i:147;s:5:"value";s:5:"v2.33";}s:70:"App\Support\SoftwareUpdate\MandatorySeeders\TranslationSeeder::lastRun";a:2:{s:2:"id";i:148;s:5:"value";s:27:"2025-11-24T09:02:52.869144Z";}s:70:"App\Support\SoftwareUpdate\MandatorySeeders\TranslationSeeder::version";a:2:{s:2:"id";i:149;s:5:"value";s:8:"v2.137/1";}s:86:"App\Support\SoftwareUpdate\MandatorySeeders\AddDestroyPermissionToDefaultRole::lastRun";a:2:{s:2:"id";i:150;s:5:"value";s:27:"2025-11-24T09:02:53.431685Z";}s:86:"App\Support\SoftwareUpdate\MandatorySeeders\AddDestroyPermissionToDefaultRole::version";a:2:{s:2:"id";i:151;s:5:"value";s:7:"v1.17.2";}s:71:"App\Support\SoftwareUpdate\MandatorySeeders\ContentBlockSeeder::lastRun";a:2:{s:2:"id";i:152;s:5:"value";s:27:"2025-11-24T09:02:53.460329Z";}s:71:"App\Support\SoftwareUpdate\MandatorySeeders\ContentBlockSeeder::version";a:2:{s:2:"id";i:153;s:5:"value";s:7:"v2.12.6";}s:68:"App\Support\SoftwareUpdate\MandatorySeeders\BlogPostsSeeder::lastRun";a:2:{s:2:"id";i:154;s:5:"value";s:27:"2025-11-24T09:58:37.230121Z";}s:68:"App\Support\SoftwareUpdate\MandatorySeeders\BlogPostsSeeder::version";a:2:{s:2:"id";i:155;s:5:"value";s:4:"v2.0";}}

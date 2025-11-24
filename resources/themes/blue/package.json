@@ -1,0 +1,40 @@
+{
+  "name": "theme",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/three": "^0.155.0",
+    "glob": "^11.0.3",
+    "sass": "^1.57.1",
+    "vite": "^7.0.6"
+  },
+  "dependencies": {
+    "@fingerprintjs/fingerprintjs": "^4.2.1",
+    "add-to-calendar-button": "^2.2.5",
+    "blaze-slider": "^1.9.3",
+    "grapesjs": "^0.22.12",
+    "grapesjs-blocks-basic": "^1.0.2",
+    "grapesjs-component-countdown": "^1.0.2",
+    "grapesjs-custom-code": "^1.0.2",
+    "grapesjs-parser-postcss": "^1.0.3",
+    "grapesjs-plugin-export": "^1.0.12",
+    "grapesjs-plugin-forms": "^2.0.6",
+    "grapesjs-preset-webpage": "^1.0.3",
+    "grapesjs-style-bg": "^2.0.2",
+    "grapesjs-tabs": "^1.0.6",
+    "grapesjs-tooltip": "^0.1.8",
+    "grapesjs-touch": "^0.1.1",
+    "grapesjs-tui-image-editor": "^1.0.2",
+    "grapesjs-typed": "^2.0.1",
+    "grapick": "^0.1.13",
+    "jquery": "^3.7.1",
+    "three": "^0.152.2",
+    "toastr": "^2.1.4"
+  }
+}

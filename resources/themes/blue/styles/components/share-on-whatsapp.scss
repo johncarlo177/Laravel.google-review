@@ -1,0 +1,33 @@
+.share-on-whatsapp-container {
+    display: flex;
+    margin: 1rem 0;
+
+    input {
+        flex: 1;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        background-color: white;
+    }
+
+    .icon {
+        display: flex;
+
+        padding: 0 1rem;
+
+        box-sizing: border-box;
+
+        background-color: #0bc144;
+        border-radius: 0.5rem;
+
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+
+        svg {
+            width: 2rem;
+
+            color: white;
+
+            fill: currentColor;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.qrcode-type-biolinks {
+    .profile-block {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        justify-content: center;
+        flex-direction: column;
+        --profile-image-width: 10rem;
+
+        .background {
+            position: absolute;
+            top: -3rem;
+            left: -1rem;
+            bottom: 0;
+            right: -1rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        > *:not(.background) {
+            z-index: 10;
+            position: relative;
+        }
+
+        .image {
+            width: var(--profile-image-width);
+            height: var(--profile-image-width);
+            margin-bottom: 1.5rem;
+            background-size: cover;
+            margin-top: 1rem;
+        }
+    }
+}

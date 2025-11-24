@@ -1,0 +1,214 @@
+@use '../core/layout.scss' as *;
+
+body:not(.path-base) .website-header {
+    background-color: rgba(0, 0, 0, 0.8);
+
+    &.open {
+        background-color: white;
+    }
+}
+
+.website-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 100;
+
+    &.open {
+        background-color: white;
+    }
+
+    .header-content {
+        align-items: center;
+
+        @include mobile-column-desktop-row;
+
+        @media (max-width: 900px) {
+            align-items: flex-start;
+        }
+    }
+
+    .login {
+        color: white;
+        border-color: white;
+
+        &:hover {
+            background-color: var(--blue-primary-0);
+            color: white;
+            border-color: var(--blue-primary-0);
+        }
+    }
+
+    .logo {
+        margin-right: 1rem;
+        [dir='rtl'] & {
+            margin-right: 0;
+            margin-left: 1rem;
+        }
+    }
+
+    qrcg-language-picker {
+        margin-inline-end: 1rem;
+    }
+
+    qrcg-language-picker::part(link) {
+        color: var(--blue-primary-0);
+    }
+
+    .push {
+        flex: 1;
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @include mobile-column-desktop-row;
+
+        li {
+            a {
+                padding: 0.625rem 0.875rem;
+                display: block;
+                color: white;
+                text-decoration: none;
+                border-radius: 0.5rem;
+                font-weight: 400;
+                margin: 0 0.1rem;
+                &:hover {
+                    color: black;
+                    background-color: var(--blue-gray-0);
+                }
+            }
+        }
+
+        @media (min-width: 900px) {
+            align-items: center;
+        }
+    }
+
+    .call-to-actions {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        &.hidden {
+            display: none;
+        }
+
+        @media (min-width: 900px) {
+            li:not(:last-child) {
+                .button {
+                    margin-right: 1rem;
+                    [dir='rtl'] & {
+                        margin-left: 1rem;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .open-btn,
+    .close-btn {
+        display: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    @media (max-width: 900px) {
+        .menu,
+        .call-to-actions,
+        qrcg-language-picker {
+            display: none;
+        }
+
+        .open-btn {
+            display: flex;
+            padding: 1rem;
+            position: absolute;
+            inset-inline-end: 0;
+            top: 0;
+            color: white;
+            cursor: pointer;
+
+            svg {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+
+        &.open {
+            box-shadow: 2px 5px 15px 2px rgb(0 0 0 / 10%);
+            margin: 1rem auto;
+            width: calc(100% - 2rem);
+            box-sizing: border-box;
+            padding: 1.5rem 0;
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            z-index: 100;
+            background-color: white;
+            border-radius: 0.5rem;
+
+            .menu,
+            .call-to-actions,
+            qrcg-language-picker {
+                display: flex;
+            }
+
+            qrcg-language-picker {
+                margin: 2rem 1rem 0;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            .call-to-actions {
+                margin-top: 2rem;
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-columns: 1fr 1fr;
+                &.hidden {
+                    display: none;
+                }
+            }
+
+            .open-btn {
+                display: none;
+            }
+
+            li {
+                a {
+                    color: black;
+                }
+            }
+
+            .logout-button {
+                color: white;
+            }
+
+            .close-btn {
+                display: block;
+                position: absolute;
+                top: 1rem;
+                inset-inline-end: 1rem;
+                z-index: 2;
+                color: var(--blue-gray-1);
+                padding: 1rem;
+                background-color: white;
+                cursor: pointer;
+
+                svg {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+<mjml>
+    <mj-head>
+        <mj-style>
+            .top-border-primary { 
+                border-top: 3px solid #000; 
+            } 
+            
+            .left-border {
+                border-left: 2px solid #d8d8d8; 
+            } 
+            
+            .right-border { 
+                border-right: 2px solid #d8d8d8;
+            }
+            
+            .bottom-border {     
+                border-bottom: 2px solid #d8d8d8;
+            }
+
+        </mj-style>
+        <mj-title><?php echo $title ?></mj-title>
+        <mj-font
+            name="Roboto"
+            href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500"
+        ></mj-font>
+        <mj-attributes>
+            <mj-all
+                font-family="Montserrat, Helvetica, Arial, sans-serif"
+            ></mj-all>
+            <mj-text
+                font-weight="400"
+                font-size="16px"
+                color="#000000"
+                line-height="24px"
+            ></mj-text>
+            <mj-section padding="0px"></mj-section>
+        </mj-attributes>
+    </mj-head>
+    <mj-body background-color="#F2F2F2">
+        <mj-section padding="10px 0 20px 0">
+            <mj-column>
+                <mj-text
+                    align="center"
+                    color="#9B9B9B"
+                    font-size="11px"
+                ></mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section
+            padding="20px 20px 0 20px"
+            background-color="#FFFFFF"
+            css-class="top-border-primary left-border right-border"
+        >
+            <mj-column width="35%">
+                <mj-image src="{{ config('frontend.header_logo_inverse_url') ?? url('/assets/images/logo.png') }}">
+            </mj-column>
+            <mj-column width="65%">
+              
+            </mj-column>
+        </mj-section>
+        <mj-section
+            padding="20px 20px 0 20px"
+            background-color="#FFFFFF"
+            css-class="left-border right-border"
+        >
+            <mj-column>
+                <mj-text> 
+                    {!! $body; !!}
+                </mj-text>
+                
+                <?php if (!empty($actionUrl)): ?>
+                <mj-button font-family="Helvetica" background-color="#f45e43" color="white" href="{{ $actionUrl }}">
+                    {!! $actionText  !!}
+                </mj-button>
+                <?php endif; ?>
+            </mj-column>
+        </mj-section>
+
+        <mj-section
+            padding="10px 20px"
+            background-color="#FFFFFF"
+            css-class="left-border right-border bottom-border"
+        >
+           <mj-column>
+                <mj-text> 
+                    {{ t('Regards')}},<br>
+                    {{ config('app.name') }} {{ t('Team')}}.
+                </mj-text>
+            </mj-column>
+        </mj-section>
+
+        <mj-section padding="10px 0 20px 0">
+            <mj-column>
+                <mj-text align="center" color="#9B9B9B" font-size="11px">
+                    &copy; {{ config('app.name') }} {{ now()->format('Y') }} 
+                </mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>

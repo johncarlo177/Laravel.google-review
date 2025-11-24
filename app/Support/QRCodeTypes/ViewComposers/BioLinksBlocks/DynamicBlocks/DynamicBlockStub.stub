@@ -1,0 +1,11 @@
+<?php
+
+namespace App\Support\QRCodeTypes\ViewComposers\BioLinksBlocks\DynamicBlocks;
+
+class DynamicBlock__id__ extends BaseDynamicBlock
+{
+    public static function id()
+    {
+        return __id__;
+    }
+}

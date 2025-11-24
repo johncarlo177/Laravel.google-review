@@ -1,0 +1,1 @@
+{!! $processor->getAliPayHtmlForm($subscription) !!}

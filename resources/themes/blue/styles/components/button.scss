@@ -1,0 +1,117 @@
+@mixin primary-button() {
+    color: white;
+    border-color: var(--blue-primary-0);
+    background-color: var(--blue-primary-0);
+
+    &:hover {
+        background-color: var(--blue-primary-1);
+        border-color: var(--blue-primary-1);
+    }
+}
+
+@mixin button() {
+    $s-box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+        rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px,
+        rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+        rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+
+    $hover-box-shadow: rgb(0 0 0 / 15%) 0px 5px 10px 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 0.5rem;
+    border: 2px solid var(--blue-text-color);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--blue-text-color);
+    transition: all 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    box-shadow: $s-box-shadow;
+    cursor: pointer;
+
+    &[disabled] {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    qrcg-loader {
+        display: none;
+    }
+
+    &:hover {
+        color: white;
+        background-color: var(--blue-text-color);
+        box-shadow: $hover-box-shadow;
+    }
+
+    &.accent {
+        color: white;
+        border-color: var(--blue-accent-0);
+        background-color: var(--blue-accent-0);
+
+        &:hover {
+            background-color: var(--blue-accent-1);
+            border-color: var(--blue-accent-1);
+        }
+    }
+
+    &.danger {
+        color: white;
+        border-color: var(--blue-danger-0);
+        background-color: var(--blue-danger-0);
+
+        &:hover {
+            background-color: var(--blue-danger-1);
+            border-color: var(--blue-danger-1);
+        }
+    }
+
+    &.primary {
+        @include primary-button();
+    }
+
+    &.black {
+        color: black;
+        border-color: black;
+        background-color: white;
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+
+    &.white {
+        background-color: white;
+        color: var(--blue-text-color);
+        border-color: white;
+    }
+
+    &.circle {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 0;
+
+        svg {
+            width: 2rem;
+            height: 2rem;
+            * {
+                fill: currentColor;
+            }
+        }
+    }
+
+    &.loading {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.button {
+    @include button();
+}

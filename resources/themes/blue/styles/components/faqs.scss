@@ -1,0 +1,75 @@
+.white-card.faqs-card,
+.qrcode-type-biolinks .white-card.faqs-card {
+    header {
+        text-align: center;
+        display: block;
+        border-bottom: 2px solid transparent;
+
+        .faq-main-subtitle {
+            margin-top: 1rem;
+        }
+
+        &.has-border {
+            padding-bottom: 1rem;
+        }
+    }
+
+    .faq-items {
+        line-height: 1.7;
+    }
+
+    .faq-item {
+        position: relative;
+        border-bottom: 2px solid #e6ebff;
+    }
+
+    .faq-title {
+        margin: 0.5rem 0;
+        display: flex;
+        align-items: center;
+
+        svg {
+            min-width: 2rem;
+            min-height: 2rem;
+            width: 2rem;
+            height: 2rem;
+            margin-left: auto;
+
+            transition: 0.25s linear;
+
+            path {
+                fill: var(--blue-gray-1);
+            }
+        }
+    }
+
+    .faq-item.active {
+        .faq-title {
+            svg {
+                transform: rotate(90deg) scale(0.9);
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .faq-description {
+        transition: all 0.5s ease;
+        max-height: 700px;
+        overflow: hidden;
+        transform: scale(1);
+        margin-bottom: 1rem;
+    }
+
+    .faq-item:not(.active) {
+        .faq-description {
+            max-height: 0;
+            opacity: 0;
+            transform: scale(0.9);
+            margin-bottom: 0;
+        }
+    }
+
+    .button {
+        margin: 1rem auto;
+    }
+}

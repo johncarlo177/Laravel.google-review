@@ -1,0 +1,21 @@
+section.post {
+    line-height: 1.7;
+
+    article {
+        padding: 0;
+        margin: 4rem 0;
+
+        h2 {
+            font-size: 1.7rem;
+        }
+
+        img {
+            border-radius: 1rem;
+        }
+
+        .content {
+            font-size: 1.3rem;
+            line-height: 2.2;
+        }
+    }
+}

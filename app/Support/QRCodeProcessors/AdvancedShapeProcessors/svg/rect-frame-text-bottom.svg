@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800px"
+   height="1005px"
+   viewBox="0 0 800 1005"
+   version="1.1"
+   id="first"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   sodipodi:docname="rect-frame-text-bottom.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     width="700pt"
+     units="pt"
+     inkscape:zoom="0.52957246"
+     inkscape:cx="333.28772"
+     inkscape:cy="505.12445"
+     inkscape:window-width="1680"
+     inkscape:window-height="925"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g944" />
+  <defs
+     id="defs2">
+    <style
+       id="style825">
+         .frame {
+            fill: #fff;
+         }
+      </style>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter1414"
+       x="-0.051824089"
+       y="-0.53582787"
+       width="1.3195819"
+       height="1.6395365">
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(143,138,138)"
+         result="flood"
+         id="feFlood1404" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1406" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur1408" />
+      <feOffset
+         dx="10"
+         dy="-10"
+         result="offset"
+         id="feOffset1410" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1412" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="g864">
+    <g
+       id="g944"
+       transform="matrix(1.8243295,0,0,-1.8243295,-238.28863,1079.4923)"
+       style="filter:url(#filter1414)">
+      <rect
+         class="frame"
+         style="stroke-width:7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect866"
+         width="416.71732"
+         height="529.04974"
+         x="136.64134"
+         y="56.770184"
+         ry="32.612659" />
+      <g
+         transform="matrix(1.0005958,0,0,0.85147254,-12.14009,8.3421512)"
+         id="g858">
+        <rect
+           class="text-background"
+           style="stroke-width:2.76348;stroke-linejoin:round;stroke-opacity:1"
+           width="416.71729"
+           height="112.33249"
+           x="148.56877"
+           y="56.770184"
+           ry="32.612625"
+           id="rect852" />
+        <rect
+           class="text-background"
+           style="stroke-width:3.38624;stroke-linejoin:round;stroke-opacity:1"
+           id="rect2082"
+           width="416.71729"
+           height="70.056824"
+           x="148.56879"
+           y="99.045853"
+           ry="0" />
+      </g>
+      <path
+         class="text-background"
+         style="fill-opacity:1;stroke-width:0.198255px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 368.15527,151.07942 h -46.31051 l 23.15526,23.14176 z"
+         id="path4406" />
+    </g>
+    <g
+       id="g840">
+      <rect
+         id="text_placeholder"
+         style="fill:none;stroke-width:9.33333;stroke-linejoin:round;stroke-opacity:0.85177"
+         width="760.45612"
+         height="174.32974"
+         x="10.763751"
+         y="801.59503"
+         ry="0" />
+    </g>
+    <g
+       id="g842"
+       transform="translate(0,30)">
+      <rect
+         style="fill:#c4c4c4;stroke-width:9.33333;stroke-linejoin:round;stroke-opacity:0.85177"
+         id="qrcode_placeholder"
+         width="627.20386"
+         height="644.8324"
+         x="77.503113"
+         y="63.298153" />
+    </g>
+  </g>
+</svg>

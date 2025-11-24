@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quick Code QR Code Generator URL Shortner PHP Script SaaS</title>
+
+        <!-- Favicon start -->
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="/assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#ffc40d" />
+        <meta
+            name="msapplication-config"
+            content="/assets/favicon/browserconfig.xml"
+        />
+        <meta name="theme-color" content="#1c57cb" />
+
+        <!-- Favicon end -->
+
+        <script type="module" src="/main.js"></script>
+
+        <script>
+            const CONFIG = {
+                'config.app.url': 'http://myip:81',
+            }
+        </script>
+    </head>
+    <body class="qrcode-type-lead-form qrcode-type">
+        <div class="loader">
+            <div class="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="layout-generated-webpage">
+            <script>
+                ;(function () {
+                    function isRuleMatched(ruleName, ruleNumber, actualNumber) {
+                        switch (ruleName) {
+                            case 'greater_than':
+                                return actualNumber > ruleNumber
+
+                            case 'less_than':
+                                return actualNumber < ruleNumber
+
+                            case 'equals_to':
+                                return actualNumber == ruleNumber
+                        }
+                    }
+
+                    function goToUrl(e, rule) {
+                        e.preventDefault()
+
+                        window.location = rule.url
+                    }
+
+                    function showOverlay(content) {
+                        const overlay = document.createElement('div')
+
+                        overlay.style =
+                            'position: fixed; top: 0; left: 0; width: 100%; min-height: 100%; background-color: black; color: white; font-size: 1.2rem; line-height: 1.7;'
+
+                        overlay.innerHTML = content
+
+                        document.body.appendChild(overlay)
+                    }
+
+                    function showTextOverlay(text) {
+                        //
+                        showOverlay(`
+                            <div>
+                                ${text}
+                            </div>
+                        `)
+                    }
+
+                    function showImageOverlay(imageId) {
+                        //
+                    }
+
+                    function showText(e, rule) {
+                        e.preventDefault()
+
+                        alert('showing text')
+
+                        showTextOverlay(rule.text)
+                    }
+
+                    function showImage(e, rule) {
+                        //
+                        e.preventDefault()
+
+                        showImageOverlay(rule.image)
+                    }
+
+                    function goToGoogleReview(e, rule) {
+                        e.preventDefault()
+                    }
+
+                    function leadFormStarAnswerShouldGoNext(e) {
+                        let { number, question } = e.detail
+
+                        number = number + 1
+
+                        const rules = question.rules ?? {}
+
+                        for (const key of Object.keys(rules)) {
+                            const rule = rules[key]
+
+                            if (isRuleMatched(key, rule.stars_number, number)) {
+                                switch (rule.action) {
+                                    case 'go_to_url':
+                                        return goToUrl(e, rule)
+
+                                    case 'show_text':
+                                        return showText(e, rule)
+
+                                    case 'show_image':
+                                        return showImage(e, rule)
+
+                                    case 'google_review':
+                                        return goToGoogleReview(e, rule)
+                                }
+                            }
+                        }
+                    }
+
+                    document.addEventListener(
+                        'stars-answer-should-go-next',
+                        leadFormStarAnswerShouldGoNext
+                    )
+                })()
+            </script>
+
+            <script>
+                window.__LEAD_FORM_SUCCESS_MESSAGE__ =
+                    'Thank you for submitting the form'
+            </script>
+
+            <div
+                class="lead-form lead-form-1 full-page"
+                data-id="1"
+                layout=""
+                data-after-submit-url=""
+            >
+                <div class="lead-form-close-button" tabindex="0">
+                    <div class="inner-button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                        >
+                            <title>close-thick</title>
+                            <path
+                                d="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12L20 6.91Z"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <header class="lead-form-header"></header>
+
+                <div class="questions">
+                    <div class="question-page">
+                        <div class="question-container">
+                            <div class="question">
+                                <div class="question-number">1-</div>
+
+                                <div class="question-text">test</div>
+
+                                <div class="question-description">test</div>
+                            </div>
+
+                            <div class="answer text">
+                                <input
+                                    placeholder="Type your answer here ..."
+                                />
+                            </div>
+                        </div>
+
+                        <div class="ok-button submit">
+                            <button class="button primary">
+                                Submit
+
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-page-footer">
+                    <div class="navigation">
+                        <button class="button primary down">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                                />
+                            </svg>
+                        </button>
+                        <button class="button primary up">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="powered-by">
+                        Powered by
+                        <a href="http://192.168.0.109:81" class="powered-by"
+                            >Quick Code</a
+                        >
+                    </div>
+                </div>
+
+                <div class="success-page">
+                    <div class="success-page-content">
+                        <h2>Thank you!</h2>
+                        <p>We have received your feedback successfully</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
