@@ -58,7 +58,7 @@
 </head>
 <body>
     <div class="card">
-        <h1>🧪 Test Feedback Rating Page</h1>
+        <h1>🧪 Feedback Rating Page</h1>
         
         <div class="info">
             <strong>QR Code Found:</strong>

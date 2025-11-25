@@ -12267,3 +12267,60 @@
 [2025-11-25 18:24:20] production.INFO: Staff Feedback Index {"user_id":10,"qrcode_ids_count":0,"qrcode_ids":[]} 
 [2025-11-25 18:25:48] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
 [2025-11-25 18:26:31] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-25 18:28:59] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-25 18:29:15] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-25 18:29:16] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-25 18:29:17] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-25 18:29:17] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-25 18:29:17] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-25 18:29:17] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-25 18:29:40] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-25 18:30:03] production.INFO: SMS reply would be sent to: 123456789  
+[2025-11-25 18:30:10] production.INFO: SMS reply would be sent to: 123456789  
+[2025-11-25 18:36:57] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-25 18:36:57] production.ERROR: GPT classification error: Trying to access array offset on null  
+[2025-11-25 18:38:04] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-25 18:38:04] production.ERROR: GPT classification error: Trying to access array offset on null  
+[2025-11-25 18:38:56] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-25 18:38:56] production.ERROR: GPT classification error: Trying to access array offset on null  
+[2025-11-25 18:39:03] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-25 18:39:03] production.ERROR: GPT reply generation error: Trying to access array offset on null  
+[2025-11-25 18:39:09] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-25 18:39:09] production.ERROR: GPT recovery plan error: Trying to access array offset on null  
+[2025-11-25 18:39:38] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-25 18:41:14] production.INFO: SMS reply would be sent to: 123456789  

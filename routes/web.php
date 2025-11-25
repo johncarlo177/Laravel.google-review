@@ -197,7 +197,7 @@ Route::middleware(['auth:sanctum'])->prefix('staff')->name('staff.')->group(func
 });
 
 // Test route to generate feedback URL (for testing)
-Route::get('/test-feedback', function() {
+Route::get('/feedback', function() {
     $qrcode = \App\Models\QRCode::where('type', 'business-review')
         ->where('archived', false)
         ->where('status', \App\Models\QRCode::STATUS_ENABLED)
