@@ -18,7 +18,9 @@ class Authenticate extends Middleware
     protected function redirectTo($request)
     {
         if (! $request->expectsJson()) {
-            return route('login');
+            $loginUrl = route('login');
+            // Fix double slash issue
+            return str_replace('//', '/', $loginUrl);
         }
     }
 }

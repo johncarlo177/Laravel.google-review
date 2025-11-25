@@ -326,9 +326,31 @@
 
                     // Show appropriate section
                     if (rating >= 4) {
-                        // High rating (4-5 stars)
+                        // High rating (4-5 stars) - submit directly
                         highRatingSection.classList.add('show');
                         lowRatingSection.classList.remove('show');
+                        
+                        // Auto-submit for 4-5 stars after a short delay
+                        setTimeout(() => {
+                            const form = document.createElement('form');
+                            form.method = 'POST';
+                            form.action = '<?php echo e(route('feedback.submit', $token)); ?>';
+                            
+                            const csrf = document.createElement('input');
+                            csrf.type = 'hidden';
+                            csrf.name = '_token';
+                            csrf.value = '<?php echo e(csrf_token()); ?>';
+                            form.appendChild(csrf);
+                            
+                            const ratingInput = document.createElement('input');
+                            ratingInput.type = 'hidden';
+                            ratingInput.name = 'rating';
+                            ratingInput.value = rating;
+                            form.appendChild(ratingInput);
+                            
+                            document.body.appendChild(form);
+                            form.submit();
+                        }, 2000); // Submit after 2 seconds
                     } else {
                         // Low rating (1-3 stars)
                         lowRatingSection.classList.add('show');

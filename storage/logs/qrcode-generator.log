@@ -11781,3 +11781,489 @@
     "2025_11_05_061026_add_archived_at_column_to_qrcodes_table",
     "2025_11_19_063049_add_columns_to_widgets_table"
 ]  
+[2025-11-25 17:47:26] production.INFO: DatabaseUpdateManager: Migrations to be run [
+    "2025_11_25_174646_create_feedback_audit_logs_table"
+], all migrations = [
+    "2014_10_12_000000_create_users_table",
+    "2014_10_12_100000_create_password_resets_table",
+    "2019_08_19_000000_create_failed_jobs_table",
+    "2019_12_14_000001_create_personal_access_tokens_table",
+    "2022_03_25_100258_create_qrcodes_table",
+    "2022_03_31_170524_create_qr_code_redirects_table",
+    "2022_04_02_104137_create_qrcode_scans_table",
+    "2022_04_07_222411_create_subscription_plans_table",
+    "2022_04_10_015621_create_payment_gateways_table",
+    "2022_04_16_194827_create_subscriptions_table",
+    "2022_04_17_092900_create_transactions_table",
+    "2022_04_20_024402_create_roles_table",
+    "2022_04_20_024425_create_permissions_table",
+    "2022_04_20_024608_create_user_roles_table",
+    "2022_04_20_024817_create_role_permissions_table",
+    "2022_04_23_034418_create_subscription_statuses_table",
+    "2022_05_01_125659_create_configs_table",
+    "2022_05_06_124446_create_jobs_table",
+    "2022_05_14_130308_create_files_table",
+    "2022_05_22_014512_create_blog_posts_table",
+    "2022_05_25_131225_create_content_blocks_table",
+    "2022_05_26_130740_create_contacts_table",
+    "2022_05_28_111623_content_blocks_add_margin_field",
+    "2022_06_23_050442_change_qrcode_background_image_fill_type_to_foreground_image",
+    "2022_07_15_070341_create_translations_table",
+    "2022_07_22_144115_add_stripe_fields_to_subscription_plans_table",
+    "2022_07_22_150212_add_stripe_fields_to_subscriptions_table",
+    "2022_07_24_204421_add_stripe_payment_intent_id_field_to_transactions_table",
+    "2022_09_05_155459_add_approved_by_rejected_by_columns_to_transactions_table",
+    "2022_09_07_050240_create_currencies_table",
+    "2022_09_23_015905_add_qr_types_column_to_subscription_plans_table",
+    "2022_09_27_024434_create_custom_codes_table",
+    "2022_09_29_053732_add_frequency_and_price_columns_to_subscription_plans_table",
+    "2022_10_02_063418_add_features_column_to_subscription_plans_table",
+    "2022_10_28_125426_create_pages_table",
+    "2022_10_29_180523_add_meta_description_column_to_blog_posts_table",
+    "2022_11_05_195158_increase_qrcode_redirect_column_length",
+    "2022_11_14_034932_create_domains_table",
+    "2022_11_15_175415_add_domain_id_column_to_qrcode_redirects_table",
+    "2022_11_22_043617_add_number_of_custom_domains_column_to_subscription_plans_table",
+    "2022_11_27_102152_create_meta_items_table",
+    "2022_11_28_095804_add_source_column_to_transations_table",
+    "2022_11_30_132430_drop_payment_gateway_id_column_from_transactions_table",
+    "2023_01_01_170020_add_location_columns_to_qrcode_scans_table",
+    "2023_01_03_044653_add_hour_column_to_qrcode_scans_table",
+    "2023_01_28_043559_add_is_main_column_to_translations_table",
+    "2023_01_28_135646_add_translation_id_column_to_content_blocks_table",
+    "2023_01_28_140206_add_translation_id_column_to_blog_posts_table",
+    "2023_01_29_051845_add_display_name_column_to_translations_table",
+    "2023_01_29_053417_add_symbol_position_column_to_currencies_table",
+    "2023_01_30_043836_create_qrcode_webpage_designs_table",
+    "2023_02_10_063333_add_country_code_and_mobile_number_columns_to_users_table",
+    "2023_02_13_052436_drop_unique_name_index_and_delete_at_columns_from_subscription_plans_table",
+    "2023_02_14_194235_create_folders_table",
+    "2023_02_14_194827_add_folder_id_column_to_qrcodes_table",
+    "2023_02_16_072555_add_parent_id_and_is_sub_columns_to_users_table",
+    "2023_02_18_073153_create_subuser_folders_table",
+    "2023_02_19_135246_add_number_of_users_column_to_subscription_plans_table",
+    "2023_03_13_045242_add_number_of_restaurant_menu_items_column_to_subscription_plans_table",
+    "2023_04_01_050457_make_subscription_id_nullable_in_transactions_table",
+    "2023_04_02_034104_add_user_id_and_description_columns_to_transactions_table",
+    "2023_04_02_054809_add_user_agent_column_to_qrcode_scans_table",
+    "2023_04_16_040608_create_dynamic_biolink_blocks_table",
+    "2023_04_20_023902_add_pincode_column_to_qrcodes_table",
+    "2023_05_03_133716_add_direction_column_to_translations_table",
+    "2023_05_08_140921_create_bulk_operation_instances_table",
+    "2023_05_10_125409_create_bulk_operation_results_table",
+    "2023_05_25_035515_add_custom_code_column_to_dynamic_biolink_blocks_table",
+    "2023_05_25_063810_add_home_page_qrcode_id_column_to_domains_table",
+    "2023_06_01_053542_create_gdpr_consents_table",
+    "2023_06_16_133306_create_lead_forms_table",
+    "2023_06_21_043854_create_lead_form_responses_table",
+    "2023_07_01_025803_change_number_of_users_column_to_signed_in_subscription_plans_table",
+    "2023_07_08_134029_remove_unsigned_from_number_of_custom_domains_in_plans_table",
+    "2023_07_30_034911_add_number_of_product_catalogue_items_column_to_subscription_plans_table",
+    "2023_08_05_042605_create_quick_qr_art_predictions_table",
+    "2023_08_11_123916_add_number_of_ai_generations_column_to_plans_table",
+    "2023_08_19_032746_add_expires_at_column_to_personal_access_tokens_table",
+    "2023_09_02_033811_add_plan_checkpoints__column_to_subscription_plans_table",
+    "2023_09_23_105106_change_number_of_restaurant_menu_column_items_to_signed_in_subscription_plans_table",
+    "2023_10_10_030109_add_expires_at_column_to_subscriptions_table",
+    "2023_11_19_030539_add_file_size_limit_column_to_subscription_plans_table",
+    "2023_12_10_164812_add_fingerprint_column_to_lead_form_responses_table",
+    "2023_12_10_165153_add_ip_and_user_agent_columns_to_lead_form_responses_table",
+    "2023_12_17_053217_add_flag_file_id_column_to_translations_table",
+    "2024_01_02_054046_add_is_template_column_to_qrcodes_table",
+    "2024_01_04_055835_add_template_access_level_column_to_qrcodes_table",
+    "2024_01_20_105222_add_sort_order_column_to_subscription_plans_table",
+    "2024_03_18_033342_add_show_ads_and_ads_timeout_and_ads_code_columns_to_subscription_plans_table",
+    "2024_05_06_080715_create_custom_forms_table",
+    "2024_05_08_045900_create_custom_form_responses_table",
+    "2024_05_08_063924_add_billing_details_custom_form_response_id_column_to_subscriptions_table",
+    "2024_05_21_104932_add_thousands_separator_dcimal_separator_columns_to_currencies_table",
+    "2024_06_26_103257_add_dynamic_type_limits_column_to_subscription_plans_table",
+    "2024_06_28_140058_add_scans_count_column_to_qrcodes_table",
+    "2024_09_17_134400_add_unavailable_types_behaviour_columns_to_plans_table",
+    "2024_10_07_044432_make_email_column_optional_in_users_table",
+    "2024_10_07_092325_add_is_created_by_bulk_operation_flag_to_qrcodes_table",
+    "2024_10_07_092716_add_tags_column_to_qrcodes_table",
+    "2024_10_08_052912_add_number_of_bulk_created_qrcodes_in_subscription_plans_table",
+    "2024_10_16_062547_add_settings_column_to_custom_forms_table",
+    "2024_10_16_072659_add_type_column_to_custom_forms_table",
+    "2024_10_17_045805_add_related_model_column_to_custom_forms_table",
+    "2024_11_29_064020_create_template_categories_table",
+    "2024_12_03_130943_add_status_column_to_qrcodes_table",
+    "2024_12_11_141736_add_template_category_id_column_to_qrcodes_table",
+    "2024_12_17_123109_add_sort_order_column_to_template_categories_table",
+    "2024_12_28_141418_add_profile_image_id_column_to_users_table",
+    "2025_01_06_161643_add_qrcode_screenshot_id_column_to_qrcodes_table",
+    "2025_01_12_183125_create_business_review_feedback_table",
+    "2025_04_08_143703_create_otp_verifications_table",
+    "2025_05_05_053755_add_browser_and_language_columns_to_scans_table",
+    "2025_05_23_162523_add_scan_retention_column_to_subscription_plans_table",
+    "2025_06_18_115659_create_invoices_table",
+    "2025_06_18_115704_create_invoice_items_table",
+    "2025_06_25_082436_add_status_column_to_invoices_table",
+    "2025_06_25_103736_add_billing_details_response_id_to_invoices_table",
+    "2025_06_26_110116_add_tax_rate_and_tax_amount_and_subtotal_columns_to_invoice_items_table",
+    "2025_08_03_074157_add_head_tag_code_column_to_pages_table",
+    "2025_08_25_075118_add_allowed_scans_column_to_qrcodes_table",
+    "2025_08_26_045158_add_is_reseller_flag_to_subscription_plans_table",
+    "2025_08_26_050405_add_reseller_id_column_to_users_table",
+    "2025_10_31_095640_add_column_to_scanned_card_details_table",
+    "2025_09_17_061324_add_button_text_field_to_subscription_plans_table",
+    "2025_10_13_101716_add_featured_image_id_column_to_blog_posts_table",
+    "2025_10_29_072630_create_widgets_table",
+    "2025_11_05_061026_add_archived_at_column_to_qrcodes_table",
+    "2025_11_19_063049_add_columns_to_widgets_table",
+    "2025_11_24_193407_create_feedback_entries_table"
+]  
+[2025-11-25 17:47:26] production.INFO: DatabaseUpdateManager: Migrations to be run [
+    "2025_11_25_174646_create_feedback_audit_logs_table"
+], all migrations = [
+    "2014_10_12_000000_create_users_table",
+    "2014_10_12_100000_create_password_resets_table",
+    "2019_08_19_000000_create_failed_jobs_table",
+    "2019_12_14_000001_create_personal_access_tokens_table",
+    "2022_03_25_100258_create_qrcodes_table",
+    "2022_03_31_170524_create_qr_code_redirects_table",
+    "2022_04_02_104137_create_qrcode_scans_table",
+    "2022_04_07_222411_create_subscription_plans_table",
+    "2022_04_10_015621_create_payment_gateways_table",
+    "2022_04_16_194827_create_subscriptions_table",
+    "2022_04_17_092900_create_transactions_table",
+    "2022_04_20_024402_create_roles_table",
+    "2022_04_20_024425_create_permissions_table",
+    "2022_04_20_024608_create_user_roles_table",
+    "2022_04_20_024817_create_role_permissions_table",
+    "2022_04_23_034418_create_subscription_statuses_table",
+    "2022_05_01_125659_create_configs_table",
+    "2022_05_06_124446_create_jobs_table",
+    "2022_05_14_130308_create_files_table",
+    "2022_05_22_014512_create_blog_posts_table",
+    "2022_05_25_131225_create_content_blocks_table",
+    "2022_05_26_130740_create_contacts_table",
+    "2022_05_28_111623_content_blocks_add_margin_field",
+    "2022_06_23_050442_change_qrcode_background_image_fill_type_to_foreground_image",
+    "2022_07_15_070341_create_translations_table",
+    "2022_07_22_144115_add_stripe_fields_to_subscription_plans_table",
+    "2022_07_22_150212_add_stripe_fields_to_subscriptions_table",
+    "2022_07_24_204421_add_stripe_payment_intent_id_field_to_transactions_table",
+    "2022_09_05_155459_add_approved_by_rejected_by_columns_to_transactions_table",
+    "2022_09_07_050240_create_currencies_table",
+    "2022_09_23_015905_add_qr_types_column_to_subscription_plans_table",
+    "2022_09_27_024434_create_custom_codes_table",
+    "2022_09_29_053732_add_frequency_and_price_columns_to_subscription_plans_table",
+    "2022_10_02_063418_add_features_column_to_subscription_plans_table",
+    "2022_10_28_125426_create_pages_table",
+    "2022_10_29_180523_add_meta_description_column_to_blog_posts_table",
+    "2022_11_05_195158_increase_qrcode_redirect_column_length",
+    "2022_11_14_034932_create_domains_table",
+    "2022_11_15_175415_add_domain_id_column_to_qrcode_redirects_table",
+    "2022_11_22_043617_add_number_of_custom_domains_column_to_subscription_plans_table",
+    "2022_11_27_102152_create_meta_items_table",
+    "2022_11_28_095804_add_source_column_to_transations_table",
+    "2022_11_30_132430_drop_payment_gateway_id_column_from_transactions_table",
+    "2023_01_01_170020_add_location_columns_to_qrcode_scans_table",
+    "2023_01_03_044653_add_hour_column_to_qrcode_scans_table",
+    "2023_01_28_043559_add_is_main_column_to_translations_table",
+    "2023_01_28_135646_add_translation_id_column_to_content_blocks_table",
+    "2023_01_28_140206_add_translation_id_column_to_blog_posts_table",
+    "2023_01_29_051845_add_display_name_column_to_translations_table",
+    "2023_01_29_053417_add_symbol_position_column_to_currencies_table",
+    "2023_01_30_043836_create_qrcode_webpage_designs_table",
+    "2023_02_10_063333_add_country_code_and_mobile_number_columns_to_users_table",
+    "2023_02_13_052436_drop_unique_name_index_and_delete_at_columns_from_subscription_plans_table",
+    "2023_02_14_194235_create_folders_table",
+    "2023_02_14_194827_add_folder_id_column_to_qrcodes_table",
+    "2023_02_16_072555_add_parent_id_and_is_sub_columns_to_users_table",
+    "2023_02_18_073153_create_subuser_folders_table",
+    "2023_02_19_135246_add_number_of_users_column_to_subscription_plans_table",
+    "2023_03_13_045242_add_number_of_restaurant_menu_items_column_to_subscription_plans_table",
+    "2023_04_01_050457_make_subscription_id_nullable_in_transactions_table",
+    "2023_04_02_034104_add_user_id_and_description_columns_to_transactions_table",
+    "2023_04_02_054809_add_user_agent_column_to_qrcode_scans_table",
+    "2023_04_16_040608_create_dynamic_biolink_blocks_table",
+    "2023_04_20_023902_add_pincode_column_to_qrcodes_table",
+    "2023_05_03_133716_add_direction_column_to_translations_table",
+    "2023_05_08_140921_create_bulk_operation_instances_table",
+    "2023_05_10_125409_create_bulk_operation_results_table",
+    "2023_05_25_035515_add_custom_code_column_to_dynamic_biolink_blocks_table",
+    "2023_05_25_063810_add_home_page_qrcode_id_column_to_domains_table",
+    "2023_06_01_053542_create_gdpr_consents_table",
+    "2023_06_16_133306_create_lead_forms_table",
+    "2023_06_21_043854_create_lead_form_responses_table",
+    "2023_07_01_025803_change_number_of_users_column_to_signed_in_subscription_plans_table",
+    "2023_07_08_134029_remove_unsigned_from_number_of_custom_domains_in_plans_table",
+    "2023_07_30_034911_add_number_of_product_catalogue_items_column_to_subscription_plans_table",
+    "2023_08_05_042605_create_quick_qr_art_predictions_table",
+    "2023_08_11_123916_add_number_of_ai_generations_column_to_plans_table",
+    "2023_08_19_032746_add_expires_at_column_to_personal_access_tokens_table",
+    "2023_09_02_033811_add_plan_checkpoints__column_to_subscription_plans_table",
+    "2023_09_23_105106_change_number_of_restaurant_menu_column_items_to_signed_in_subscription_plans_table",
+    "2023_10_10_030109_add_expires_at_column_to_subscriptions_table",
+    "2023_11_19_030539_add_file_size_limit_column_to_subscription_plans_table",
+    "2023_12_10_164812_add_fingerprint_column_to_lead_form_responses_table",
+    "2023_12_10_165153_add_ip_and_user_agent_columns_to_lead_form_responses_table",
+    "2023_12_17_053217_add_flag_file_id_column_to_translations_table",
+    "2024_01_02_054046_add_is_template_column_to_qrcodes_table",
+    "2024_01_04_055835_add_template_access_level_column_to_qrcodes_table",
+    "2024_01_20_105222_add_sort_order_column_to_subscription_plans_table",
+    "2024_03_18_033342_add_show_ads_and_ads_timeout_and_ads_code_columns_to_subscription_plans_table",
+    "2024_05_06_080715_create_custom_forms_table",
+    "2024_05_08_045900_create_custom_form_responses_table",
+    "2024_05_08_063924_add_billing_details_custom_form_response_id_column_to_subscriptions_table",
+    "2024_05_21_104932_add_thousands_separator_dcimal_separator_columns_to_currencies_table",
+    "2024_06_26_103257_add_dynamic_type_limits_column_to_subscription_plans_table",
+    "2024_06_28_140058_add_scans_count_column_to_qrcodes_table",
+    "2024_09_17_134400_add_unavailable_types_behaviour_columns_to_plans_table",
+    "2024_10_07_044432_make_email_column_optional_in_users_table",
+    "2024_10_07_092325_add_is_created_by_bulk_operation_flag_to_qrcodes_table",
+    "2024_10_07_092716_add_tags_column_to_qrcodes_table",
+    "2024_10_08_052912_add_number_of_bulk_created_qrcodes_in_subscription_plans_table",
+    "2024_10_16_062547_add_settings_column_to_custom_forms_table",
+    "2024_10_16_072659_add_type_column_to_custom_forms_table",
+    "2024_10_17_045805_add_related_model_column_to_custom_forms_table",
+    "2024_11_29_064020_create_template_categories_table",
+    "2024_12_03_130943_add_status_column_to_qrcodes_table",
+    "2024_12_11_141736_add_template_category_id_column_to_qrcodes_table",
+    "2024_12_17_123109_add_sort_order_column_to_template_categories_table",
+    "2024_12_28_141418_add_profile_image_id_column_to_users_table",
+    "2025_01_06_161643_add_qrcode_screenshot_id_column_to_qrcodes_table",
+    "2025_01_12_183125_create_business_review_feedback_table",
+    "2025_04_08_143703_create_otp_verifications_table",
+    "2025_05_05_053755_add_browser_and_language_columns_to_scans_table",
+    "2025_05_23_162523_add_scan_retention_column_to_subscription_plans_table",
+    "2025_06_18_115659_create_invoices_table",
+    "2025_06_18_115704_create_invoice_items_table",
+    "2025_06_25_082436_add_status_column_to_invoices_table",
+    "2025_06_25_103736_add_billing_details_response_id_to_invoices_table",
+    "2025_06_26_110116_add_tax_rate_and_tax_amount_and_subtotal_columns_to_invoice_items_table",
+    "2025_08_03_074157_add_head_tag_code_column_to_pages_table",
+    "2025_08_25_075118_add_allowed_scans_column_to_qrcodes_table",
+    "2025_08_26_045158_add_is_reseller_flag_to_subscription_plans_table",
+    "2025_08_26_050405_add_reseller_id_column_to_users_table",
+    "2025_10_31_095640_add_column_to_scanned_card_details_table",
+    "2025_09_17_061324_add_button_text_field_to_subscription_plans_table",
+    "2025_10_13_101716_add_featured_image_id_column_to_blog_posts_table",
+    "2025_10_29_072630_create_widgets_table",
+    "2025_11_05_061026_add_archived_at_column_to_qrcodes_table",
+    "2025_11_19_063049_add_columns_to_widgets_table",
+    "2025_11_24_193407_create_feedback_entries_table"
+]  
+[2025-11-25 18:11:57] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-25 18:11:57] production.ERROR: GPT classification error: Trying to access array offset on null  
+[2025-11-25 18:12:09] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-25 18:12:09] production.ERROR: GPT classification error: Trying to access array offset on null  
+[2025-11-25 18:12:31] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-25 18:12:31] production.ERROR: GPT classification error: Trying to access array offset on null  
+[2025-11-25 18:12:38] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-25 18:12:38] production.ERROR: GPT reply generation error: Trying to access array offset on null  
+[2025-11-25 18:12:44] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-25 18:12:44] production.ERROR: GPT recovery plan error: Trying to access array offset on null  
+[2025-11-25 18:13:33] production.ERROR: View [pagination.default] not found. {"view":{"view":"/home/johncarlo/Documents/Projects/FREE-TESK/review/review/resources/views/staff/feedback/index.blade.php","data":[]},"userId":10,"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): View [pagination.default] not found. at /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:138)
+[stacktrace]
+#0 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(78): Illuminate\\View\\FileViewFinder->findInPaths()
+#1 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/Factory.php(150): Illuminate\\View\\FileViewFinder->find()
+#2 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pagination/LengthAwarePaginator.php(102): Illuminate\\View\\Factory->make()
+#3 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pagination/LengthAwarePaginator.php(90): Illuminate\\Pagination\\LengthAwarePaginator->render()
+#4 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/resources/views/staff/feedback/index.blade.php(201): Illuminate\\Pagination\\LengthAwarePaginator->links()
+#5 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(123): require('...')
+#6 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#7 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(57): Illuminate\\Filesystem\\Filesystem->getRequire()
+#8 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(74): Illuminate\\View\\Engines\\PhpEngine->evaluatePath()
+#9 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/View.php(208): Illuminate\\View\\Engines\\CompilerEngine->get()
+#10 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/View.php(191): Illuminate\\View\\View->getContents()
+#11 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\\View\\View->renderContents()
+#12 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Http/Response.php(78): Illuminate\\View\\View->render()
+#13 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Http/Response.php(34): Illuminate\\Http\\Response->setContent()
+#14 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Router.php(924): Illuminate\\Http\\Response->__construct()
+#15 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Router.php(891): Illuminate\\Routing\\Router::toResponse()
+#16 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Routing\\Router->prepareResponse()
+#17 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(169): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#18 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/RequestLogger.php(32): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\RequestLogger->handle()
+#20 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/SyncAppLocaleFromCookie.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\SyncAppLocaleFromCookie->handle()
+#22 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/DatabaseUpdaterMiddleware.php(35): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\DatabaseUpdaterMiddleware->handle()
+#24 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/DropletMiddleware.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\DropletMiddleware->handle()
+#26 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/CustomDomainServer.php(167): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\CustomDomainServer->handle()
+#28 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/RemoveTrailingSlash.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\RemoveTrailingSlash->handle()
+#30 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/InstallMiddleware.php(40): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\InstallMiddleware->handle()
+#32 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#34 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Auth\\Middleware\\Authenticate->handle()
+#36 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(89): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#38 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(48): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#40 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/CookieAuthentication.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\CookieAuthentication->handle()
+#42 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(120): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#43 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#44 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Session\\Middleware\\StartSession->handle()
+#45 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#46 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#47 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(74): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#49 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then()
+#51 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack()
+#52 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute()
+#53 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute()
+#54 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#55 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(169): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#56 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/BenchmarkMiddleware.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#57 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\BenchmarkMiddleware->handle()
+#58 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#59 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#60 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#61 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#62 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#63 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#64 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#65 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#66 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#67 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#68 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(48): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#69 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#70 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#71 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#72 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#73 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#74 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#75 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle()
+#76 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(23): require_once('...')
+#77 {main}
+
+[previous exception] [object] (InvalidArgumentException(code: 0): View [pagination.default] not found. at /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:138)
+[stacktrace]
+#0 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(78): Illuminate\\View\\FileViewFinder->findInPaths()
+#1 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/Factory.php(150): Illuminate\\View\\FileViewFinder->find()
+#2 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pagination/LengthAwarePaginator.php(102): Illuminate\\View\\Factory->make()
+#3 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pagination/LengthAwarePaginator.php(90): Illuminate\\Pagination\\LengthAwarePaginator->render()
+#4 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/storage/framework/views/b1137660732fa4b9d5cd73395f3e96f2.php(203): Illuminate\\Pagination\\LengthAwarePaginator->links()
+#5 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(123): require('...')
+#6 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#7 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(57): Illuminate\\Filesystem\\Filesystem->getRequire()
+#8 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(74): Illuminate\\View\\Engines\\PhpEngine->evaluatePath()
+#9 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/View.php(208): Illuminate\\View\\Engines\\CompilerEngine->get()
+#10 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/View.php(191): Illuminate\\View\\View->getContents()
+#11 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/View.php(160): Illuminate\\View\\View->renderContents()
+#12 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Http/Response.php(78): Illuminate\\View\\View->render()
+#13 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Http/Response.php(34): Illuminate\\Http\\Response->setContent()
+#14 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Router.php(924): Illuminate\\Http\\Response->__construct()
+#15 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Router.php(891): Illuminate\\Routing\\Router::toResponse()
+#16 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Routing\\Router->prepareResponse()
+#17 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(169): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#18 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/RequestLogger.php(32): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\RequestLogger->handle()
+#20 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/SyncAppLocaleFromCookie.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\SyncAppLocaleFromCookie->handle()
+#22 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/DatabaseUpdaterMiddleware.php(35): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\DatabaseUpdaterMiddleware->handle()
+#24 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/DropletMiddleware.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\DropletMiddleware->handle()
+#26 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/CustomDomainServer.php(167): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\CustomDomainServer->handle()
+#28 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/RemoveTrailingSlash.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\RemoveTrailingSlash->handle()
+#30 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/InstallMiddleware.php(40): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\InstallMiddleware->handle()
+#32 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#34 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Auth\\Middleware\\Authenticate->handle()
+#36 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(89): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#38 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(48): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#40 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/CookieAuthentication.php(31): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\CookieAuthentication->handle()
+#42 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(120): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#43 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#44 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Session\\Middleware\\StartSession->handle()
+#45 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#46 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#47 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(74): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#49 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then()
+#51 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack()
+#52 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute()
+#53 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute()
+#54 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#55 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(169): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#56 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Http/Middleware/BenchmarkMiddleware.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#57 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): App\\Http\\Middleware\\BenchmarkMiddleware->handle()
+#58 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#59 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#60 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#61 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#62 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#63 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#64 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#65 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
+#66 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#67 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#68 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(48): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#69 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#70 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#71 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(208): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#72 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#73 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#74 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#75 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/public/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle()
+#76 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(23): require_once('...')
+#77 {main}
+"} 
+[2025-11-25 18:24:13] production.INFO: Staff Feedback Index {"user_id":10,"qrcode_ids_count":0,"qrcode_ids":[]} 
+[2025-11-25 18:24:18] production.INFO: Staff Feedback Index {"user_id":10,"qrcode_ids_count":0,"qrcode_ids":[]} 
+[2025-11-25 18:24:18] production.INFO: Staff Feedback Index {"user_id":10,"qrcode_ids_count":0,"qrcode_ids":[]} 
+[2025-11-25 18:24:18] production.INFO: Staff Feedback Index {"user_id":10,"qrcode_ids_count":0,"qrcode_ids":[]} 
+[2025-11-25 18:24:19] production.INFO: Staff Feedback Index {"user_id":10,"qrcode_ids_count":0,"qrcode_ids":[]} 
+[2025-11-25 18:24:19] production.INFO: Staff Feedback Index {"user_id":10,"qrcode_ids_count":0,"qrcode_ids":[]} 
+[2025-11-25 18:24:19] production.INFO: Staff Feedback Index {"user_id":10,"qrcode_ids_count":0,"qrcode_ids":[]} 
+[2025-11-25 18:24:19] production.INFO: Staff Feedback Index {"user_id":10,"qrcode_ids_count":0,"qrcode_ids":[]} 
+[2025-11-25 18:24:19] production.INFO: Staff Feedback Index {"user_id":10,"qrcode_ids_count":0,"qrcode_ids":[]} 
+[2025-11-25 18:24:20] production.INFO: Staff Feedback Index {"user_id":10,"qrcode_ids_count":0,"qrcode_ids":[]} 
+[2025-11-25 18:24:20] production.INFO: Staff Feedback Index {"user_id":10,"qrcode_ids_count":0,"qrcode_ids":[]} 
+[2025-11-25 18:25:48] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-25 18:26:31] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 

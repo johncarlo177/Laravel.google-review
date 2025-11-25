@@ -187,6 +187,15 @@ Route::get('/invoice/{uuid}', [InvoiceController::class, 'viewInvoice']);
 Route::get('/feedback/{token}', [App\Http\Controllers\FeedbackController::class, 'showRatingPage'])->name('feedback.rating');
 Route::post('/feedback/{token}/submit', [App\Http\Controllers\FeedbackController::class, 'submit'])->name('feedback.submit');
 
+// Staff feedback routes (protected)
+Route::middleware(['auth:sanctum'])->prefix('staff')->name('staff.')->group(function () {
+    Route::get('/feedback', [App\Http\Controllers\StaffFeedbackController::class, 'index'])->name('feedback.index');
+    Route::get('/feedback/{id}', [App\Http\Controllers\StaffFeedbackController::class, 'show'])->name('feedback.show');
+    Route::post('/feedback/{id}/approve-reply', [App\Http\Controllers\StaffFeedbackController::class, 'approveReply'])->name('feedback.approve-reply');
+    Route::post('/feedback/{id}/resolve', [App\Http\Controllers\StaffFeedbackController::class, 'markResolved'])->name('feedback.resolve');
+    Route::get('/feedback/export', [App\Http\Controllers\StaffFeedbackController::class, 'export'])->name('feedback.export');
+});
+
 // Test route to generate feedback URL (for testing)
 Route::get('/test-feedback', function() {
     $qrcode = \App\Models\QRCode::where('type', 'business-review')
