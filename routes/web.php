@@ -183,6 +183,29 @@ Route::get(
 
 Route::get('/invoice/{uuid}', [InvoiceController::class, 'viewInvoice']);
 
+// Feedback routes
+Route::get('/feedback/{token}', [App\Http\Controllers\FeedbackController::class, 'showRatingPage'])->name('feedback.rating');
+Route::post('/feedback/{token}/submit', [App\Http\Controllers\FeedbackController::class, 'submit'])->name('feedback.submit');
+
+// Test route to generate feedback URL (for testing)
+Route::get('/test-feedback', function() {
+    $qrcode = \App\Models\QRCode::where('type', 'business-review')
+        ->where('archived', false)
+        ->where('status', \App\Models\QRCode::STATUS_ENABLED)
+        ->first();
+    
+    if (!$qrcode) {
+        return 'No business-review QR code found. Please create one first.';
+    }
+    
+    $feedbackUrl = \App\Http\Controllers\FeedbackController::generateFeedbackUrl($qrcode);
+    
+    return view('feedback.test', [
+        'qrcode' => $qrcode,
+        'feedbackUrl' => $feedbackUrl,
+    ]);
+})->name('feedback.test');
+
 DashboardAssetsServer::registerWebRoute();
 
 Scramble::registerUiRoute(path: 'docs/api')->name('scramble.docs.ui');
