@@ -130,7 +130,7 @@
         <h2>Feedback URL:</h2>
         <div class="url-box"><?php echo e($feedbackUrl); ?></div>
 
-        <a href="<?php echo e($feedbackUrl); ?>" target="_blank" class="button">
+        <a href="<?php echo e($feedbackUrl); ?>" class="button">
             🚀 Open Feedback Rating Page
         </a>
 

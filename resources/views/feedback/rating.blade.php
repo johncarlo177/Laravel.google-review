@@ -15,7 +15,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 40px 20px 10px 20px;
+        padding: 40px 20px 20px 20px;
     }
 
     .feedback-container {

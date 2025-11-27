@@ -6,7 +6,7 @@
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         max-width: 900px;
         margin: 40px auto;
-        padding: 24px;
+        padding: 40px 24px;
         background: #f5f7fa;
         min-height: calc(100vh - 200px);
     }
@@ -132,7 +132,7 @@
         <h2>Feedback URL:</h2>
         <div class="url-box">{{ $feedbackUrl }}</div>
 
-        <a href="{{ $feedbackUrl }}" target="_blank" class="button">
+        <a href="{{ $feedbackUrl }}" class="button">
             🚀 Open Feedback Rating Page
         </a>
 
