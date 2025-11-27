@@ -4,53 +4,110 @@
 <style>
     .feedback-test-wrapper {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 20px;
-        background: #f5f5f5;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 24px;
+        background: #f5f7fa;
+        min-height: calc(100vh - 200px);
     }
     .card {
-        background: white;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        margin-bottom: 20px;
-        color: #333;
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.04);
+        color: #1a1d29;
+        border: 1px solid #e8ecf0;
     }
     h1 {
-        color: #333;
-        margin-bottom: 20px;
+        color: #1a1d29;
+        margin-bottom: 24px;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+    }
+    h2 {
+        color: #1a1d29;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        letter-spacing: -0.01em;
     }
     .info {
         background: #e3f2fd;
-        padding: 15px;
-        border-radius: 5px;
-        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 24px;
+        border-left: 4px solid #2196f3;
     }
     .info strong {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
+        color: #1976d2;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .info div {
+        color: #374151;
+        margin-bottom: 6px;
+        font-size: 14px;
     }
     .button {
         display: inline-block;
-        background: #667eea;
-        color: white;
-        padding: 15px 30px;
+        background: #4285f4;
+        color: #ffffff;
+        padding: 14px 32px;
         border-radius: 8px;
         text-decoration: none;
         font-weight: 600;
-        margin-top: 10px;
+        margin-top: 12px;
+        font-size: 15px;
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 2px 4px rgba(66, 133, 244, 0.2);
     }
     .button:hover {
-        background: #5568d3;
+        background: #357ae8;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
     }
     .url-box {
-        background: #f5f5f5;
-        padding: 15px;
-        border-radius: 5px;
+        background: #f9fafb;
+        padding: 16px;
+        border-radius: 8px;
         word-break: break-all;
-        font-family: monospace;
-        margin: 10px 0;
+        font-family: 'SF Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', monospace;
+        margin: 12px 0;
+        border: 1px solid #e5e7eb;
+        color: #1a1d29;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    ol {
+        color: #374151;
+        line-height: 1.8;
+        padding-left: 24px;
+    }
+    ol li {
+        margin-bottom: 8px;
+    }
+    @media (max-width: 640px) {
+        .feedback-test-wrapper {
+            padding: 16px;
+            margin: 20px auto;
+        }
+        .card {
+            padding: 28px 24px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+        .button {
+            width: 100%;
+            text-align: center;
+        }
     }
 </style>
 

@@ -12583,3 +12583,9 @@
 [2025-11-27 09:57:57] production.INFO: SMS reply sent successfully {"to":"18777804236"} 
 [2025-11-27 16:02:11] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
 [2025-11-27 16:06:43] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-27 16:22:04] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-27 16:27:43] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-27 16:42:13] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-27 16:43:29] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-27 16:44:10] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-27 16:44:58] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
