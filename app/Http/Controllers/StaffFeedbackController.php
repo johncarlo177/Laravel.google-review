@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\FeedbackEntry;
 use App\Models\FeedbackAuditLog;
 use App\Models\QRCode;
+use App\Support\Sms\SmsService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
@@ -256,9 +257,19 @@ class StaffFeedbackController extends Controller
                 Log::error('Error sending email reply: ' . $e->getMessage());
             }
         } elseif (preg_match('/^\+?[1-9]\d{1,14}$/', $contact)) {
-            // Send SMS (if SMS driver is configured)
-            // This would use the SMS system
-            Log::info('SMS reply would be sent to: ' . $contact);
+            // Send SMS using the SMS service
+            try {
+                $smsService = new SmsService();
+                $result = $smsService->send($contact, $reply);
+                
+                if ($result) {
+                    Log::info('SMS reply sent successfully', ['to' => $contact]);
+                } else {
+                    Log::warning('SMS reply failed to send', ['to' => $contact]);
+                }
+            } catch (\Exception $e) {
+                Log::error('Error sending SMS reply: ' . $e->getMessage());
+            }
         }
     }
 }

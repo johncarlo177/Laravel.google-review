@@ -12510,3 +12510,74 @@
 }  
 [2025-11-27 07:49:34] production.ERROR: GPT recovery plan error: Trying to access array offset on null  
 [2025-11-27 07:49:47] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-27 08:19:25] production.ERROR: Symfony\Component\Console\Question\Question::setHiddenFallback(): Argument #1 ($fallback) must be of type bool, null given, called in /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Console/Concerns/InteractsWithIO.php on line 198 {"exception":"[object] (TypeError(code: 0): Symfony\\Component\\Console\\Question\\Question::setHiddenFallback(): Argument #1 ($fallback) must be of type bool, null given, called in /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Console/Concerns/InteractsWithIO.php on line 198 at /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/symfony/console/Question/Question.php:118)
+[stacktrace]
+#0 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Console/Concerns/InteractsWithIO.php(198): Symfony\\Component\\Console\\Question\\Question->setHiddenFallback()
+#1 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/app/Console/Commands/ConfigureTwilioSms.php(49): Illuminate\\Console\\Command->secret()
+#2 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App\\Console\\Commands\\ConfigureTwilioSms->handle()
+#3 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
+#5 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#6 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\\Container\\BoundMethod::call()
+#7 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call()
+#8 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute()
+#9 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#10 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/symfony/console/Application.php(1094): Illuminate\\Console\\Command->run()
+#11 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/symfony/console/Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand()
+#12 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun()
+#13 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#14 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/artisan(39): Illuminate\\Foundation\\Console\\Kernel->handle()
+#15 {main}
+"} 
+[2025-11-27 08:36:57] production.ERROR: Twilio SMS failed {"status":400,"body":"{\"code\":21266,\"message\":\"'To' and 'From' number cannot be the same: +1833938XXXX\",\"more_info\":\"https://www.twilio.com/docs/errors/21266\",\"status\":400}"} 
+[2025-11-27 08:38:59] production.ERROR: Twilio SMS failed {"status":400,"body":"{\"code\":21211,\"message\":\"Invalid 'To' Phone Number: +123456XXXX\",\"more_info\":\"https://www.twilio.com/docs/errors/21211\",\"status\":400}"} 
+[2025-11-27 08:40:46] production.ERROR: Twilio SMS failed {"status":400,"body":"{\"code\":21408,\"message\":\"Permission to send an SMS has not been enabled for the region indicated by the 'To' number: +63977318XXXX\",\"more_info\":\"https://www.twilio.com/docs/errors/21408\",\"status\":400}"} 
+[2025-11-27 08:47:08] production.ERROR: Twilio SMS failed {"status":400,"body":"{\"code\":21608,\"message\":\"The number +63977318XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +63977318XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers\",\"more_info\":\"https://www.twilio.com/docs/errors/21608\",\"status\":400}"} 
+[2025-11-27 08:49:30] production.ERROR: Twilio SMS failed {"status":400,"body":"{\"code\":21608,\"message\":\"The number +861384016XXXX is unverified. Trial accounts cannot send messages to unverified numbers; verify +861384016XXXX at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers\",\"more_info\":\"https://www.twilio.com/docs/errors/21608\",\"status\":400}"} 
+[2025-11-27 09:44:12] production.ERROR: Too many arguments to "sms:test-twilio" command, expected arguments "phone" "message". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Too many arguments to \"sms:test-twilio\" command, expected arguments \"phone\" \"message\". at /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/symfony/console/Input/ArgvInput.php:199)
+[stacktrace]
+#0 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/symfony/console/Input/ArgvInput.php(92): Symfony\\Component\\Console\\Input\\ArgvInput->parseArgument()
+#1 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/symfony/console/Input/ArgvInput.php(77): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#2 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/symfony/console/Input/Input.php(53): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/symfony/console/Command/Command.php(238): Symfony\\Component\\Console\\Input\\Input->bind()
+#4 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#5 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/symfony/console/Application.php(1094): Illuminate\\Console\\Command->run()
+#6 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/symfony/console/Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand()
+#7 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun()
+#8 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#9 /home/johncarlo/Documents/Projects/FREE-TESK/review/review/artisan(39): Illuminate\\Foundation\\Console\\Kernel->handle()
+#10 {main}
+"} 
+[2025-11-27 09:53:37] production.INFO: Twilio SMS sent successfully {"sid":"SMefb90da50512e9651fbcde04dbee8f44"} 
+[2025-11-27 09:54:21] production.INFO: QRCodeScansCalculator: Current chunk offset: 0  
+[2025-11-27 09:55:30] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-27 09:55:30] production.ERROR: GPT classification error: Trying to access array offset on null  
+[2025-11-27 09:55:37] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-27 09:55:37] production.ERROR: GPT reply generation error: Trying to access array offset on null  
+[2025-11-27 09:55:43] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-27 09:55:43] production.ERROR: GPT recovery plan error: Trying to access array offset on null  
+[2025-11-27 09:56:10] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-27 09:57:57] production.INFO: Twilio SMS sent successfully {"sid":"SMcd6a32bf348f7978ed2ae811bed3d434"} 
+[2025-11-27 09:57:57] production.INFO: SMS sent successfully {"to":"18777804236","driver":"twilio","sid":"SMcd6a32bf348f7978ed2ae811bed3d434"} 
+[2025-11-27 09:57:57] production.INFO: SMS reply sent successfully {"to":"18777804236"} 
