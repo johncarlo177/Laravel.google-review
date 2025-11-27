@@ -12426,3 +12426,32 @@
 }  
 [2025-11-27 07:25:54] production.ERROR: GPT recovery plan error: Trying to access array offset on null  
 [2025-11-27 07:26:13] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-27 07:32:57] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-27 07:36:24] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-27 07:36:24] production.ERROR: GPT classification error: Trying to access array offset on null  
+[2025-11-27 07:36:31] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-27 07:36:31] production.ERROR: GPT reply generation error: Trying to access array offset on null  
+[2025-11-27 07:36:36] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-27 07:36:36] production.ERROR: GPT recovery plan error: Trying to access array offset on null  
+[2025-11-27 07:40:46] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 

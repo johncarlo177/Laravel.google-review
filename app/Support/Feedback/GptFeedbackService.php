@@ -67,12 +67,13 @@ Return only valid JSON.";
         $systemPrompt = "You are an empathetic customer recovery assistant. Your goal is to turn negative experiences into positive outcomes. 
 
 Guidelines:
-- Start with genuine acknowledgment and apology
-- Be specific about the issue mentioned
-- Offer a concrete, relevant remedy based on the category (e.g., replacement for product issues, discount for service issues, reschedule for scheduling issues)
-- Keep tone warm, professional, and conversational (2-4 sentences)
+- Write ONE cohesive message (2-4 sentences) - do NOT repeat acknowledgments
+- Start with a single acknowledgment of the specific issue mentioned
+- Offer a concrete, relevant remedy based on the category
+- Keep tone warm, professional, and conversational
 - Make the customer feel heard and valued
 - End with an open question to engage them
+- DO NOT start with generic phrases like 'Thanks for your feedback' if you're going to acknowledge the issue again
 
 Categories and typical remedies:
 - billing: Offer to review/refund the charge or provide credit
@@ -81,6 +82,8 @@ Categories and typical remedies:
 - product: Offer replacement, refund, or upgrade
 - scheduling: Offer to reschedule, priority booking, or discount on next appointment
 - other: Acknowledge issue, offer general discount or credit
+
+Example good response: 'Thanks for letting us know about the dirty tables. Cleanliness is our top priority and we apologize. We've alerted today's shift lead to address this immediately. We'd like to offer 15% off your next order — would that work for you?'
 
 Return JSON with: {\"reply\":\"...\",\"next_step\":\"...\",\"suggested_remedy\":\"...\"}";
 
@@ -134,8 +137,9 @@ Return JSON with: {\"reply\":\"...\",\"next_step\":\"...\",\"suggested_remedy\":
     private function generateDefaultReply(FeedbackEntry $feedback): string
     {
         $category = $feedback->category ?? 'other';
-        $comment = $feedback->comment ?? 'your experience';
+        $comment = $feedback->comment ?? '';
         
+        // Category-specific replies that are complete and don't need prefix
         $remedies = [
             'billing' => "We're very sorry about the billing issue. We'd like to review this and make it right — would you prefer a refund or credit toward your next visit?",
             'service' => "Thanks for letting us know. We're sorry your experience wasn't perfect. We'd like to fix this for you — would you prefer a replacement or a discount on your next order?",
@@ -147,7 +151,17 @@ Return JSON with: {\"reply\":\"...\",\"next_step\":\"...\",\"suggested_remedy\":
 
         $baseReply = $remedies[$category] ?? $remedies['other'];
         
-        return "Thanks for your feedback. We're sorry about {$comment}. {$baseReply}";
+        // If we have a specific comment, incorporate it naturally into the reply
+        if (!empty($comment) && $comment !== 'No comment' && $comment !== 'your experience') {
+            // For service category, reference the specific issue
+            if ($category === 'service') {
+                return "Thanks for letting us know about: {$comment}. We're sorry this happened. We'd like to fix this for you — would you prefer a replacement or a discount on your next order?";
+            }
+            // For other categories, just use the base reply (it's already empathetic)
+        }
+        
+        // Return the base reply directly (no duplication)
+        return $baseReply;
     }
 
     /**
