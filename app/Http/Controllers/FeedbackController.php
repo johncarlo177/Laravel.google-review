@@ -140,12 +140,26 @@ class FeedbackController extends Controller
             // Generate GPT reply and recovery plan
             $replyData = $gptService->generateReply($feedback);
             $recoveryPlan = $gptService->generateRecoveryPlan($feedback);
+            
+            // Generate operational recommendation
+            // Count similar issues in last 30 days for frequency analysis
+            $similarIssuesCount = FeedbackEntry::where('qrcode_id', $qrcode->id)
+                ->where('category', $feedback->category)
+                ->where('created_at', '>=', now()->subDays(30))
+                ->count();
+            
+            $operationalRecommendation = $gptService->generateOperationalRecommendation($feedback, $similarIssuesCount);
+            
+            // Schedule follow-up (3 days after resolution attempt)
+            $followupScheduled = now()->addDays(3);
 
             $feedback->update([
                 'gpt_reply' => $replyData['reply'],
                 'gpt_next_step' => $replyData['next_step'],
                 'gpt_suggested_remedy' => $replyData['suggested_remedy'] ?? null,
                 'gpt_actions' => $recoveryPlan,
+                'operational_recommendation' => $operationalRecommendation,
+                'followup_scheduled_at' => $followupScheduled,
             ]);
 
             // Log reply generation

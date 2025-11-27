@@ -198,6 +198,17 @@
             </div>
         @endif
 
+        <!-- Operational Recommendation -->
+        @if($feedback->operational_recommendation)
+            <div class="section">
+                <h2>🤖 AI Operational Recommendation</h2>
+                <div style="padding: 15px; background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 4px; color: #856404;">
+                    <strong>System Suggestion:</strong>
+                    <p style="margin: 10px 0 0 0; line-height: 1.6;">{{ $feedback->operational_recommendation }}</p>
+                </div>
+            </div>
+        @endif
+
         <!-- Recovery Plan -->
         @if($feedback->gpt_actions && count($feedback->gpt_actions) > 0)
             <div class="section">
@@ -213,6 +224,43 @@
                 </ul>
             </div>
         @endif
+
+        <!-- Follow-up Status -->
+        <div class="section">
+            <h2>Follow-up Status</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <label>Follow-up Scheduled</label>
+                    <div class="value">{{ $feedback->followup_scheduled_at ? $feedback->followup_scheduled_at->format('M d, Y H:i') : 'Not scheduled' }}</div>
+                </div>
+                <div class="info-item">
+                    <label>Follow-up Sent</label>
+                    <div class="value">{{ $feedback->followup_sent_at ? $feedback->followup_sent_at->format('M d, Y H:i') : 'Not sent' }}</div>
+                </div>
+                <div class="info-item">
+                    <label>Customer Satisfied</label>
+                    <div class="value">
+                        @if($feedback->customer_satisfied === true)
+                            <span style="color: #4caf50;">✓ Yes</span>
+                        @elseif($feedback->customer_satisfied === false)
+                            <span style="color: #f44336;">✗ No</span>
+                        @else
+                            Pending
+                        @endif
+                    </div>
+                </div>
+                <div class="info-item">
+                    <label>Google Review Requested</label>
+                    <div class="value">
+                        @if($feedback->google_review_requested)
+                            <span style="color: #4caf50;">✓ Yes</span>
+                        @else
+                            <span style="color: #999;">Not yet</span>
+                        @endif
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Actions -->
         <div class="section">

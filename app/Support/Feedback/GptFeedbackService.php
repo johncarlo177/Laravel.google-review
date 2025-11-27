@@ -64,31 +64,43 @@ Return only valid JSON.";
      */
     public function generateReply(FeedbackEntry $feedback): array
     {
-        $systemPrompt = "You are an empathetic customer recovery assistant. Your goal is to turn negative experiences into positive outcomes. 
+        $systemPrompt = "You are an AI agentic recovery assistant. Your responses must be concise, empathetic, and action-oriented (2-3 sentences maximum).
 
-Guidelines:
-- Write ONE cohesive message (2-4 sentences) - do NOT repeat acknowledgments
-- Start with a single acknowledgment of the specific issue mentioned
-- Offer a concrete, relevant remedy based on the category
-- Keep tone warm, professional, and conversational
-- Make the customer feel heard and valued
-- End with an open question to engage them
-- DO NOT start with generic phrases like 'Thanks for your feedback' if you're going to acknowledge the issue again
+CRITICAL STYLE RULES:
+- Start with brief acknowledgment: 'Thanks for letting us know' or 'Thank you for your honest feedback'
+- Acknowledge the SPECIFIC issue mentioned in their comment
+- Apologize sincerely (one sentence)
+- Offer a CONCRETE remedy with specific details (discount %, replacement, etc.)
+- End with a question to engage them
+- Keep it SHORT - maximum 3 sentences total
+- Be warm but professional
+- DO NOT repeat information or use filler words
 
-Categories and typical remedies:
-- billing: Offer to review/refund the charge or provide credit
-- service: Offer replacement, discount (15-25%), or free item/service
-- staff: Apologize, mention internal review, offer discount or free item
-- product: Offer replacement, refund, or upgrade
-- scheduling: Offer to reschedule, priority booking, or discount on next appointment
-- other: Acknowledge issue, offer general discount or credit
+Category-specific response patterns:
 
-Example good response: 'Thanks for letting us know about the dirty tables. Cleanliness is our top priority and we apologize. We've alerted today's shift lead to address this immediately. We'd like to offer 15% off your next order — would that work for you?'
+SERVICE (food quality, wait times, cleanliness):
+- Pattern: 'Thanks for letting us know. [Acknowledge specific issue]. We apologize. [Immediate action taken]. We'd like to offer [specific remedy] — would you prefer [option A] or [option B]?'
+- Example: 'Thanks for letting us know. We're very sorry your meal arrived cold. We'd like to fix this for you right away — would you prefer a replacement or a credit toward your next order?'
 
-Return JSON with: {\"reply\":\"...\",\"next_step\":\"...\",\"suggested_remedy\":\"...\"}";
+STAFF (rude, unprofessional):
+- Pattern: 'Thank you for your honest feedback. We're sorry about your experience — that's not the level of service we aim for. We're addressing this internally, and we'd like to offer you [specific remedy].'
+- Example: 'Thank you for your honest feedback. We're sorry about your experience — that's not the level of service we aim for. We're addressing this internally, and we'd like to offer you a free coffee on your next visit.'
+
+PRODUCT (wrong item, defective):
+- Pattern: 'Sorry about that! [Immediate action]. Thank you for pointing this out so we can improve.'
+- Example: 'Sorry about that! We'll send the correct item today — no return needed. Thank you for pointing this out so we can improve.'
+
+SCHEDULING (long waits, missed appointments):
+- Pattern: 'Thanks for letting us know. [Acknowledge frustration]. We want to make this right — we can offer [specific remedy].'
+- Example: 'Thanks for letting us know. Long waits are frustrating, and we apologize. We want to make this right — we can offer 20% off your next appointment.'
+
+BILLING (charges, pricing):
+- Pattern: 'We're very sorry about the billing issue. We'd like to review this and make it right — would you prefer a refund or credit toward your next visit?'
+
+Return JSON: {\"reply\":\"...\",\"next_step\":\"...\",\"suggested_remedy\":\"...\"}";
 
         $userPrompt = sprintf(
-            "Customer Rating: %d/5 stars\n\nCustomer Feedback: \"%s\"\n\nIssue Category: %s\nUrgency Level: %s\n\nGenerate a warm, empathetic response that:\n1. Acknowledges their specific issue\n2. Apologizes sincerely\n3. Offers a specific remedy appropriate for this category\n4. Asks how they'd like to proceed or what would make it right",
+            "Customer Rating: %d/5 stars\n\nCustomer Feedback: \"%s\"\n\nIssue Category: %s\nUrgency Level: %s\n\nGenerate a concise, agentic recovery response (2-3 sentences max) following the exact pattern for this category. Reference their specific issue directly. Be direct and action-oriented.",
             $feedback->rating,
             $feedback->comment ?? 'No specific comment provided',
             $feedback->category ?? 'other',
@@ -139,29 +151,33 @@ Return JSON with: {\"reply\":\"...\",\"next_step\":\"...\",\"suggested_remedy\":
         $category = $feedback->category ?? 'other';
         $comment = $feedback->comment ?? '';
         
-        // Category-specific replies that are complete and don't need prefix
+        // Category-specific replies matching the agentic style (2-3 sentences, concise)
         $remedies = [
             'billing' => "We're very sorry about the billing issue. We'd like to review this and make it right — would you prefer a refund or credit toward your next visit?",
-            'service' => "Thanks for letting us know. We're sorry your experience wasn't perfect. We'd like to fix this for you — would you prefer a replacement or a discount on your next order?",
-            'staff' => "Thank you for your honest feedback. We're sorry about your experience — that's not the level of service we aim for. We're addressing this internally, and we'd like to offer you a discount on your next visit.",
-            'product' => "We're sorry the product wasn't right. We'll send a replacement right away — no return needed. Thank you for pointing this out so we can improve.",
-            'scheduling' => "We apologize for the scheduling issue. Long waits are frustrating. We want to make this right — we can offer priority booking for your next appointment or a discount.",
+            'service' => function($comment) {
+                $issue = !empty($comment) ? strtolower($comment) : 'your experience';
+                if (stripos($issue, 'cold') !== false || stripos($issue, 'food') !== false) {
+                    return "Thanks for letting us know. We're very sorry your meal arrived cold. We'd like to fix this for you right away — would you prefer a replacement or a credit toward your next order?";
+                } elseif (stripos($issue, 'dirty') !== false || stripos($issue, 'clean') !== false) {
+                    return "Thanks for telling us. Cleanliness is top priority and we apologize. We've alerted today's shift lead to address this immediately. We'd like to offer 15% off your next order.";
+                }
+                return "Thanks for letting us know. We're sorry your experience wasn't perfect. We'd like to fix this for you — would you prefer a replacement or a discount on your next order?";
+            },
+            'staff' => "Thank you for your honest feedback. We're sorry about your experience — that's not the level of service we aim for. We're addressing this internally, and we'd like to offer you a free item on your next visit.",
+            'product' => "Sorry about that! We'll send the correct item today — no return needed. Thank you for pointing this out so we can improve.",
+            'scheduling' => "Thanks for letting us know. Long waits are frustrating, and we apologize. We want to make this right — we can offer 20% off your next appointment.",
             'other' => "Thanks for letting us know. We're sorry your experience wasn't what you expected. We'd like to make this right — what would work best for you?",
         ];
 
-        $baseReply = $remedies[$category] ?? $remedies['other'];
+        $baseRemedy = $remedies[$category] ?? $remedies['other'];
         
-        // If we have a specific comment, incorporate it naturally into the reply
-        if (!empty($comment) && $comment !== 'No comment' && $comment !== 'your experience') {
-            // For service category, reference the specific issue
-            if ($category === 'service') {
-                return "Thanks for letting us know about: {$comment}. We're sorry this happened. We'd like to fix this for you — would you prefer a replacement or a discount on your next order?";
-            }
-            // For other categories, just use the base reply (it's already empathetic)
+        // Handle service category with callable for dynamic responses
+        if ($category === 'service' && is_callable($baseRemedy)) {
+            return $baseRemedy($comment);
         }
         
-        // Return the base reply directly (no duplication)
-        return $baseReply;
+        // For other categories, return the base reply directly
+        return is_string($baseRemedy) ? $baseRemedy : $remedies['other'];
     }
 
     /**
@@ -203,6 +219,77 @@ Return JSON with: {\"reply\":\"...\",\"next_step\":\"...\",\"suggested_remedy\":
         ];
         
         return $remedies[$category] ?? 'Discount or credit based on specific issue';
+    }
+
+    /**
+     * Generate operational recommendation based on category and frequency
+     */
+    public function generateOperationalRecommendation(FeedbackEntry $feedback, int $frequency = 0): ?string
+    {
+        $category = $feedback->category ?? 'other';
+        $comment = $feedback->comment ?? '';
+        
+        $recommendations = [
+            'service' => function($freq, $comment) {
+                if (stripos($comment, 'wait') !== false || stripos($comment, 'time') !== false) {
+                    return $freq > 10 
+                        ? "Peak-time bookings exceed staff capacity. Recommendation: Add a text-based check-in system or increase staff during peak hours."
+                        : "Consider optimizing scheduling to reduce wait times.";
+                } elseif (stripos($comment, 'cold') !== false || stripos($comment, 'food') !== false) {
+                    return "Food temperature issues detected. Recommendation: Review delivery timeframes and implement temperature monitoring.";
+                } elseif (stripos($comment, 'dirty') !== false || stripos($comment, 'clean') !== false) {
+                    return "Cleanliness issues reported. Recommendation: Implement hourly cleaning checklists and staff training on cleanliness standards.";
+                }
+                return "Service quality issues detected. Recommendation: Review service processes and implement quality checks.";
+            },
+            'staff' => function($freq) {
+                return $freq > 5 
+                    ? "Multiple staff-related complaints. Recommendation: Provide customer service training and coaching on interaction scripts."
+                    : "Staff interaction issue. Recommendation: Review with team member and provide coaching.";
+            },
+            'product' => function($freq) {
+                return $freq > 3
+                    ? "Fulfillment errors occurring frequently. Recommendation: Implement double-check system before shipping."
+                    : "Fulfillment error detected. Recommendation: Review fulfillment process.";
+            },
+            'scheduling' => function($freq) {
+                return $freq > 10
+                    ? "Scheduling issues exceed capacity. Recommendation: Optimize booking system and consider adding buffer time between appointments."
+                    : "Scheduling issue detected. Recommendation: Review booking system.";
+            },
+            'billing' => function($freq) {
+                return "Billing issue detected. Recommendation: Review billing process and implement verification steps.";
+            },
+            'other' => function() {
+                return "Customer concern identified. Recommendation: Review and address root cause.";
+            },
+        ];
+        
+        $recommendation = $recommendations[$category] ?? $recommendations['other'];
+        return is_callable($recommendation) ? $recommendation($frequency, $comment) : $recommendation;
+    }
+
+    /**
+     * Generate follow-up message based on feedback status
+     */
+    public function generateFollowUpMessage(FeedbackEntry $feedback, string $type = 'check_in'): string
+    {
+        $messages = [
+            'check_in' => "Just checking in — did our team address your concern?",
+            'satisfaction' => "Was everything better this time?",
+            'review_request' => function($category) {
+                if ($category === 'service') {
+                    return "Great! Would you mind sharing your updated experience on Google? It helps a small business a lot.";
+                }
+                return "Glad to help! If you're comfortable, we'd appreciate a quick review about your experience.";
+            },
+        ];
+        
+        if ($type === 'review_request' && is_callable($messages[$type])) {
+            return $messages[$type]($feedback->category);
+        }
+        
+        return $messages[$type] ?? $messages['check_in'];
     }
 
     /**

@@ -20,6 +20,11 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null gpt_suggested_remedy
  * @property array|null gpt_actions
  * @property string status
+ * @property \Carbon\Carbon|null followup_sent_at
+ * @property \Carbon\Carbon|null followup_scheduled_at
+ * @property bool|null customer_satisfied
+ * @property bool google_review_requested
+ * @property string|null operational_recommendation
  * @property \Carbon\Carbon created_at
  * @property \Carbon\Carbon updated_at
  * @property QRCode qrcode
@@ -44,12 +49,21 @@ class FeedbackEntry extends Model
         'gpt_suggested_remedy',
         'gpt_actions',
         'status',
+        'followup_sent_at',
+        'followup_scheduled_at',
+        'customer_satisfied',
+        'google_review_requested',
+        'operational_recommendation',
     ];
 
     protected $casts = [
         'rating' => 'integer',
         'escalate' => 'boolean',
         'gpt_actions' => 'array',
+        'customer_satisfied' => 'boolean',
+        'google_review_requested' => 'boolean',
+        'followup_sent_at' => 'datetime',
+        'followup_scheduled_at' => 'datetime',
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];
