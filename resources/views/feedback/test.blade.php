@@ -90,6 +90,13 @@
     ol li {
         margin-bottom: 8px;
     }
+    
+    /* Remove layout-gap spacing */
+    .layout-gap {
+        display: none !important;
+        margin: 0 !important;
+    }
+    
     @media (max-width: 640px) {
         .feedback-test-wrapper {
             padding: 16px;

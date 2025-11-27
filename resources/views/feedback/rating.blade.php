@@ -237,6 +237,12 @@
         }
     }
 
+    /* Remove layout-gap spacing */
+    .layout-gap {
+        display: none !important;
+        margin: 0 !important;
+    }
+
     @media (max-width: 640px) {
         /* .feedback-page-wrapper {
             padding: 24px 16px;

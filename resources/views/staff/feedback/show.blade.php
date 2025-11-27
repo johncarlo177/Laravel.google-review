@@ -4,7 +4,7 @@
 <style>
     .staff-feedback-show-wrapper {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        padding: 24px;
+        padding: 40px 20px 10px 20px;
         background: #f5f7fa;
         min-height: calc(100vh - 200px);
     }
@@ -213,9 +213,16 @@
     table tr:hover {
         background: #f9fafb;
     }
+    
+    /* Remove layout-gap spacing */
+    .layout-gap {
+        display: none !important;
+        margin: 0 !important;
+    }
+    
     @media (max-width: 768px) {
         .staff-feedback-show-wrapper {
-            padding: 16px;
+            padding: 40px 20px 20px 20px;
         }
         .container {
             padding: 24px;

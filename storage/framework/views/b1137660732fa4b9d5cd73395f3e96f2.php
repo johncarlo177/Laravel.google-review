@@ -151,6 +151,13 @@
         font-size: 18px;
         letter-spacing: 2px;
     }
+    
+    /* Remove layout-gap spacing */
+    .layout-gap {
+        display: none !important;
+        margin: 0 !important;
+    }
+    
     @media (max-width: 1024px) {
         .container {
             padding: 24px;

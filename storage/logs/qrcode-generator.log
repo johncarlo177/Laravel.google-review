@@ -12589,3 +12589,5 @@
 [2025-11-27 16:43:29] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
 [2025-11-27 16:44:10] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
 [2025-11-27 16:44:58] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-27 16:47:37] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-27 16:49:12] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
