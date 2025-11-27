@@ -177,11 +177,20 @@
                 <h2>AI Suggested Reply</h2>
                 <form method="POST" action="<?php echo e(route('staff.feedback.approve-reply', $feedback->id)); ?>">
                     <?php echo csrf_field(); ?>
-                    <textarea name="reply" required><?php echo e($feedback->gpt_reply); ?></textarea>
-                    <div style="margin-top: 10px; font-size: 12px; color: #666;">
-                        <strong>Suggested Next Step:</strong> <?php echo e($feedback->gpt_next_step); ?>
+                    <textarea name="reply" required style="min-height: 150px;"><?php echo e($feedback->gpt_reply); ?></textarea>
+                    
+                    <?php if($feedback->gpt_suggested_remedy): ?>
+                        <div style="margin-top: 15px; padding: 12px; background: #e3f2fd; border-left: 4px solid #2196f3; border-radius: 4px;">
+                            <strong style="color: #1976d2; display: block; margin-bottom: 5px;">💡 Suggested Remedy:</strong>
+                            <span style="color: #333;"><?php echo e($feedback->gpt_suggested_remedy); ?></span>
+                        </div>
+                    <?php endif; ?>
+                    
+                    <div style="margin-top: 15px; padding: 10px; background: #f5f5f5; border-radius: 4px; font-size: 13px; color: #666;">
+                        <strong>📋 Suggested Next Step:</strong> <?php echo e($feedback->gpt_next_step); ?>
 
                     </div>
+                    
                     <div class="actions" style="margin-top: 20px;">
                         <button type="submit" class="btn btn-success">Approve & Send Reply</button>
                         <a href="<?php echo e(route('staff.feedback.index')); ?>" class="btn btn-secondary">Back to List</a>

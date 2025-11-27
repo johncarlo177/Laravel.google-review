@@ -17,6 +17,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property bool escalate
  * @property string|null gpt_reply
  * @property string|null gpt_next_step
+ * @property string|null gpt_suggested_remedy
  * @property array|null gpt_actions
  * @property string status
  * @property \Carbon\Carbon created_at
@@ -40,6 +41,7 @@ class FeedbackEntry extends Model
         'escalate',
         'gpt_reply',
         'gpt_next_step',
+        'gpt_suggested_remedy',
         'gpt_actions',
         'status',
     ];

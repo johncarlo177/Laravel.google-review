@@ -144,6 +144,7 @@ class FeedbackController extends Controller
             $feedback->update([
                 'gpt_reply' => $replyData['reply'],
                 'gpt_next_step' => $replyData['next_step'],
+                'gpt_suggested_remedy' => $replyData['suggested_remedy'] ?? null,
                 'gpt_actions' => $recoveryPlan,
             ]);
 
