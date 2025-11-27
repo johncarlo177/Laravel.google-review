@@ -12581,3 +12581,5 @@
 [2025-11-27 09:57:57] production.INFO: Twilio SMS sent successfully {"sid":"SMcd6a32bf348f7978ed2ae811bed3d434"} 
 [2025-11-27 09:57:57] production.INFO: SMS sent successfully {"to":"18777804236","driver":"twilio","sid":"SMcd6a32bf348f7978ed2ae811bed3d434"} 
 [2025-11-27 09:57:57] production.INFO: SMS reply sent successfully {"to":"18777804236"} 
+[2025-11-27 16:02:11] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-27 16:06:43] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 

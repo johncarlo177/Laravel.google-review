@@ -1,24 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback Details</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: #f5f5f5;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+@extends('blue.layouts.page')
+
+@section('page-content')
+<style>
+    .staff-feedback-show-wrapper {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        padding: 20px;
+        background: #f5f5f5;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
         .header {
             display: flex;
             justify-content: space-between;
@@ -118,14 +114,14 @@
             border-radius: 4px;
             margin-bottom: 20px;
         }
-        .alert-success {
-            background: #e8f5e9;
-            color: #2e7d32;
-            border: 1px solid #4caf50;
-        }
-    </style>
-</head>
-<body>
+    .alert-success {
+        background: #e8f5e9;
+        color: #2e7d32;
+        border: 1px solid #4caf50;
+    }
+</style>
+
+<div class="staff-feedback-show-wrapper">
     <div class="container">
         <div class="header">
             <h1>Feedback #{{ $feedback->id }}</h1>
@@ -301,6 +297,6 @@
             </div>
         @endif
     </div>
-</body>
-</html>
+</div>
+@endsection
 

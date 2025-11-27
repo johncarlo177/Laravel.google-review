@@ -1,24 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback Details</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: #f5f5f5;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+<?php $__env->startSection('page-content'); ?>
+<style>
+    .staff-feedback-show-wrapper {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        padding: 20px;
+        background: #f5f5f5;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
         .header {
             display: flex;
             justify-content: space-between;
@@ -118,14 +112,14 @@
             border-radius: 4px;
             margin-bottom: 20px;
         }
-        .alert-success {
-            background: #e8f5e9;
-            color: #2e7d32;
-            border: 1px solid #4caf50;
-        }
-    </style>
-</head>
-<body>
+    .alert-success {
+        background: #e8f5e9;
+        color: #2e7d32;
+        border: 1px solid #4caf50;
+    }
+</style>
+
+<div class="staff-feedback-show-wrapper">
     <div class="container">
         <div class="header">
             <h1>Feedback #<?php echo e($feedback->id); ?></h1>
@@ -302,7 +296,8 @@
             </div>
         <?php endif; ?>
     </div>
-</body>
-</html>
+</div>
+<?php $__env->stopSection(); ?>
 
-<?php /**PATH /home/johncarlo/Documents/Projects/FREE-TESK/review/review/resources/views/staff/feedback/show.blade.php ENDPATH**/ ?>
+
+<?php echo $__env->make('blue.layouts.page', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH /home/johncarlo/Documents/Projects/FREE-TESK/review/review/resources/views/staff/feedback/show.blade.php ENDPATH**/ ?>

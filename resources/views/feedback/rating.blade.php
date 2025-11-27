@@ -1,233 +1,229 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ $businessName }} - Rate Your Experience</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+@extends('blue.layouts.page')
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
+@section('page-content')
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
+    .feedback-page-wrapper {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: calc(100vh - 200px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+
+    .feedback-container {
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 500px;
+        width: 100%;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 30px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    .stars-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+
+    .star {
+        font-size: 48px;
+        color: #ddd;
+        cursor: pointer;
+        transition: all 0.2s;
+        user-select: none;
+    }
+
+    .star:hover {
+        transform: scale(1.1);
+    }
+
+    .star.active,
+    .star.selected {
+        color: #ffd700;
+    }
+
+    /* High rating section (4-5 stars) */
+    .high-rating-section {
+        display: none;
+        margin-top: 30px;
+    }
+
+    .high-rating-section.show {
+        display: block;
+    }
+
+    .high-rating-message {
+        color: #333;
+        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .google-review-button {
+        display: inline-block;
+        background: #4285f4;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s;
+        margin-top: 10px;
+    }
+
+    .google-review-button:hover {
+        background: #357ae8;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
+    }
+
+    /* Low rating section (1-3 stars) */
+    .low-rating-section {
+        display: none;
+        margin-top: 30px;
+    }
+
+    .low-rating-section.show {
+        display: block;
+    }
+
+    .low-rating-message {
+        color: #333;
+        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .feedback-form {
+        text-align: left;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        color: #333;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 16px;
+        font-family: inherit;
+        transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #667eea;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    .form-group small {
+        display: block;
+        color: #666;
+        font-size: 12px;
+        margin-top: 4px;
+    }
+
+    .button-group {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .btn {
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .btn-primary {
+        background: #667eea;
+        color: white;
+    }
+
+    .btn-primary:hover {
+        background: #5568d3;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    }
+
+    .btn-secondary {
+        background: #f5f5f5;
+        color: #333;
+    }
+
+    .btn-secondary:hover {
+        background: #e0e0e0;
+    }
+
+    .footer-note {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #e0e0e0;
+        font-size: 12px;
+        color: #666;
+        line-height: 1.5;
+    }
+
+    @media (max-width: 480px) {
         .feedback-container {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            max-width: 500px;
-            width: 100%;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            text-align: center;
+            padding: 30px 20px;
         }
 
         h1 {
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 30px;
-            font-weight: 600;
-            line-height: 1.4;
-        }
-
-        .stars-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
+            font-size: 20px;
         }
 
         .star {
-            font-size: 48px;
-            color: #ddd;
-            cursor: pointer;
-            transition: all 0.2s;
-            user-select: none;
+            font-size: 40px;
         }
+    }
+</style>
 
-        .star:hover {
-            transform: scale(1.1);
-        }
-
-        .star.active,
-        .star.selected {
-            color: #ffd700;
-        }
-
-        /* High rating section (4-5 stars) */
-        .high-rating-section {
-            display: none;
-            margin-top: 30px;
-        }
-
-        .high-rating-section.show {
-            display: block;
-        }
-
-        .high-rating-message {
-            color: #333;
-            font-size: 18px;
-            margin-bottom: 20px;
-            line-height: 1.5;
-        }
-
-        .google-review-button {
-            display: inline-block;
-            background: #4285f4;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 600;
-            transition: all 0.3s;
-            margin-top: 10px;
-        }
-
-        .google-review-button:hover {
-            background: #357ae8;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
-        }
-
-        /* Low rating section (1-3 stars) */
-        .low-rating-section {
-            display: none;
-            margin-top: 30px;
-        }
-
-        .low-rating-section.show {
-            display: block;
-        }
-
-        .low-rating-message {
-            color: #333;
-            font-size: 18px;
-            margin-bottom: 20px;
-            line-height: 1.5;
-        }
-
-        .feedback-form {
-            text-align: left;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            color: #333;
-            font-size: 14px;
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-size: 16px;
-            font-family: inherit;
-            transition: border-color 0.3s;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        .form-group small {
-            display: block;
-            color: #666;
-            font-size: 12px;
-            margin-top: 4px;
-        }
-
-        .button-group {
-            display: flex;
-            gap: 10px;
-            flex-direction: column;
-            margin-top: 20px;
-        }
-
-        .btn {
-            padding: 15px 30px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
-        }
-
-        .btn-primary {
-            background: #667eea;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #5568d3;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-        }
-
-        .btn-secondary {
-            background: #f5f5f5;
-            color: #333;
-        }
-
-        .btn-secondary:hover {
-            background: #e0e0e0;
-        }
-
-        .footer-note {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            font-size: 12px;
-            color: #666;
-            line-height: 1.5;
-        }
-
-        @media (max-width: 480px) {
-            .feedback-container {
-                padding: 30px 20px;
-            }
-
-            h1 {
-                font-size: 20px;
-            }
-
-            .star {
-                font-size: 40px;
-            }
-        }
-    </style>
-</head>
-<body>
+<div class="feedback-page-wrapper">
     <div class="feedback-container">
         <h1>How did we do today?<br>Rate your experience — 1–5 stars.</h1>
 
@@ -300,8 +296,9 @@
             All customers may leave public reviews; private feedback helps us resolve issues faster.
         </div>
     </div>
+</div>
 
-    <script>
+<script>
         document.addEventListener('DOMContentLoaded', function() {
             const stars = document.querySelectorAll('.star');
             const highRatingSection = document.getElementById('highRatingSection');
@@ -387,6 +384,5 @@
             });
         });
     </script>
-</body>
-</html>
+@endsection
 
