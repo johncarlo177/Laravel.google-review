@@ -307,6 +307,10 @@
             <p class="high-rating-message">
                 Thanks — we're glad you enjoyed it! Would you share your experience on Google?
             </p>
+            <div id="highRatingLoading" style="display: none; text-align: center; padding: 16px; margin-top: 16px;">
+                <span style="display: inline-block; width: 20px; height: 20px; border: 3px solid #4285f4; border-top-color: transparent; border-radius: 50%; animation: spin 0.6s linear infinite; margin-right: 8px; vertical-align: middle;"></span>
+                <span style="color: #4285f4; font-weight: 500;">Submitting your feedback...</span>
+            </div>
             @if($googleReviewUrl)
                 <a href="{{ $googleReviewUrl }}" target="_blank" class="google-review-button">
                     Leave a Google Review
@@ -346,7 +350,7 @@
                 </div>
 
                 <div class="button-group">
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary" id="sendFeedbackBtn">
                         Send Feedback to Business
                     </button>
                     @if($googleReviewUrl)
@@ -393,6 +397,12 @@
                         // High rating (4-5 stars) - submit directly
                         highRatingSection.classList.add('show');
                         lowRatingSection.classList.remove('show');
+                        
+                        // Show loading indicator
+                        const loadingIndicator = document.getElementById('highRatingLoading');
+                        if (loadingIndicator) {
+                            loadingIndicator.style.display = 'block';
+                        }
                         
                         // Auto-submit for 4-5 stars after a short delay
                         setTimeout(() => {
@@ -450,6 +460,22 @@
                 }
             });
         });
+
+        // Add loading state to feedback form submission
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            const btn = document.getElementById('sendFeedbackBtn');
+            if (btn) {
+                btn.disabled = true;
+                btn.innerHTML = '<span style="display: inline-block; width: 16px; height: 16px; border: 2px solid #ffffff; border-top-color: transparent; border-radius: 50%; animation: spin 0.6s linear infinite; margin-right: 8px; vertical-align: middle;"></span>Sending...';
+                btn.style.opacity = '0.7';
+                btn.style.cursor = 'not-allowed';
+            }
+        });
     </script>
+    <style>
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
 @endsection
 
