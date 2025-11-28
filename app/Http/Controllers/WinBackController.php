@@ -32,15 +32,27 @@ class WinBackController extends Controller
     }
 
     /**
+     * Check if user is super admin
+     */
+    protected function requireSuperAdmin()
+    {
+        $user = Auth::guard('sanctum')->user();
+        
+        if (!$user || !$user->isSuperAdmin()) {
+            abort(403, 'Access denied. Win-Back system is only available to administrators.');
+        }
+        
+        return $user;
+    }
+
+    /**
      * Dashboard - Overview of win-back system
      */
     public function index(Request $request)
     {
-        $user = Auth::guard('sanctum')->user();
+        $this->requireSuperAdmin();
         
-        if (!$user) {
-            abort(401, 'Unauthorized');
-        }
+        $user = Auth::guard('sanctum')->user();
 
         // Get segment statistics
         $segmentStats = $this->segmentationService->getSegmentStats($user);
@@ -72,11 +84,7 @@ class WinBackController extends Controller
      */
     public function import()
     {
-        $user = Auth::guard('sanctum')->user();
-        
-        if (!$user) {
-            abort(401, 'Unauthorized');
-        }
+        $this->requireSuperAdmin();
 
         return view('winback.import');
     }
@@ -86,11 +94,7 @@ class WinBackController extends Controller
      */
     public function storeImport(Request $request)
     {
-        $user = Auth::guard('sanctum')->user();
-        
-        if (!$user) {
-            abort(401, 'Unauthorized');
-        }
+        $user = $this->requireSuperAdmin();
 
         $request->validate([
             'import_type' => 'required|in:csv,text,email',
@@ -127,11 +131,7 @@ class WinBackController extends Controller
      */
     public function customers(Request $request)
     {
-        $user = Auth::guard('sanctum')->user();
-        
-        if (!$user) {
-            abort(401, 'Unauthorized');
-        }
+        $user = $this->requireSuperAdmin();
 
         $segment = $request->get('segment', 'all');
         
@@ -159,11 +159,7 @@ class WinBackController extends Controller
      */
     public function createCampaign(Request $request)
     {
-        $user = Auth::guard('sanctum')->user();
-        
-        if (!$user) {
-            abort(401, 'Unauthorized');
-        }
+        $user = $this->requireSuperAdmin();
 
         $request->validate([
             'name' => 'required|string|max:255',
@@ -232,7 +228,7 @@ class WinBackController extends Controller
      */
     public function sendCampaign(WinBackCampaign $campaign)
     {
-        $user = Auth::guard('sanctum')->user();
+        $user = $this->requireSuperAdmin();
         
         if ($campaign->user_id !== $user->id) {
             abort(403);
@@ -267,7 +263,7 @@ class WinBackController extends Controller
      */
     public function showCampaign(WinBackCampaign $campaign)
     {
-        $user = Auth::guard('sanctum')->user();
+        $user = $this->requireSuperAdmin();
         
         if ($campaign->user_id !== $user->id) {
             abort(403);
@@ -289,11 +285,7 @@ class WinBackController extends Controller
      */
     public function revenueReport(Request $request)
     {
-        $user = Auth::guard('sanctum')->user();
-        
-        if (!$user) {
-            abort(401, 'Unauthorized');
-        }
+        $user = $this->requireSuperAdmin();
 
         $period = $request->get('period', 'month'); // month, week, year
 
@@ -329,11 +321,7 @@ class WinBackController extends Controller
      */
     public function segment()
     {
-        $user = Auth::guard('sanctum')->user();
-        
-        if (!$user) {
-            abort(401, 'Unauthorized');
-        }
+        $user = $this->requireSuperAdmin();
 
         try {
             $result = $this->segmentationService->segmentCustomers($user);
