@@ -42,7 +42,7 @@ class WinBackCustomerImportService
     }
 
     /**
-     * Import customers from text list (one per line: name, email/phone)
+     * Import customers from text list (one per line: name, email/phone, [last_visit_date], [total_spend], [visit_count], [lifetime_value])
      */
     public function importFromText(User $user, string $text): array
     {
@@ -55,25 +55,70 @@ class WinBackCustomerImportService
             if (empty($line)) continue;
 
             try {
-                // Try to parse: "Name, email@example.com" or "Name, +1234567890"
-                $parts = explode(',', $line, 2);
-                $name = trim($parts[0] ?? '');
-                $contact = trim($parts[1] ?? '');
+                // Parse line: "Name, email@example.com, 2024-10-15, 250, 5, 500"
+                // Format: name, email/phone, last_visit_date (optional), total_spend (optional), visit_count (optional), lifetime_value (optional)
+                $parts = array_map('trim', explode(',', $line));
+                
+                if (count($parts) < 2) {
+                    $errors[] = "Line format invalid: {$line} (needs at least: Name, Email/Phone)";
+                    continue;
+                }
 
                 $data = [
-                    'name' => $name,
+                    'name' => $parts[0] ?? '',
                 ];
 
+                // Parse contact (email or phone)
+                $contact = $parts[1] ?? '';
                 if (filter_var($contact, FILTER_VALIDATE_EMAIL)) {
                     $data['email'] = $contact;
                 } elseif (preg_match('/^\+?[\d\s\-\(\)]+$/', $contact)) {
                     $data['phone'] = $contact;
+                } else {
+                    $errors[] = "Invalid contact format: {$contact}";
+                    continue;
+                }
+
+                // Parse optional fields
+                if (isset($parts[2]) && !empty($parts[2])) {
+                    // Try to parse as date first
+                    try {
+                        $date = Carbon::parse($parts[2]);
+                        $data['last_visit_date'] = $date->format('Y-m-d');
+                    } catch (\Exception $e) {
+                        // If not a date, might be spend amount
+                        if (is_numeric($parts[2])) {
+                            $data['total_spend'] = floatval($parts[2]);
+                        }
+                    }
+                }
+
+                if (isset($parts[3]) && !empty($parts[3]) && is_numeric($parts[3])) {
+                    $data['total_spend'] = floatval($parts[3]);
+                }
+
+                if (isset($parts[4]) && !empty($parts[4]) && is_numeric($parts[4])) {
+                    $data['visit_count'] = intval($parts[4]);
+                }
+
+                if (isset($parts[5]) && !empty($parts[5]) && is_numeric($parts[5])) {
+                    $data['lifetime_value'] = floatval($parts[5]);
+                }
+
+                // If we have a date in parts[2] but it wasn't parsed, try again
+                if (isset($parts[2]) && !empty($parts[2]) && !isset($data['last_visit_date'])) {
+                    try {
+                        $date = Carbon::parse($parts[2]);
+                        $data['last_visit_date'] = $date->format('Y-m-d');
+                    } catch (\Exception $e) {
+                        // Ignore if not a valid date
+                    }
                 }
 
                 $this->createCustomer($user, $data);
                 $imported++;
             } catch (\Exception $e) {
-                $errors[] = "Line error: " . $e->getMessage();
+                $errors[] = "Line error: {$line} - " . $e->getMessage();
             }
         }
 
@@ -143,6 +188,11 @@ class WinBackCustomerImportService
         $customer->visit_count = intval($data['visit_count'] ?? $data['visits'] ?? $customer->visit_count ?? 0);
         $customer->lifetime_value = floatval($data['lifetime_value'] ?? $data['ltv'] ?? $customer->lifetime_value ?? 0);
         $customer->customer_type = $data['customer_type'] ?? $data['type'] ?? $customer->customer_type;
+
+        // If last_visit_date is provided but visit_count is 0, assume at least 1 visit
+        if ($customer->last_visit_date && $customer->visit_count === 0) {
+            $customer->visit_count = 1;
+        }
 
         // Calculate days since last visit
         if ($customer->last_visit_date) {
