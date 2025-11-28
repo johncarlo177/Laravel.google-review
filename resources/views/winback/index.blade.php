@@ -225,12 +225,14 @@
         <h1>AI Win-Back System</h1>
 
         @if(session('success'))
-            <div class="alert alert-success">{{ session('success') }}</div>
+            <div class="alert alert-success" style="padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+                ✅ {{ session('success') }}
+            </div>
         @endif
 
         @if(session('error'))
-            <div class="alert" style="background: #fef2f2; color: #991b1b; border-color: #ef4444;">
-                {{ session('error') }}
+            <div class="alert" style="background: #fef2f2; color: #991b1b; border-color: #ef4444; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+                <strong>⚠️ Error:</strong> {{ session('error') }}
             </div>
         @endif
 
@@ -311,9 +313,26 @@
                     <label style="display: block; margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #374151;">Schedule (Optional)</label>
                     <input type="datetime-local" name="scheduled_at" style="width: 100%; padding: 10px 14px; border: 1.5px solid #e5e7eb; border-radius: 8px; font-size: 14px;">
                 </div>
-                <button type="submit" class="btn btn-primary" style="min-width: 150px;">Create Campaign</button>
+                <button type="submit" class="btn btn-primary" id="createCampaignBtn" style="min-width: 150px;">Create Campaign</button>
             </form>
         </div>
+
+        <script>
+            document.querySelector('form[action="{{ route('winback.campaigns.create') }}"]').addEventListener('submit', function(e) {
+                const btn = document.getElementById('createCampaignBtn');
+                if (btn) {
+                    btn.disabled = true;
+                    btn.innerHTML = '<span style="display: inline-block; width: 16px; height: 16px; border: 2px solid #ffffff; border-top-color: transparent; border-radius: 50%; animation: spin 0.6s linear infinite; margin-right: 8px; vertical-align: middle;"></span>Creating...';
+                    btn.style.opacity = '0.7';
+                    btn.style.cursor = 'not-allowed';
+                }
+            });
+        </script>
+        <style>
+            @keyframes spin {
+                to { transform: rotate(360deg); }
+            }
+        </style>
 
         <!-- Recent Campaigns -->
         <div class="campaigns-list">

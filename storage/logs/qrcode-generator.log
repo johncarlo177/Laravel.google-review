@@ -12734,3 +12734,30 @@
     }
 }  
 [2025-11-28 17:12:05] production.ERROR: Win-Back message generation error: Trying to access array offset on null  
+[2025-11-28 17:13:41] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-28 17:13:41] production.ERROR: Win-Back message generation error: Trying to access array offset on null  
+[2025-11-28 17:15:48] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-28 17:15:48] production.ERROR: Win-Back message generation error: Trying to access array offset on null  
+[2025-11-28 17:16:15] production.WARNING: Response: Expected open AI response with ID key, but got instead: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https:\/\/platform.openai.com\/docs\/guides\/error-codes\/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}  
+[2025-11-28 17:16:15] production.ERROR: Win-Back message generation error: Trying to access array offset on null  

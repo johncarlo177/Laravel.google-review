@@ -149,9 +149,9 @@
             <div>
                 <span class="badge badge-{{ $campaign->status }}">{{ ucfirst($campaign->status) }}</span>
                 @if($campaign->status === 'draft' || $campaign->status === 'scheduled')
-                    <form method="POST" action="{{ route('winback.campaigns.send', $campaign->id) }}" style="display: inline; margin-left: 12px;">
+                    <form method="POST" action="{{ route('winback.campaigns.send', $campaign->id) }}" style="display: inline; margin-left: 12px;" id="sendCampaignForm">
                         @csrf
-                        <button type="submit" class="btn btn-success">Send Campaign</button>
+                        <button type="submit" class="btn btn-success" id="sendCampaignBtn">Send Campaign</button>
                     </form>
                 @endif
             </div>
@@ -234,5 +234,25 @@
         </div>
     </div>
 </div>
+
+<script>
+    const sendCampaignForm = document.getElementById('sendCampaignForm');
+    if (sendCampaignForm) {
+        sendCampaignForm.addEventListener('submit', function(e) {
+            const btn = document.getElementById('sendCampaignBtn');
+            if (btn) {
+                btn.disabled = true;
+                btn.innerHTML = '<span style="display: inline-block; width: 16px; height: 16px; border: 2px solid #ffffff; border-top-color: transparent; border-radius: 50%; animation: spin 0.6s linear infinite; margin-right: 8px; vertical-align: middle;"></span>Sending...';
+                btn.style.opacity = '0.7';
+                btn.style.cursor = 'not-allowed';
+            }
+        });
+    }
+</script>
+<style>
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+</style>
 @endsection
 
