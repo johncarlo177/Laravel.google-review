@@ -196,6 +196,19 @@ Route::middleware(['auth:sanctum'])->prefix('staff')->name('staff.')->group(func
     Route::get('/feedback/export', [App\Http\Controllers\StaffFeedbackController::class, 'export'])->name('feedback.export');
 });
 
+// Win-Back routes (protected)
+Route::middleware(['auth:sanctum'])->prefix('winback')->name('winback.')->group(function () {
+    Route::get('/', [App\Http\Controllers\WinBackController::class, 'index'])->name('index');
+    Route::get('/import', [App\Http\Controllers\WinBackController::class, 'import'])->name('import');
+    Route::post('/import', [App\Http\Controllers\WinBackController::class, 'storeImport'])->name('import.store');
+    Route::get('/customers', [App\Http\Controllers\WinBackController::class, 'customers'])->name('customers');
+    Route::post('/segment', [App\Http\Controllers\WinBackController::class, 'segment'])->name('segment');
+    Route::post('/campaigns', [App\Http\Controllers\WinBackController::class, 'createCampaign'])->name('campaigns.create');
+    Route::get('/campaigns/{campaign}', [App\Http\Controllers\WinBackController::class, 'showCampaign'])->name('campaigns.show');
+    Route::post('/campaigns/{campaign}/send', [App\Http\Controllers\WinBackController::class, 'sendCampaign'])->name('campaigns.send');
+    Route::get('/report', [App\Http\Controllers\WinBackController::class, 'revenueReport'])->name('report');
+});
+
 // Test route to generate feedback URL (for testing)
 Route::get('/feedback', function() {
     $qrcode = \App\Models\QRCode::where('type', 'business-review')
