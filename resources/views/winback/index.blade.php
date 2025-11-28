@@ -173,6 +173,9 @@
         font-size: 13px;
         color: #6b7280;
     }
+    .campaign-item-mobile {
+        display: none;
+    }
     .badge {
         display: inline-block;
         padding: 4px 12px;
@@ -242,16 +245,60 @@
             font-size: 14px;
         }
         .campaign-item {
-            flex-direction: column;
+            display: none;
+        }
+        .campaign-item-mobile {
+            display: block;
+            background: #f9fafb;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #e5e7eb;
+        }
+        .campaign-item-mobile .campaign-header-mobile {
+            display: flex;
+            justify-content: space-between;
             align-items: flex-start;
-            gap: 12px;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e5e7eb;
         }
-        .campaign-item .campaign-info {
-            width: 100%;
+        .campaign-item-mobile .campaign-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1d29;
+            margin-bottom: 4px;
         }
-        .campaign-item .campaign-info .meta {
+        .campaign-item-mobile .campaign-badge {
+            margin-top: 4px;
+        }
+        .campaign-item-mobile .campaign-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .campaign-item-mobile .campaign-row:last-child {
+            border-bottom: none;
+        }
+        .campaign-item-mobile .campaign-label {
             font-size: 12px;
-            word-break: break-word;
+            color: #6b7280;
+            font-weight: 500;
+        }
+        .campaign-item-mobile .campaign-value {
+            font-size: 14px;
+            color: #1a1d29;
+            text-align: right;
+            font-weight: 500;
+        }
+        .campaign-item-mobile .campaign-actions {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #e5e7eb;
+        }
+        .campaign-item-mobile .campaign-actions .btn {
+            width: 100%;
         }
         /* Campaign creation form */
         form[action="{{ route('winback.campaigns.create') }}"] {
@@ -403,6 +450,7 @@
         <div class="campaigns-list">
             <h2 style="font-size: 24px; font-weight: 600; margin-bottom: 20px; color: #1a1d29;">Recent Campaigns</h2>
             
+            <!-- Desktop View -->
             @forelse($campaigns as $campaign)
                 <div class="campaign-item">
                     <div class="campaign-info">
@@ -421,6 +469,43 @@
                 </div>
             @empty
                 <div style="text-align: center; padding: 40px; color: #6b7280;">
+                    No campaigns yet. Create your first campaign by importing customers and running segmentation.
+                </div>
+            @endforelse
+
+            <!-- Mobile Card View -->
+            @forelse($campaigns as $campaign)
+                <div class="campaign-item-mobile">
+                    <div class="campaign-header-mobile">
+                        <div>
+                            <div class="campaign-title">{{ $campaign->name }}</div>
+                            <div class="campaign-badge">
+                                <span class="badge badge-{{ $campaign->status }}">{{ ucfirst($campaign->status) }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-row">
+                        <span class="campaign-label">Messages Sent</span>
+                        <span class="campaign-value">{{ $campaign->messages_sent }}</span>
+                    </div>
+                    <div class="campaign-row">
+                        <span class="campaign-label">Responses</span>
+                        <span class="campaign-value">{{ $campaign->responses_received }}</span>
+                    </div>
+                    <div class="campaign-row">
+                        <span class="campaign-label">Returned</span>
+                        <span class="campaign-value">{{ $campaign->customers_returned }}</span>
+                    </div>
+                    <div class="campaign-row">
+                        <span class="campaign-label">Revenue Recovered</span>
+                        <span class="campaign-value">${{ number_format($campaign->revenue_recovered, 2) }}</span>
+                    </div>
+                    <div class="campaign-actions">
+                        <a href="{{ route('winback.campaigns.show', $campaign->id) }}" class="btn btn-secondary">View Campaign</a>
+                    </div>
+                </div>
+            @empty
+                <div class="campaign-item-mobile" style="text-align: center; padding: 40px; color: #6b7280;">
                     No campaigns yet. Create your first campaign by importing customers and running segmentation.
                 </div>
             @endforelse

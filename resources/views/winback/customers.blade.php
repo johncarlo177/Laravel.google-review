@@ -100,6 +100,53 @@
         margin: 0 -16px;
         padding: 0 16px;
     }
+    .customer-card {
+        display: none;
+    }
+    .customer-card-mobile {
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 12px;
+    }
+    .customer-card-mobile .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    .customer-card-mobile .card-name {
+        font-weight: 600;
+        font-size: 16px;
+        color: #1a1d29;
+        margin-bottom: 4px;
+    }
+    .customer-card-mobile .card-segment {
+        margin-top: 4px;
+    }
+    .customer-card-mobile .card-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid #f3f4f6;
+    }
+    .customer-card-mobile .card-row:last-child {
+        border-bottom: none;
+    }
+    .customer-card-mobile .card-label {
+        font-size: 12px;
+        color: #6b7280;
+        font-weight: 500;
+    }
+    .customer-card-mobile .card-value {
+        font-size: 14px;
+        color: #1a1d29;
+        text-align: right;
+        font-weight: 500;
+    }
     @media (max-width: 768px) {
         .winback-wrapper {
             padding: 20px 12px 20px 12px;
@@ -122,23 +169,10 @@
             margin-top: 0
         }
         .table-wrapper {
-            margin: 0 -16px;
-            padding: 0 16px;
+            display: none;
         }
-        table {
-            font-size: 12px;
-            min-width: 600px;
-        }
-        th, td {
-            padding: 8px 6px;
-            white-space: nowrap;
-        }
-        th {
-            font-size: 11px;
-        }
-        .badge {
-            font-size: 10px;
-            padding: 3px 8px;
+        .mobile-cards-wrapper {
+            display: block !important;
         }
         .btn {
             width: 100%;
@@ -155,11 +189,11 @@
         h1 {
             font-size: 20px;
         }
-        table {
-            font-size: 11px;
+        .customer-card-mobile {
+            padding: 12px;
         }
-        th, td {
-            padding: 6px 4px;
+        .customer-card-mobile .card-name {
+            font-size: 15px;
         }
     }
 </style>
@@ -224,6 +258,54 @@
                 @endforelse
             </tbody>
         </table>
+        </div>
+
+        <!-- Mobile Card View -->
+        <div class="mobile-cards-wrapper" style="display: none;">
+            @forelse($customers as $customer)
+                <div class="customer-card-mobile">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-name">{{ $customer->name ?? 'N/A' }}</div>
+                            <div class="card-segment">
+                                <span class="badge badge-{{ $customer->segment }}">{{ ucfirst(str_replace('-', ' ', $customer->segment ?? 'N/A')) }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <span class="card-label">Contact</span>
+                        <span class="card-value">
+                            @if($customer->email)
+                                {{ $customer->email }}
+                            @elseif($customer->phone)
+                                {{ $customer->phone }}
+                            @else
+                                N/A
+                            @endif
+                        </span>
+                    </div>
+                    <div class="card-row">
+                        <span class="card-label">Last Visit</span>
+                        <span class="card-value">{{ $customer->last_visit_date ? $customer->last_visit_date->format('M d, Y') : 'Never' }}</span>
+                    </div>
+                    <div class="card-row">
+                        <span class="card-label">Days Since</span>
+                        <span class="card-value">{{ $customer->days_since_last_visit ?? 'N/A' }}</span>
+                    </div>
+                    <div class="card-row">
+                        <span class="card-label">Visits</span>
+                        <span class="card-value">{{ $customer->visit_count }}</span>
+                    </div>
+                    <div class="card-row">
+                        <span class="card-label">Lifetime Value</span>
+                        <span class="card-value">${{ number_format($customer->lifetime_value, 2) }}</span>
+                    </div>
+                </div>
+            @empty
+                <div style="text-align: center; padding: 40px; color: #6b7280;">
+                    No customers found. <a href="{{ route('winback.import') }}" style="color: #4285f4;">Import customers</a> to get started.
+                </div>
+            @endforelse
         </div>
 
         <div style="margin-top: 24px;">
