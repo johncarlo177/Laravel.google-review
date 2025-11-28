@@ -94,18 +94,72 @@
         display: none !important;
         margin: 0 !important;
     }
+    .table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 0 -16px;
+        padding: 0 16px;
+    }
     @media (max-width: 768px) {
         .winback-wrapper {
-            padding: 40px 20px 20px 20px;
+            padding: 20px 12px 20px 12px;
         }
         .container {
-            padding: 24px;
+            padding: 20px 16px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .filters {
+            flex-direction: column;
+            gap: 8px;
+        }
+        .filters select,
+        .filters button {
+            width: 100%;
+            margin-top: 0
+        }
+        .table-wrapper {
+            margin: 0 -16px;
+            padding: 0 16px;
         }
         table {
             font-size: 12px;
+            min-width: 600px;
         }
         th, td {
-            padding: 10px;
+            padding: 8px 6px;
+            white-space: nowrap;
+        }
+        th {
+            font-size: 11px;
+        }
+        .badge {
+            font-size: 10px;
+            padding: 3px 8px;
+        }
+        .btn {
+            width: 100%;
+            margin-top: 16px;
+        }
+    }
+    @media (max-width: 480px) {
+        .winback-wrapper {
+            padding: 16px 8px;
+        }
+        .container {
+            padding: 16px 12px;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        table {
+            font-size: 11px;
+        }
+        th, td {
+            padding: 6px 4px;
         }
     }
 </style>
@@ -128,6 +182,7 @@
             </form>
         </div>
 
+        <div class="table-wrapper">
         <table>
             <thead>
                 <tr>
@@ -169,6 +224,7 @@
                 @endforelse
             </tbody>
         </table>
+        </div>
 
         <div style="margin-top: 24px;">
             {{ $customers->links() }}

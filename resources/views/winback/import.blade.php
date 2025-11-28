@@ -118,10 +118,45 @@
     }
     @media (max-width: 768px) {
         .winback-wrapper {
-            padding: 40px 20px 20px 20px;
+            padding: 20px 12px 20px 12px;
         }
         .container {
-            padding: 24px;
+            padding: 20px 16px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        .import-section {
+            padding: 16px;
+        }
+        .import-section h3 {
+            font-size: 18px;
+        }
+        .form-group textarea {
+            min-height: 120px;
+        }
+        .btn {
+            width: 100%;
+        }
+    }
+    @media (max-width: 480px) {
+        .winback-wrapper {
+            padding: 16px 8px;
+        }
+        .container {
+            padding: 16px 12px;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        .import-section {
+            padding: 12px;
+        }
+        .info-box {
+            padding: 12px;
+            font-size: 13px;
         }
     }
 </style>

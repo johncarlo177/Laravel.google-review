@@ -202,20 +202,85 @@
     }
     @media (max-width: 768px) {
         .winback-wrapper {
-            padding: 40px 20px 20px 20px;
+            padding: 20px 12px 20px 12px;
         }
         .container {
-            padding: 24px;
+            padding: 20px 16px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 24px;
         }
         .stats-grid, .segment-cards {
             grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        .stat-card {
+            padding: 16px;
+        }
+        .stat-card .value {
+            font-size: 24px;
+        }
+        .segment-card {
+            padding: 16px;
+        }
+        .segment-card .count {
+            font-size: 20px;
         }
         .header-actions {
             flex-direction: column;
+            gap: 8px;
+        }
+        .header-actions form {
+            width: 100%;
         }
         .btn {
             width: 100%;
             text-align: center;
+            padding: 12px 16px;
+            font-size: 14px;
+        }
+        .campaign-item {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .campaign-item .campaign-info {
+            width: 100%;
+        }
+        .campaign-item .campaign-info .meta {
+            font-size: 12px;
+            word-break: break-word;
+        }
+        /* Campaign creation form */
+        form[action="{{ route('winback.campaigns.create') }}"] {
+            flex-direction: column;
+            gap: 16px;
+        }
+        form[action="{{ route('winback.campaigns.create') }}"] > div {
+            width: 100% !important;
+            min-width: 100% !important;
+        }
+        form[action="{{ route('winback.campaigns.create') }}"] button {
+            width: 100%;
+        }
+    }
+    @media (max-width: 480px) {
+        .winback-wrapper {
+            padding: 16px 8px;
+        }
+        .container {
+            padding: 16px 12px;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        .stat-card h3 {
+            font-size: 11px;
+        }
+        .segment-card h4 {
+            font-size: 14px;
         }
     }
 </style>

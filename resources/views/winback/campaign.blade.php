@@ -122,16 +122,85 @@
         display: none !important;
         margin: 0 !important;
     }
+    .table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 0 -16px;
+        padding: 0 16px;
+    }
     @media (max-width: 768px) {
         .winback-wrapper {
-            padding: 40px 20px 20px 20px;
+            padding: 20px 12px 20px 12px;
         }
         .container {
-            padding: 24px;
+            padding: 20px 16px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 16px;
         }
         .campaign-header {
             flex-direction: column;
             align-items: flex-start;
+            gap: 16px;
+            padding-bottom: 20px;
+        }
+        .campaign-header > div:last-child {
+            width: 100%;
+        }
+        .campaign-header .badge {
+            display: block;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .campaign-stats {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+        .stat-box {
+            padding: 16px;
+        }
+        .stat-box .value {
+            font-size: 20px;
+        }
+        .stat-box .label {
+            font-size: 11px;
+        }
+        .table-wrapper {
+            margin: 0 -16px;
+            padding: 0 16px;
+        }
+        table {
+            min-width: 600px;
+            font-size: 12px;
+        }
+        th, td {
+            padding: 10px 8px;
+        }
+        .btn {
+            width: 100%;
+            margin-left: 0 !important;
+        }
+    }
+    @media (max-width: 480px) {
+        .winback-wrapper {
+            padding: 16px 8px;
+        }
+        .container {
+            padding: 16px 12px;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        .campaign-stats {
+            grid-template-columns: 1fr;
+        }
+        table {
+            font-size: 11px;
+        }
+        th, td {
+            padding: 8px 6px;
         }
     }
 </style>
@@ -181,6 +250,7 @@
         </div>
 
         <h2 style="font-size: 20px; font-weight: 600; margin-bottom: 16px;">Messages</h2>
+        <div class="table-wrapper">
         <table>
             <thead>
                 <tr>
@@ -224,6 +294,7 @@
                 @endforelse
             </tbody>
         </table>
+        </div>
 
         <div style="margin-top: 24px;">
             {{ $messages->links() }}

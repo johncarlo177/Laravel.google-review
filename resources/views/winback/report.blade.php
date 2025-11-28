@@ -119,13 +119,63 @@
     }
     @media (max-width: 768px) {
         .winback-wrapper {
-            padding: 40px 20px 20px 20px;
+            padding: 20px 12px 20px 12px;
         }
         .container {
-            padding: 24px;
+            padding: 20px 16px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        .period-selector {
+            margin-bottom: 24px;
+        }
+        .period-selector a {
+            display: block;
+            margin-bottom: 8px;
+            text-align: center;
         }
         .stats-grid {
             grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        .stat-card {
+            padding: 16px;
+        }
+        .stat-card .value {
+            font-size: 24px;
+        }
+        .campaign-item {
+            padding: 16px;
+        }
+        .campaign-item h4 {
+            font-size: 16px;
+        }
+        .campaign-stats {
+            flex-direction: column;
+            gap: 12px;
+        }
+        .btn {
+            width: 100%;
+        }
+    }
+    @media (max-width: 480px) {
+        .winback-wrapper {
+            padding: 16px 8px;
+        }
+        .container {
+            padding: 16px 12px;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        .stat-card .value {
+            font-size: 20px;
+        }
+        .campaign-item {
+            padding: 12px;
         }
     }
 </style>
