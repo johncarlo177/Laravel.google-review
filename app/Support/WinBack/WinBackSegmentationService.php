@@ -60,6 +60,16 @@ class WinBackSegmentationService
             return WinBackCustomer::SEGMENT_FAILED_LEAD;
         }
 
+        // VIP: High value or frequent visitor (check FIRST - VIPs are important regardless of days)
+        if ($customer->lifetime_value >= 500 || $customer->visit_count >= 10) {
+            return WinBackCustomer::SEGMENT_VIP;
+        }
+
+        // One-Time Visitor: Only visited once (check BEFORE time-based segments)
+        if ($customer->visit_count === 1) {
+            return WinBackCustomer::SEGMENT_ONE_TIME;
+        }
+
         // Lost Customer: 60+ days no visit
         if ($daysSinceVisit >= 60) {
             return WinBackCustomer::SEGMENT_LOST;
@@ -68,16 +78,6 @@ class WinBackSegmentationService
         // Dormant Customer: 30-59 days
         if ($daysSinceVisit >= 30 && $daysSinceVisit < 60) {
             return WinBackCustomer::SEGMENT_DORMANT;
-        }
-
-        // VIP: High value or frequent visitor
-        if ($customer->lifetime_value >= 500 || $customer->visit_count >= 10) {
-            return WinBackCustomer::SEGMENT_VIP;
-        }
-
-        // One-Time Visitor: Only visited once
-        if ($customer->visit_count === 1) {
-            return WinBackCustomer::SEGMENT_ONE_TIME;
         }
 
         // Default to dormant if between visits but not quite lost
