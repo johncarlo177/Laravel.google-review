@@ -394,37 +394,9 @@
 
                     // Show appropriate section
                     if (rating >= 4) {
-                        // High rating (4-5 stars) - submit directly
+                        // High rating (4-5 stars) - show Google review option
                         highRatingSection.classList.add('show');
                         lowRatingSection.classList.remove('show');
-                        
-                        // Show loading indicator
-                        const loadingIndicator = document.getElementById('highRatingLoading');
-                        if (loadingIndicator) {
-                            loadingIndicator.style.display = 'block';
-                        }
-                        
-                        // Auto-submit for 4-5 stars after a short delay
-                        setTimeout(() => {
-                            const form = document.createElement('form');
-                            form.method = 'POST';
-                            form.action = '{{ route('feedback.submit', $token) }}';
-                            
-                            const csrf = document.createElement('input');
-                            csrf.type = 'hidden';
-                            csrf.name = '_token';
-                            csrf.value = '{{ csrf_token() }}';
-                            form.appendChild(csrf);
-                            
-                            const ratingInput = document.createElement('input');
-                            ratingInput.type = 'hidden';
-                            ratingInput.name = 'rating';
-                            ratingInput.value = rating;
-                            form.appendChild(ratingInput);
-                            
-                            document.body.appendChild(form);
-                            form.submit();
-                        }, 2000); // Submit after 2 seconds
                     } else {
                         // Low rating (1-3 stars)
                         lowRatingSection.classList.add('show');
