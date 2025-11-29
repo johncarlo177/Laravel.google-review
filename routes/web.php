@@ -196,6 +196,11 @@ Route::middleware(['auth:sanctum'])->prefix('staff')->name('staff.')->group(func
     Route::get('/feedback/export', [App\Http\Controllers\StaffFeedbackController::class, 'export'])->name('feedback.export');
 });
 
+// User feedback routes (protected)  
+Route::middleware(['auth:sanctum'])->group(function () {
+    Route::get('/feedbacks', [App\Http\Controllers\UserFeedbackController::class, 'index'])->name('feedbacks.index');
+});
+
 // Win-Back routes (protected)
 Route::middleware(['auth:sanctum'])->prefix('winback')->name('winback.')->group(function () {
     Route::get('/', [App\Http\Controllers\WinBackController::class, 'index'])->name('index');

@@ -12783,3 +12783,9 @@
 }  
 [2025-11-28 18:46:43] production.ERROR: GPT recovery plan error: Trying to access array offset on null  
 [2025-11-28 18:47:49] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-29 19:45:47] production.INFO: Staff Feedback Index {"user_id":1,"qrcode_ids_count":2,"qrcode_ids":[130004,130005]} 
+[2025-11-29 21:27:18] production.INFO: QRCodeScansCalculator: Current chunk offset: 0  
+[2025-11-29 21:28:23] production.INFO: QRCodeScansCalculator: Current chunk offset: 0  
+[2025-11-29 21:40:52] production.INFO: QRCodeScansCalculator: Current chunk offset: 0  
+[2025-11-29 21:50:28] production.INFO: QRCodeScansCalculator: Current chunk offset: 0  
+[2025-11-29 22:03:19] production.INFO: QRCodeScansCalculator: Current chunk offset: 0  

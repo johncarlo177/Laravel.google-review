@@ -1,2 +1,0 @@
-<script type="module" crossorigin src="<?php echo e(asset('/assets/blue.BW4C9MXY.js')); ?>"></script>
-<link rel="stylesheet" href="<?php echo e(asset('/assets/blue.DxYTLGN3.css')); ?>"><?php /**PATH /home/johncarlo/Documents/Projects/FREELANCER-TASK/public_html (1)/review/resources/views/blue/partials/head/blue-assets.blade.php ENDPATH**/ ?>
